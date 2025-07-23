@@ -1,0 +1,10 @@
+pdf-engine: lualatex
+template: cover.latex
+listings: true
+filters:
+   - tables.lua
+# - flatten-authors.lua
+
+variables:
+  linestretch: 1.2
+  colorlinks: true

@@ -1,0 +1,63 @@
+#!/bin/bash
+
+
+# Set Paths
+BD=$(dirname "$(realpath "$0")")  # Base directory
+ARTICLE_DIR=$(pwd)  # Das Skript wird aus dem Artikelverzeichnis aufgerufen
+
+# Set path to fortext logo according to used OS
+LOGOPATH=$(realpath "$BD/data/logo/fortext-logo.png")
+COVERPATH=$(realpath "$BD/data/templates/cover_quer.latex")
+if [[ "$OSTYPE" == "msys" || "$OSTYPE" == "cygwin" ]]; then
+  FORTEXTLOGO=$(cygpath -m "$LOGOPATH")
+  APPENDIX_COVER=$(cygpath -m "$COVERPATH")
+else
+  FORTEXTLOGO=$LOGOPATH
+  APPENDIX_COVER=$COVERPATH
+fi
+
+echo "Logo Pfad: $FORTEXTLOGO"
+
+# Check if metadata file exists
+METADATA_FILE="author_meta.yaml"
+if [ ! -f "$METADATA_FILE" ]; then
+  echo "Error: Metadata file '$METADATA_FILE' not found in $ARTICLE_DIR. Exiting."
+  exit 1
+fi
+
+# Convert YAML metadata to Markdown format
+AUTHOR_META_MD="author_meta.md"
+{ echo "---"; cat "$METADATA_FILE"; echo -e "\n---"; } > "$AUTHOR_META_MD"
+
+echo "Converted metadata to Markdown format."
+
+# Call Python script to extract metadata and generate appendix_meta.md
+python3.11 "$BD/scripts/make_cover_meta.py" "$AUTHOR_META_MD" && rm "$AUTHOR_META_MD"
+
+
+# Iterate over all _appendix_meta.md files and generate cover for each
+for appendix_meta_file in *_appendix_meta.md; do
+  if [ -f "$appendix_meta_file" ]; then
+    OUTPUT_BASE="Anhänge/${appendix_meta_file/_appendix_meta/}"
+    OUTPUT_BASE="${OUTPUT_BASE%.md}_cover"
+    OUTPUT_PDF="$OUTPUT_BASE.pdf"
+
+    echo "Generating $OUTPUT_PDF for $appendix_meta_file"
+
+    pandoc \
+      --defaults="$BD/fortext-hefte.yaml" \
+      --defaults="$BD/data/defaults/latex_cover.yaml" \
+      --variable=logo:"$FORTEXTLOGO" \
+      --defaults="$BD/data/defaults/font-plex.yaml" \
+      --include-in-header="$BD/data/caption.tex" \
+      "$appendix_meta_file" \
+      --output "$OUTPUT_PDF" \
+    && git add "$OUTPUT_PDF" \
+    && git commit -m "data(output): generated $OUTPUT_PDF" \
+    && git push \
+    ## && rm "$appendix_meta_file"
+
+    echo "Cover generated: $OUTPUT_PDF"
+  fi
+done
+

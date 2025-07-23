@@ -1,0 +1,6 @@
+../submission/SpecialIssue_RT/4244_Thematologie/v1_Jacke_Thematologie_und_Topic_Modeling
+../submission/SpecialIssue_RT/4263_Reflektierte_Textanalyse/v0_ReflektierteTextanalyse_Pichler_Reiter
+../submission/SpecialIssue_RT/4265_Kafka/v1_Kafka_stiemer-gius
+../submission/SpecialIssue_RT/4266_AnwendungenCL/v1_4266_AnwendungenCL
+../submission/SpecialIssue_RT/42690_Reflektierte_Algorithmische_Netzwerkanalyse/v1_algorithmische_netzwerkanalys_schumacher_ketschik
+../submission/TAH/4067_CATMA/v9_selbststudieneinheit-textannotation-mit-catma

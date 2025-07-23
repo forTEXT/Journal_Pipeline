@@ -1,0 +1,6 @@
+variables:
+  mainfont: 'STIX Two Text'
+  sansfont: 'Open Sans'
+  monofont: 'Source Sans Pro'
+  mathfont: 'STIX Two Math'
+

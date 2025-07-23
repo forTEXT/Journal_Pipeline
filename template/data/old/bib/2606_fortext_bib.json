@@ -1,0 +1,3069 @@
+[
+    {
+        "id": "blassMethodenbeitragDigitaleEditionen2024",
+        "author": [
+            {
+                "family": "Bläß",
+                "given": "Sandra"
+            },
+            {
+                "family": "Flüh",
+                "given": "Marie"
+            },
+            {
+                "family": "Nantke",
+                "given": "Julia"
+            }
+        ],
+        "citation-key": "blassMethodenbeitragDigitaleEditionen2024",
+        "collection-title": "Textdigitalisierung und Edition",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3747",
+        "editor": [
+            {
+                "family": "Gius",
+                "given": "Evelyn"
+            }
+        ],
+        "issue": "3",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    6,
+                    12
+                ]
+            ]
+        },
+        "title": "Methodenbeitrag: Digitale Editionen",
+        "type": "article-journal",
+        "URL": "https://fortext.net/routinen/methoden/digitale-editionen",
+        "volume": "1"
+    },
+    {
+        "id": "blassMethodenbeitragKorpusbildung2020",
+        "author": [
+            {
+                "family": "Bläß",
+                "given": "Sandra"
+            }
+        ],
+        "citation-key": "blassMethodenbeitragKorpusbildung2020",
+        "collection-title": "Korpusbildung",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3708",
+        "editor": [
+            {
+                "family": "Gius",
+                "given": "Evelyn"
+            }
+        ],
+        "issue": "2",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    6,
+                    12
+                ]
+            ]
+        },
+        "title": "Methodenbeitrag: Korpusbildung",
+        "type": "article-journal",
+        "URL": "https://fortext.net/routinen/methoden/korpusbildung",
+        "volume": "1"
+    },
+    {
+        "id": "blassMethodenbeitragProjektkonzeption2019",
+        "author": [
+            {
+                "family": "Bläß",
+                "given": "Sandra"
+            }
+        ],
+        "citation-key": "blassMethodenbeitragProjektkonzeption2019",
+        "collection-title": "Projektkonzeption",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3796",
+        "note": "blassMethodenbeitragProjektkonzeption2019",
+        "title": "Methodenbeitrag: Projektkonzeption",
+        "type": "article-journal",
+        "URL": "https://fortext.net/routinen/methoden/projektkonzeption",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    12,
+                    16
+                ]
+            ]
+        }
+    },
+    {
+        "id": "blassToolbeitragTrello2019",
+        "author": [
+            {
+                "family": "Bläß",
+                "given": "Sandra"
+            }
+        ],
+        "citation-key": "blassToolbeitragTrello2019",
+        "collection-title": "Projektkonzeption",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3801",
+        "title": "Toolbeitrag: Trello",
+        "type": "article-journal",
+        "URL": "https://fortext.net/tools/tools/trello",
+        "issued": {
+            "date-parts": [
+                [
+                    "2022",
+                    2,
+                    2
+                ]
+            ]
+        }
+    },
+    {
+        "id": "descherRessourcenbeitragTagsetInterpretationstexte2020",
+        "author": [
+            {
+                "family": "Descher",
+                "given": "Stefan"
+            }
+        ],
+        "citation-key": "descherRessourcenbeitragTagsetInterpretationstexte2020",
+        "collection-title": "Manuelle Annotation",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3758",
+        "title": "Ressourcenbeitrag: Tagset Interpretationstexte analysieren",
+        "type": "article-journal",
+        "URL": "https://fortext.net/ressourcen/tagsets/tagset-interpretationstexte-analysieren",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    7,
+                    15
+                ]
+            ]
+        },
+        "volume": "1",
+        "issue": "4"
+    },
+    {
+        "id": "fluhLerneinheitNetzwerkanalyseMit2019",
+        "author": [
+            {
+                "family": "Flüh",
+                "given": "Marie"
+            }
+        ],
+        "citation-key": "fluhLerneinheitNetzwerkanalyseMit2019",
+        "collection-title": "Netzwerkanalyse",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3781",
+        "title": "Lerneinheit: Netzwerkanalyse mit Ezlinavis unterrichten",
+        "type": "article-journal",
+        "URL": "https://fortext.net/routinen/schulunterricht/netzwerkanalyse-mit-ezlinavis-unterrichten",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    11,
+                    18
+                ]
+            ]
+        }
+    },
+    {
+        "id": "fluhLerneinheitSentimentanalyseMit2020",
+        "author": [
+            {
+                "family": "Flüh",
+                "given": "Marie"
+            }
+        ],
+        "citation-key": "fluhLerneinheitSentimentanalyseMit2020",
+        "collection-title": "Sentimentanalyse",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3798",
+        "title": "Lerneinheit: Sentimentanalyse mit SentText",
+        "type": "article-journal",
+        "URL": "https://fortext.net/routinen/lerneinheiten/sentimentanalyse-mit-senttext-1",
+        "issued": {
+            "date-parts": [
+                [
+                    "2020",
+                    6,
+                    29
+                ]
+            ]
+        }
+    },
+    {
+        "id": "fluhLerneinheitTextanalyseMit2020",
+        "author": [
+            {
+                "family": "Flüh",
+                "given": "Marie"
+            }
+        ],
+        "citation-key": "fluhLerneinheitTextanalyseMit2020",
+        "collection-title": "Manuelle Annotation",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3755",
+        "title": "Lerneinheit: Textanalyse mit CATMA unterrichten",
+        "type": "article-journal",
+        "URL": "https://fortext.net/routinen/schulunterricht/textanalyse-mit-catma-unterrichten",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    7,
+                    15
+                ]
+            ]
+        },
+        "volume": "1",
+        "issue": "4"
+    },
+    {
+        "id": "fluhLerneinheitTextvisualisierungMit2019",
+        "author": [
+            {
+                "family": "Flüh",
+                "given": "Marie"
+            }
+        ],
+        "citation-key": "fluhLerneinheitTextvisualisierungMit2019",
+        "collection-title": "Textvisualisierung",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3773",
+        "editor": [
+            {
+                "family": "Gius",
+                "given": "Evelyn"
+            }
+        ],
+        "title": "Lerneinheit: Textvisualisierung mit Voyant",
+        "type": "article-journal",
+        "URL": "https://fortext.net/routinen/lerneinheiten/textvisualisierung-mit-voyant",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    7,
+                    15
+                ]
+            ]
+        },
+        "volume": "1",
+        "issue": "5"
+    },
+    {
+        "id": "fluhLerneinheitTextvisualisierungMit2019a",
+        "author": [
+            {
+                "family": "Flüh",
+                "given": "Marie"
+            }
+        ],
+        "citation-key": "fluhLerneinheitTextvisualisierungMit2019a",
+        "collection-title": "Textvisualisierung",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3774",
+        "editor": [
+            {
+                "family": "Gius",
+                "given": "Evelyn"
+            }
+        ],
+        "title": "Lerneinheit: Textvisualisierung mit Voyant unterrichten",
+        "type": "article-journal",
+        "URL": "https://fortext.net/routinen/schulunterricht/textvisualisierung-mit-voyant-unterrichten",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    7,
+                    15
+                ]
+            ]
+        },
+        "volume": "1",
+        "issue": "5"
+    },
+    {
+        "id": "fluhMethodenbeitragDigitalesBibliografieren2019",
+        "author": [
+            {
+                "family": "Flüh",
+                "given": "Marie"
+            }
+        ],
+        "citation-key": "fluhMethodenbeitragDigitalesBibliografieren2019",
+        "collection-title": "Bibliografie",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3786",
+        "title": "Methodenbeitrag: Digitales Bibliografieren",
+        "type": "article-journal",
+        "URL": "https://fortext.net/routinen/methoden/digitales-bibliografieren",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    3,
+                    4
+                ]
+            ]
+        }
+    },
+    {
+        "id": "fluhMethodenbeitragDigitalesBibliografieren2019a",
+        "author": [
+            {
+                "family": "Flüh",
+                "given": "Marie"
+            }
+        ],
+        "citation-key": "fluhMethodenbeitragDigitalesBibliografieren2019a",
+        "collection-title": "Projektkonzeption",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3802",
+        "title": "Methodenbeitrag: Digitales Bibliografieren",
+        "type": "article-journal",
+        "URL": "https://fortext.net/routinen/methoden/digitales-bibliografieren",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    3,
+                    4
+                ]
+            ]
+        }
+    },
+    {
+        "id": "fluhMethodenbeitragDigitalesPrasentieren2019",
+        "author": [
+            {
+                "family": "Flüh",
+                "given": "Marie"
+            }
+        ],
+        "citation-key": "fluhMethodenbeitragDigitalesPrasentieren2019",
+        "collection-title": "Textdigitalisierung und Edition",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3807",
+        "editor": [
+            {
+                "family": "Gius",
+                "given": "Evelyn"
+            }
+        ],
+        "issue": "3",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    6,
+                    12
+                ]
+            ]
+        },
+        "title": "Methodenbeitrag: Digitales Präsentieren und Publizieren",
+        "type": "article-journal",
+        "URL": "https://fortext.net/routinen/methoden/digitales-praesentieren-und-publizieren",
+        "volume": "1"
+    },
+    {
+        "id": "fluhMethodenbeitragSentimentanalyse2019",
+        "author": [
+            {
+                "family": "Flüh",
+                "given": "Marie"
+            }
+        ],
+        "citation-key": "fluhMethodenbeitragSentimentanalyse2019",
+        "collection-title": "Sentimentanalyse",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3797",
+        "title": "Methodenbeitrag: Sentimentanalyse",
+        "type": "article-journal",
+        "URL": "https://fortext.net/routinen/methoden/sentimentanalyse",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    9,
+                    16
+                ]
+            ]
+        }
+    },
+    {
+        "id": "fluhResourcenbeitragBibliothecaAugustana",
+        "author": [
+            {
+                "family": "Flüh",
+                "given": "Marie"
+            }
+        ],
+        "citation-key": "fluhResourcenbeitragBibliothecaAugustana",
+        "collection-title": "Bibliografie",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3789",
+        "title": "Resourcenbeitrag: Bibliotheca Augustana",
+        "type": "article-journal",
+        "URL": "https://fortext.net/ressourcen/textsammlungen/bibliotheca-augustana",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    4,
+                    29
+                ]
+            ]
+        }
+    },
+    {
+        "id": "fluhResourcenbeitragHathiTrustDigital2019",
+        "author": [
+            {
+                "family": "Flüh",
+                "given": "Marie"
+            }
+        ],
+        "citation-key": "fluhResourcenbeitragHathiTrustDigital2019",
+        "collection-title": "Bibliografie",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3792",
+        "title": "Resourcenbeitrag: HathiTrust Digital Library",
+        "type": "article-journal",
+        "URL": "https://fortext.net/ressourcen/textsammlungen/hathitrust-digital-library",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    4,
+                    1
+                ]
+            ]
+        }
+    },
+    {
+        "id": "fluhRessourcenbeitragGermanistikIm2019",
+        "author": [
+            {
+                "family": "Flüh",
+                "given": "Marie"
+            }
+        ],
+        "citation-key": "fluhRessourcenbeitragGermanistikIm2019",
+        "collection-title": "Bibliografie",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3793",
+        "title": "Ressourcenbeitrag: Germanistik im Netz",
+        "type": "article-journal",
+        "URL": "https://fortext.net/ressourcen/textsammlungen/germanistik-im-netz",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    5,
+                    27
+                ]
+            ]
+        }
+    },
+    {
+        "id": "fluhRessourcenbeitragKatharsis2019",
+        "author": [
+            {
+                "family": "Flüh",
+                "given": "Marie"
+            }
+        ],
+        "citation-key": "fluhRessourcenbeitragKatharsis2019",
+        "collection-title": "Sentimentanalyse",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3795",
+        "title": "Ressourcenbeitrag: Katharsis",
+        "type": "article-journal",
+        "URL": "https://fortext.net/ressourcen/textsammlungen/katharsis",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    9,
+                    2
+                ]
+            ]
+        }
+    },
+    {
+        "id": "fluhRessourcenbeitragTagsetEmotionsanalyse2020",
+        "author": [
+            {
+                "family": "Flüh",
+                "given": "Marie"
+            }
+        ],
+        "citation-key": "fluhRessourcenbeitragTagsetEmotionsanalyse2020",
+        "collection-title": "Manuelle Annotation",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3760",
+        "title": "Ressourcenbeitrag: Tagset Emotionsanalyse",
+        "type": "article-journal",
+        "URL": "https://fortext.net/ressourcen/tagsets/emotionsanalyse",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    7,
+                    15
+                ]
+            ]
+        },
+        "volume": "1",
+        "issue": "4"
+    },
+    {
+        "id": "fluhToolbeitragEzlinavis2019",
+        "author": [
+            {
+                "family": "Flüh",
+                "given": "Marie"
+            }
+        ],
+        "citation-key": "fluhToolbeitragEzlinavis2019",
+        "collection-title": "Netzwerkanalyse",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3784",
+        "title": "Toolbeitrag: Ezlinavis",
+        "type": "article-journal",
+        "URL": "https://fortext.net/tools/tools/ezlinavis",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    6,
+                    10
+                ]
+            ]
+        }
+    },
+    {
+        "id": "fluhToolbeitragLIWC2019",
+        "author": [
+            {
+                "family": "Flüh",
+                "given": "Marie"
+            }
+        ],
+        "citation-key": "fluhToolbeitragLIWC2019",
+        "collection-title": "Sentimentanalyse",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3800",
+        "title": "Toolbeitrag: LIWC",
+        "type": "article-journal",
+        "URL": "https://fortext.net/tools/tools/liwc",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    8,
+                    12
+                ]
+            ]
+        }
+    },
+    {
+        "id": "fluhToolbeitragPrezi2019",
+        "author": [
+            {
+                "family": "Flüh",
+                "given": "Marie"
+            }
+        ],
+        "citation-key": "fluhToolbeitragPrezi2019",
+        "collection-title": "Projektkonzeption",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3803",
+        "title": "Toolbeitrag: Prezi",
+        "type": "article-journal",
+        "URL": "https://fortext.net/tools/tools/prezi",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    7,
+                    8
+                ]
+            ]
+        }
+    },
+    {
+        "id": "fluhToolbeitragSentText2020",
+        "author": [
+            {
+                "family": "Flüh",
+                "given": "Marie"
+            }
+        ],
+        "citation-key": "fluhToolbeitragSentText2020",
+        "collection-title": "Sentimentanalyse",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3799",
+        "title": "Toolbeitrag: SentText",
+        "type": "article-journal",
+        "URL": "https://fortext.net/tools/tools/senttext",
+        "issued": {
+            "date-parts": [
+                [
+                    "2020",
+                    6,
+                    1
+                ]
+            ]
+        }
+    },
+    {
+        "id": "fluhToolbeitragVoyant2018",
+        "author": [
+            {
+                "family": "Flüh",
+                "given": "Marie"
+            }
+        ],
+        "citation-key": "fluhToolbeitragVoyant2018",
+        "collection-title": "Textvisualisierung",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3775",
+        "editor": [
+            {
+                "family": "Gius",
+                "given": "Evelyn"
+            }
+        ],
+        "title": "Toolbeitrag: Voyant",
+        "type": "article-journal",
+        "URL": "https://fortext.net/tools/tools/voyant",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    7,
+                    15
+                ]
+            ]
+        },
+        "volume": "1",
+        "issue": "5"
+    },
+    {
+        "id": "fluhToolbeitragZotero2019",
+        "author": [
+            {
+                "family": "Flüh",
+                "given": "Marie"
+            }
+        ],
+        "citation-key": "fluhToolbeitragZotero2019",
+        "collection-title": "Bibliografie",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3787",
+        "title": "Toolbeitrag: Zotero",
+        "type": "article-journal",
+        "URL": "https://fortext.net/tools/tools/zotero",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    6,
+                    3
+                ]
+            ]
+        }
+    },
+    {
+        "id": "fortext_2023_10250582",
+        "author": [
+            {
+                "literal": "forTEXT"
+            }
+        ],
+        "citation-key": "fortext_2023_10250582",
+        "DOI": "10.5281/zenodo.10250582",
+        "issued": {
+            "date-parts": [
+                [
+                    "2018",
+                    10,
+                    4
+                ]
+            ]
+        },
+        "publisher": "Zenodo",
+        "title": "Figurenkonstellationen in Goethes Werther und Plenzdorfs neuem werther",
+        "type": "document",
+        "URL": "https://doi.org/10.5281/zenodo.10250582"
+    },
+    {
+        "id": "fortext_2024_11074222",
+        "author": [
+            {
+                "literal": "forTEXT"
+            }
+        ],
+        "citation-key": "fortext_2024_11074222",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    1,
+                    25
+                ]
+            ]
+        },
+        "title": "Tutorial: Sicherheitsaufnahme für Internetprogramme Hinzufügen (Windows)",
+        "type": "document",
+        "URL": "https://doi.org/10.5281/zenodo.11074222"
+    },
+    {
+        "id": "fortext_2024_11074232",
+        "author": [
+            {
+                "literal": "forTEXT"
+            }
+        ],
+        "citation-key": "fortext_2024_11074232",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    1,
+                    19
+                ]
+            ]
+        },
+        "title": "Tutorial: Sicherheitsaufnahme für Internetprogramme Hinzufügen (Mac)",
+        "type": "document",
+        "URL": "https://doi.org/10.5281/zenodo.11074232"
+    },
+    {
+        "id": "fortextAnalyseFigurennetzwerkeLessings2019",
+        "author": [
+            {
+                "family": "forTEXT",
+                "given": ""
+            }
+        ],
+        "citation-key": "fortextAnalyseFigurennetzwerkeLessings2019",
+        "DOI": "10.5281/zenodo.10221595",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    5,
+                    23
+                ]
+            ]
+        },
+        "note": "youtube-link: https://www.youtube.com/watch?v=CLUhvUV0GQM",
+        "title": "Analyse der Figurennetzwerke in Lessings \"Emilia Galotti\"",
+        "type": "document",
+        "URL": "https://doi.org/10.5281/zenodo.10221595"
+    },
+    {
+        "id": "fortextChristophMartinWieland2019",
+        "author": [
+            {
+                "family": "forTEXT",
+                "given": ""
+            }
+        ],
+        "citation-key": "fortextChristophMartinWieland2019",
+        "DOI": "10.5281/zenodo.10474049",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    8,
+                    29
+                ]
+            ]
+        },
+        "note": "youtube-link: https://youtu.be/0na8Z55fHLc",
+        "title": "Christoph Martin Wieland und Sophie von la Roche: Eine Dichterfreundschaft mit literarischen Folgen?",
+        "type": "document",
+        "URL": "https://doi.org/10.5281/zenodo.10474049"
+    },
+    {
+        "id": "fortextFigurenkonstellationenGoethesWerther2019",
+        "author": [
+            {
+                "family": "forTEXT",
+                "given": ""
+            }
+        ],
+        "citation-key": "fortextFigurenkonstellationenGoethesWerther2019",
+        "DOI": "10.5281/zenodo.10250582",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    5,
+                    23
+                ]
+            ]
+        },
+        "note": "youtube-link: https://www.youtube.com/watch?v=AZI87GOzNJQ&t=1s",
+        "title": "Figurenkonstellationen in Goethes Werther und Plenzdorfs neuem Werther",
+        "type": "document",
+        "URL": "https://doi.org/10.5281/zenodo.10250582"
+    },
+    {
+        "id": "fortextKorpusanalyseMitCATMA2020",
+        "author": [
+            {
+                "family": "forTEXT",
+                "given": ""
+            }
+        ],
+        "citation-key": "fortextKorpusanalyseMitCATMA2020",
+        "DOI": "10.5281/zenodo.10592623",
+        "issued": {
+            "date-parts": [
+                [
+                    "2020",
+                    11,
+                    16
+                ]
+            ]
+        },
+        "publisher": "Zenodo",
+        "title": "Korpusanalyse mit CATMA",
+        "type": "dataset",
+        "URL": "https://doi.org/10.5281/zenodo.10592623"
+    },
+    {
+        "id": "fortextNamedEntityRecognition2019",
+        "author": [
+            {
+                "family": "forTEXT",
+                "given": ""
+            }
+        ],
+        "citation-key": "fortextNamedEntityRecognition2019",
+        "DOI": "10.5281/zenodo.10592571",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    8,
+                    26
+                ]
+            ]
+        },
+        "publisher": "Zenodo",
+        "title": "Named Entity Recognition mit dem Stanford Named Entity Recognizer",
+        "type": "dataset",
+        "URL": "https://doi.org/10.5281/zenodo.10592571"
+    },
+    {
+        "id": "fortextTagsetInterpretationstexteAnalysieren2020",
+        "author": [
+            {
+                "family": "forTEXT",
+                "given": ""
+            }
+        ],
+        "citation-key": "fortextTagsetInterpretationstexteAnalysieren2020",
+        "DOI": "10.5281/zenodo.10519632",
+        "issued": {
+            "date-parts": [
+                [
+                    "2020",
+                    7,
+                    27
+                ]
+            ]
+        },
+        "publisher": "Zenodo",
+        "title": "Tagset Interpretationstexte analysieren",
+        "type": "dataset",
+        "URL": "https://doi.org/10.5281/zenodo.10519632"
+    },
+    {
+        "id": "fortextTagsetNarratologieDiscours2020",
+        "author": [
+            {
+                "family": "forTEXT",
+                "given": ""
+            }
+        ],
+        "citation-key": "fortextTagsetNarratologieDiscours2020",
+        "DOI": "10.5281/zenodo.105196488",
+        "issued": {
+            "date-parts": [
+                [
+                    "2020",
+                    1,
+                    27
+                ]
+            ]
+        },
+        "publisher": "Zenodo",
+        "title": "Tagset Narratologie (discours)",
+        "type": "dataset",
+        "URL": "https://doi.org/10.5281/zenodo.10519648"
+    },
+    {
+        "id": "fortextTagsetNarratologieHistoire2020",
+        "author": [
+            {
+                "family": "forTEXT",
+                "given": ""
+            }
+        ],
+        "citation-key": "fortextTagsetNarratologieHistoire2020",
+        "DOI": "10.5281/zenodo.10519654",
+        "issued": {
+            "date-parts": [
+                [
+                    "2020",
+                    5,
+                    4
+                ]
+            ]
+        },
+        "publisher": "Zenodo",
+        "title": "Tagset Narratologie (histoire)",
+        "type": "dataset",
+        "URL": "https://doi.org/10.5281/zenodo.10519654"
+    },
+    {
+        "id": "fortextThemenAutorenUnd2019",
+        "author": [
+            {
+                "family": "forTEXT",
+                "given": ""
+            }
+        ],
+        "citation-key": "fortextThemenAutorenUnd2019",
+        "DOI": "10.5281/zenodo.10276975",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    3,
+                    25
+                ]
+            ]
+        },
+        "note": "youtube-link: https://youtu.be/v0kmgAyxdpQ",
+        "title": "Themen von Autoren und Autorinnen der Literatur des 19. Jahrhunderts",
+        "type": "document",
+        "URL": "https://doi.org/10.5281/zenodo.10276975"
+    },
+    {
+        "id": "fortextTutorialAnalysierenUnd2020",
+        "author": [
+            {
+                "family": "forTEXT",
+                "given": ""
+            }
+        ],
+        "citation-key": "fortextTutorialAnalysierenUnd2020",
+        "collection-title": "Manuelle Annotation und Literaturanalyse",
+        "DOI": "10.5281/zenodo.10276637",
+        "issued": {
+            "date-parts": [
+                [
+                    "2020",
+                    2,
+                    17
+                ]
+            ]
+        },
+        "note": "youtube-link: https://www.youtube.com/watch?v=Kk-EdsC_Q7M&embeds_referring_euri=https%3A%2F%2Ffortext.net%2F&feature=emb_title",
+        "title": "Tutorial: Analysieren und visualisieren mit CATMA",
+        "type": "document",
+        "URL": "https://doi.org/10.5281/zenodo.10276637"
+    },
+    {
+        "id": "fortextTutorialCATMAAnnotieren2020",
+        "author": [
+            {
+                "family": "forTEXT",
+                "given": ""
+            }
+        ],
+        "citation-key": "fortextTutorialCATMAAnnotieren2020",
+        "collection-title": "Manuelle Annotation und Literaturanalyse",
+        "DOI": "10.5281/zenodo.10353910",
+        "issued": {
+            "date-parts": [
+                [
+                    "2020",
+                    1,
+                    20
+                ]
+            ]
+        },
+        "note": "youtube-link: https://www.youtube.com/watch?v=UEIcUvoLfJ0",
+        "title": "Tutorial: In CATMA 6 annotieren",
+        "type": "document",
+        "URL": "https://doi.org/10.5281/zenodo.10353910"
+    },
+    {
+        "id": "fortextTutorialCATMAZur2019",
+        "author": [
+            {
+                "family": "forTEXT",
+                "given": ""
+            }
+        ],
+        "citation-key": "fortextTutorialCATMAZur2019",
+        "collection-title": "Manuelle Annotation und Literaturanalyse",
+        "DOI": "10.5281/zenodo.10353556",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    10,
+                    28
+                ]
+            ]
+        },
+        "note": "youtube-link: https://youtu.be/d5yxE0Qu2Dw",
+        "title": "Tutorial: CATMA 6 zur manuellen Annotation nutzen",
+        "type": "document",
+        "URL": "https://doi.org/10.5281/zenodo.10353556"
+    },
+    {
+        "id": "fortextTutorialDARIAHTopics2019",
+        "author": [
+            {
+                "family": "forTEXT",
+                "given": ""
+            }
+        ],
+        "citation-key": "fortextTutorialDARIAHTopics2019",
+        "collection-title": "Topic Modeling und Literaturanalyse",
+        "DOI": "10.5281/zenodo.10371074",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    2,
+                    11
+                ]
+            ]
+        },
+        "note": "Youtube-link: https://youtu.be/uckoY80J0cE",
+        "title": "Tutorial: DARIAH Topics Explorer installieren",
+        "type": "document",
+        "URL": "https://doi.org/10.5281/zenodo.10371074"
+    },
+    {
+        "id": "fortextTutorialDARIAHTopics2019a",
+        "author": [
+            {
+                "family": "forTEXT",
+                "given": ""
+            }
+        ],
+        "citation-key": "fortextTutorialDARIAHTopics2019a",
+        "collection-title": "Topic Modeling und Literaturanalyse",
+        "DOI": "10.5281/zenodo.10372228",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    2,
+                    25
+                ]
+            ]
+        },
+        "note": "youtube-link: https://youtu.be/TkCPJL95dKA",
+        "title": "Tutorial: DARIAH Topics Explorer zur Literaturanalyse nutzen",
+        "type": "document",
+        "URL": "https://doi.org/10.5281/zenodo.10372228"
+    },
+    {
+        "id": "fortextTutorialDreiMethoden2019",
+        "author": [
+            {
+                "family": "forTEXT",
+                "given": ""
+            }
+        ],
+        "citation-key": "fortextTutorialDreiMethoden2019",
+        "collection-title": "Topic Modeling und Literaturanalyse",
+        "DOI": "10.5281/zenodo.10378213",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    3,
+                    11
+                ]
+            ]
+        },
+        "note": "youtube-link: https://youtu.be/X9j4Zr-NC0Q",
+        "title": "Tutorial: Drei Methoden für bessere Topics beim Topic Modeling",
+        "type": "document",
+        "URL": "https://doi.org/10.5281/zenodo.10378213"
+    },
+    {
+        "id": "fortextTutorialEigenesNERModell2018",
+        "author": [
+            {
+                "family": "forTEXT",
+                "given": ""
+            }
+        ],
+        "citation-key": "fortextTutorialEigenesNERModell2018",
+        "collection-title": "Named Entity Recognition und Literaturanalyse",
+        "DOI": "10.5281/zenodo.10371086",
+        "issued": {
+            "date-parts": [
+                [
+                    "2018",
+                    9,
+                    14
+                ]
+            ]
+        },
+        "title": "Tutorial: Ein eigenes NER-Modell für die digitale Literaturanalyse trainieren",
+        "type": "document",
+        "URL": "https://www.youtube.com/watch?v=SAg69AVJSIU"
+    },
+    {
+        "id": "fortextTutorialGephiDaten2019",
+        "author": [
+            {
+                "family": "forTEXT",
+                "given": ""
+            }
+        ],
+        "citation-key": "fortextTutorialGephiDaten2019",
+        "collection-title": "Netzwerkanalyse und Literaturanalyse",
+        "DOI": "10.5281/zenodo.10276657",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    4,
+                    22
+                ]
+            ]
+        },
+        "note": "youtube-link: https://youtu.be/FbZvRy6SbAo",
+        "title": "Tutorial: Gephi Daten zur Netzwerkanalyse vorbereiten",
+        "type": "document",
+        "URL": "https://doi.org/10.5281/zenodo.10276657"
+    },
+    {
+        "id": "fortextTutorialGephiInstallieren2019",
+        "author": [
+            {
+                "family": "forTEXT",
+                "given": ""
+            }
+        ],
+        "citation-key": "fortextTutorialGephiInstallieren2019",
+        "collection-title": "Netzwerkanalyse und Literaturanalyse",
+        "DOI": "10.5281/zenodo.10276970",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    4,
+                    8
+                ]
+            ]
+        },
+        "note": "youtube-link: https://youtu.be/ewvQ2iuCA5M",
+        "title": "Tutorial: Gephi installieren",
+        "type": "document",
+        "URL": "https://doi.org/10.5281/zenodo.10276970"
+    },
+    {
+        "id": "fortextTutorialGephiNetzwerkvisualisierung2019",
+        "author": [
+            {
+                "family": "forTEXT",
+                "given": ""
+            }
+        ],
+        "citation-key": "fortextTutorialGephiNetzwerkvisualisierung2019",
+        "collection-title": "Netzwerkanalyse und Literaturanalyse",
+        "DOI": "10.5281/zenodo.10372210",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    5,
+                    6
+                ]
+            ]
+        },
+        "note": "youtube-link: https://youtu.be/kQFsy_StbK8",
+        "title": "Tutorial: Gephi Netzwerkvisualisierung bearbeiten",
+        "type": "document",
+        "URL": "https://doi.org/10.5281/zenodo.10372210"
+    },
+    {
+        "id": "fortextTutorialNetzwerkanalyseMit2019",
+        "author": [
+            {
+                "family": "forTEXT",
+                "given": ""
+            }
+        ],
+        "citation-key": "fortextTutorialNetzwerkanalyseMit2019",
+        "collection-title": "Netzwerkanalyse und Literaturanalyse",
+        "DOI": "10.5281/zenodo.10372220",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    6,
+                    20
+                ]
+            ]
+        },
+        "note": "youtube-link: https://youtu.be/Uq_1LBHgdMk",
+        "title": "Tutorial: Netzwerkanalyse mit Ezlinavis",
+        "type": "document",
+        "URL": "https://youtu.be/10.5281/zenodo.10372220"
+    },
+    {
+        "id": "fortextTutorialProjektmanagementCATMA2019",
+        "author": [
+            {
+                "family": "forTEXT",
+                "given": ""
+            }
+        ],
+        "citation-key": "fortextTutorialProjektmanagementCATMA2019",
+        "collection-title": "Manuelle Annotation und Literaturanalyse",
+        "DOI": "10.5281/zenodo.10353713",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    11,
+                    25
+                ]
+            ]
+        },
+        "note": "youtube-link: https://youtu.be/agywc1hV0U4",
+        "title": "Tutorial: Projektmanagement in CATMA 6",
+        "type": "document",
+        "URL": "https://doi.org/10.5281/zenodo.10353713"
+    },
+    {
+        "id": "fortextTutorialRollingDelta2019",
+        "author": [
+            {
+                "family": "forTEXT",
+                "given": ""
+            }
+        ],
+        "citation-key": "fortextTutorialRollingDelta2019",
+        "collection-title": "Stilometrie und Literaturanalyse",
+        "DOI": "10.5281/zenodo.10371113",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    8,
+                    15
+                ]
+            ]
+        },
+        "note": "youtube-link: https://www.youtube.com/watch?v=VfaWAzHSEZ8",
+        "title": "Tutorial: Die Rolling Delta Funktion in Stylo nutzen, um Autorenstil zu analysieren",
+        "type": "document",
+        "URL": "https://www.doi.org/10.5281/zenodo.10371113"
+    },
+    {
+        "id": "fortextTutorialStanfordNamed2018",
+        "author": [
+            {
+                "family": "forTEXT",
+                "given": ""
+            }
+        ],
+        "citation-key": "fortextTutorialStanfordNamed2018",
+        "collection-title": "Named Entity Recognition und Literaturanalyse",
+        "DOI": "10.5281/zenodo.10372231",
+        "issued": {
+            "date-parts": [
+                [
+                    "2018",
+                    8,
+                    15
+                ]
+            ]
+        },
+        "title": "Tutorial: Stanford Named Entity Recognizer installieren und deutsche Kategorien laden",
+        "type": "document",
+        "URL": "https://youtu.be/hYed-ZqEzs8"
+    },
+    {
+        "id": "fortextTutorialStanfordNamed2018a",
+        "author": [
+            {
+                "family": "forTEXT",
+                "given": ""
+            }
+        ],
+        "citation-key": "fortextTutorialStanfordNamed2018a",
+        "collection-title": "Named Entity Recognition und Literaturanalyse",
+        "DOI": "10.5281/zenodo.10372239",
+        "issued": {
+            "date-parts": [
+                [
+                    "2018",
+                    8,
+                    31
+                ]
+            ]
+        },
+        "title": "Tutorial: Stanford Named Entity Recognizer zur digitalen Literaturanalyse nutzen",
+        "type": "document",
+        "URL": "https://youtu.be/n35i4Cy2c7Y"
+    },
+    {
+        "id": "fortextTutorialStyloInstallieren2019",
+        "author": [
+            {
+                "family": "forTEXT",
+                "given": ""
+            }
+        ],
+        "citation-key": "fortextTutorialStyloInstallieren2019",
+        "collection-title": "Stilometrie und Literaturanalyse",
+        "DOI": "10.5281/zenodo.10372243",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    7,
+                    18
+                ]
+            ]
+        },
+        "note": "youtube-link: https://youtu.be/hp3MTGA_W8o",
+        "title": "Tutorial: Stylo installieren",
+        "type": "document",
+        "URL": "https://doi.org/10.5281/zenodo.10372243"
+    },
+    {
+        "id": "fortextTutorialStyloZur2019",
+        "author": [
+            {
+                "family": "forTEXT",
+                "given": ""
+            }
+        ],
+        "citation-key": "fortextTutorialStyloZur2019",
+        "collection-title": "Stilometrie und Literaturanalyse",
+        "DOI": "10.5281/zenodo.10372249",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    8,
+                    1
+                ]
+            ]
+        },
+        "note": "youtube-link: https://www.youtube.com/watch?v=LuJe67898z0",
+        "title": "Tutorial: Stylo zur Analyse des Autoren-Stils nutzen",
+        "type": "document",
+        "URL": "https://www.doi.org/10.5281/zenodo.10372249"
+    },
+    {
+        "id": "fortextTutorialTagsetsCATMA2019",
+        "author": [
+            {
+                "family": "forTEXT",
+                "given": ""
+            }
+        ],
+        "citation-key": "fortextTutorialTagsetsCATMA2019",
+        "collection-title": "Manuelle Annotation und Literaturanalyse",
+        "DOI": "10.5281/zenodo.10377968",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    12,
+                    23
+                ]
+            ]
+        },
+        "note": "youtube-link: https://youtu.be/Q10W0st8ZCQ",
+        "title": "Tutorial: Tagsets in CATMA 6 anlegen",
+        "type": "document",
+        "URL": "https://doi.org/10.5281/zenodo.10377968"
+    },
+    {
+        "id": "fortextTutorialVisualisierungMit2019",
+        "author": [
+            {
+                "family": "forTEXT",
+                "given": ""
+            }
+        ],
+        "citation-key": "fortextTutorialVisualisierungMit2019",
+        "collection-title": "Textvisualisierung und digitale Literaturanalyse",
+        "DOI": "10.5281/zenodo.10378119",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    9,
+                    26
+                ]
+            ]
+        },
+        "note": "youtube-link: https://youtu.be/FvnBpjdpQxs",
+        "title": "Tutorial: Visualisierung mit Voyant 2",
+        "type": "document",
+        "URL": "https://doi.org/10.5281/zenodo.10378119"
+    },
+    {
+        "id": "fortextTutorialVoyantToolsZur2019",
+        "author": [
+            {
+                "family": "forTEXT",
+                "given": ""
+            }
+        ],
+        "citation-key": "fortextTutorialVoyantToolsZur2019",
+        "collection-title": "Textvisualisierung und digitale Literaturanalyse",
+        "DOI": "10.5281/zenodo.10354065",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    9,
+                    12
+                ]
+            ]
+        },
+        "note": "youtube-title: https://youtu.be/KbBHTlXoZO4",
+        "title": "Tutorial: Voyant-Tools zur Textvisualisierung nutzen",
+        "type": "document",
+        "URL": "https://doi.org/10.5281/zenodo.10354065"
+    },
+    {
+        "id": "gerstorferToolbeitragGROBID2021",
+        "author": [
+            {
+                "family": "Gerstorfer",
+                "given": "Dominik"
+            }
+        ],
+        "citation-key": "gerstorferToolbeitragGROBID2021",
+        "collection-title": "Bibliografie",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3788",
+        "title": "Toolbeitrag: GROBID",
+        "type": "article-journal",
+        "URL": "https://fortext.net/tools/tools/grobid",
+        "issued": {
+            "date-parts": [
+                [
+                    "2021",
+                    3,
+                    8
+                ]
+            ]
+        }
+    },
+    {
+        "id": "horstmannLerneiheitAnalyseUnd2019",
+        "author": [
+            {
+                "family": "Horstmann",
+                "given": "Jan"
+            }
+        ],
+        "citation-key": "horstmannLerneiheitAnalyseUnd2019",
+        "collection-title": "Manuelle Annotation",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3752",
+        "title": "Lerneiheit: Analyse und Visualisierung mit CATMA",
+        "type": "article-journal",
+        "URL": "https://fortext.net/routinen/lerneinheiten/analyse-und-visualisierung-mit-catma",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    7,
+                    15
+                ]
+            ]
+        },
+        "volume": "1",
+        "issue": "4"
+    },
+    {
+        "id": "horstmannLerneinheitManuelleAnnotation2019",
+        "author": [
+            {
+                "family": "Horstmann",
+                "given": "Jan"
+            }
+        ],
+        "citation-key": "horstmannLerneinheitManuelleAnnotation2019",
+        "collection-title": "Manuelle Annotation",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3750",
+        "title": "Lerneinheit: Manuelle Annotation mit CATMA",
+        "type": "article-journal",
+        "URL": "https://fortext.net/routinen/lerneinheiten/manuelle-annotation-mit-catma",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    7,
+                    15
+                ]
+            ]
+        },
+        "volume": "1",
+        "issue": "4"
+    },
+    {
+        "id": "horstmannLerneinheitManuskriptdigitalisierungMit2019",
+        "author": [
+            {
+                "family": "Horstmann",
+                "given": "Jan"
+            }
+        ],
+        "citation-key": "horstmannLerneinheitManuskriptdigitalisierungMit2019",
+        "collection-title": "Textdigitalisierung und Edition",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3745",
+        "editor": [
+            {
+                "family": "Gius",
+                "given": "Evelyn"
+            }
+        ],
+        "issue": "3",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    6,
+                    12
+                ]
+            ]
+        },
+        "title": "Lerneinheit: Manuskriptdigitalisierung mit Transkribus",
+        "type": "article-journal",
+        "URL": "https://fortext.net/routinen/lerneinheiten/manuskriptdigitalisierung-mit-transkribus",
+        "volume": "1"
+    },
+    {
+        "id": "horstmannLerneinheitStilometrieMit2024",
+        "author": [
+            {
+                "family": "Horstmann",
+                "given": "Jan"
+            }
+        ],
+        "citation-key": "horstmannLerneinheitStilometrieMit2024",
+        "collection-title": "Stilometrie",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3771",
+        "editor": [
+            {
+                "family": "Gius",
+                "given": "Evelyn"
+            },
+            {
+                "family": "Gerstorfer",
+                "given": "Dominik"
+            }
+        ],
+        "issue": "1",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    2,
+                    26
+                ]
+            ]
+        },
+        "title": "Lerneinheit: Stilometrie mit Stylo",
+        "type": "article-journal",
+        "URL": "https://fortext.net/routinen/lerneinheiten/stilometrie-mit-stylo",
+        "volume": "1"
+    },
+    {
+        "id": "horstmannLerneinheitTopicModeling2019",
+        "author": [
+            {
+                "family": "Horstmann",
+                "given": "Jan"
+            }
+        ],
+        "citation-key": "horstmannLerneinheitTopicModeling2019",
+        "collection-title": "Topic Modeling",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3729",
+        "title": "Lerneinheit: Topic Modeling mit dem DARIAH Topics Explorer",
+        "type": "article-journal",
+        "URL": "https://fortext.net/routinen/lerneinheiten/topic-modeling-mit-dem-dariah-topics-explorer",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    1,
+                    21
+                ]
+            ]
+        }
+    },
+    {
+        "id": "horstmannLerneinheitTopicModeling2019a",
+        "author": [
+            {
+                "family": "Horstmann",
+                "given": "Jan"
+            }
+        ],
+        "citation-key": "horstmannLerneinheitTopicModeling2019a",
+        "collection-title": "Topic Modeling",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3716",
+        "title": "Lerneinheit: Topic Modeling mit dem DARIAH Topics Explorer lehren",
+        "type": "article-journal",
+        "URL": "https://fortext.net/routinen/lehrmodule/topic-modeling-mit-dem-dariah-topics-explorer-lehren",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    7,
+                    22
+                ]
+            ]
+        }
+    },
+    {
+        "id": "horstmannMethodenbeitragDigitaleManuskriptanalyse2018",
+        "author": [
+            {
+                "family": "Horstmann",
+                "given": "Jan"
+            }
+        ],
+        "citation-key": "horstmannMethodenbeitragDigitaleManuskriptanalyse2018",
+        "collection-title": "Textdigitalisierung und Edition",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3744",
+        "editor": [
+            {
+                "family": "Gius",
+                "given": "Evelyn"
+            }
+        ],
+        "issue": "3",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    6,
+                    12
+                ]
+            ]
+        },
+        "title": "Methodenbeitrag: Digitale Manuskriptanalyse",
+        "type": "article-journal",
+        "URL": "https://fortext.net/routinen/methoden/digitale-manuskriptanalyse",
+        "volume": "1"
+    },
+    {
+        "id": "horstmannMethodenbeitragMoglichkeitenTextdigitalisierung2018",
+        "author": [
+            {
+                "family": "Horstmann",
+                "given": "Jan"
+            }
+        ],
+        "citation-key": "horstmannMethodenbeitragMoglichkeitenTextdigitalisierung2018",
+        "collection-title": "Textdigitalisierung und Edition",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3741",
+        "editor": [
+            {
+                "family": "Gius",
+                "given": "Evelyn"
+            }
+        ],
+        "issue": "3",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    6,
+                    12
+                ]
+            ]
+        },
+        "title": "Methodenbeitrag: Möglichkeiten der Textdigitalisierung",
+        "type": "article-journal",
+        "URL": "https://fortext.net/routinen/methoden/moeglichkeiten-der-textdigitalisierung",
+        "volume": "1"
+    },
+    {
+        "id": "horstmannMethodenbeitragStilometrie2024",
+        "author": [
+            {
+                "family": "Horstmann",
+                "given": "Jan"
+            }
+        ],
+        "citation-key": "horstmannMethodenbeitragStilometrie2024",
+        "collection-title": "Stilometrie",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3769",
+        "editor": [
+            {
+                "family": "Gius",
+                "given": "Evelyn"
+            },
+            {
+                "family": "Gerstorfer",
+                "given": "Dominik"
+            }
+        ],
+        "issue": "1",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    2,
+                    26
+                ]
+            ]
+        },
+        "title": "Methodenbeitrag: Stilometrie",
+        "type": "article-journal",
+        "URL": "https://fortext.net/routinen/methoden/stilometrie",
+        "volume": "1"
+    },
+    {
+        "id": "horstmannMethodenbeitragTextvisualisierung2018",
+        "author": [
+            {
+                "family": "Horstmann",
+                "given": "Jan"
+            },
+            {
+                "family": "Stange",
+                "given": "Jan-Erik"
+            }
+        ],
+        "citation-key": "horstmannMethodenbeitragTextvisualisierung2018",
+        "collection-title": "Textvisualisierung",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3774",
+        "editor": [
+            {
+                "family": "Gius",
+                "given": "Evelyn"
+            }
+        ],
+        "title": "Methodenbeitrag: Textvisualisierung",
+        "type": "article-journal",
+        "URL": "https://fortext.net/routinen/methoden/textvisualisierung",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    7,
+                    15
+                ]
+            ]
+        },
+        "volume": "1",
+        "issue": "5"
+    },
+    {
+        "id": "horstmannMethodenbeitragTopicModeling2018",
+        "author": [
+            {
+                "family": "Horstmann",
+                "given": "Jan"
+            }
+        ],
+        "citation-key": "horstmannMethodenbeitragTopicModeling2018",
+        "collection-title": "Topic Modeling",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3717",
+        "title": "Methodenbeitrag: Topic Modeling",
+        "type": "article-journal",
+        "URL": "https://fortext.net/routinen/methoden/topic-modeling",
+        "issued": {
+            "date-parts": [
+                [
+                    "2018",
+                    1,
+                    15
+                ]
+            ]
+        }
+    },
+    {
+        "id": "horstmannRessourcenbeitragDeutschesTextarchiv2018",
+        "author": [
+            {
+                "family": "Horstmann",
+                "given": "Jan"
+            },
+            {
+                "family": "Kern",
+                "given": "Alexandra"
+            }
+        ],
+        "citation-key": "horstmannRessourcenbeitragDeutschesTextarchiv2018",
+        "collection-title": "Bibliografie",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3791",
+        "title": "Ressourcenbeitrag: Deutsches Textarchiv (DTA)",
+        "type": "article-journal",
+        "URL": "https://fortext.net/ressourcen/textsammlungen/deutsches-textarchiv-dta",
+        "issued": {
+            "date-parts": [
+                [
+                    "2018",
+                    7,
+                    24
+                ]
+            ]
+        }
+    },
+    {
+        "id": "horstmannRessourcenbeitragDraCorDrama2020",
+        "author": [
+            {
+                "family": "Horstmann",
+                "given": "Jan"
+            }
+        ],
+        "citation-key": "horstmannRessourcenbeitragDraCorDrama2020",
+        "collection-title": "Netzwerkanalyse",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3785",
+        "title": "Ressourcenbeitrag: DraCor: Drama Corpora Project",
+        "type": "article-journal",
+        "URL": "https://fortext.net/ressourcen/textsammlungen/dracor-drama-corpora-project",
+        "issued": {
+            "date-parts": [
+                [
+                    "2020",
+                    12,
+                    3
+                ]
+            ]
+        }
+    },
+    {
+        "id": "horstmannRessourcenbeitragDROCDeutsches2019",
+        "author": [
+            {
+                "family": "Horstmann",
+                "given": "Jan"
+            }
+        ],
+        "citation-key": "horstmannRessourcenbeitragDROCDeutsches2019",
+        "collection-title": "Korpusbildung",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3812",
+        "editor": [
+            {
+                "family": "Gius",
+                "given": "Evelyn"
+            }
+        ],
+        "issue": "2",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    6,
+                    12
+                ]
+            ]
+        },
+        "title": "Ressourcenbeitrag: DROC: Deutsches Romankorpus",
+        "type": "article-journal",
+        "URL": "https://fortext.net/ressourcen/textsammlungen/droc-deutsches-romankorpus",
+        "volume": "1"
+    },
+    {
+        "id": "horstmannRessourcenbeitragDWDSDigitales2019",
+        "author": [
+            {
+                "family": "Horstmann",
+                "given": "Jan"
+            }
+        ],
+        "citation-key": "horstmannRessourcenbeitragDWDSDigitales2019",
+        "collection-title": "Projektkonzeption",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3804",
+        "title": "Ressourcenbeitrag: DWDS: Digitales Wörterbuch der Deutschen Sprache",
+        "type": "article-journal",
+        "URL": "https://fortext.net/ressourcen/textsammlungen/dwds-digitales-woerterbuch-der-deutschen-sprache",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    7,
+                    1
+                ]
+            ]
+        }
+    },
+    {
+        "id": "horstmannRessourcenbeitragKOLIMOKorpus2019",
+        "author": [
+            {
+                "family": "Horstmann",
+                "given": "Jan"
+            }
+        ],
+        "citation-key": "horstmannRessourcenbeitragKOLIMOKorpus2019",
+        "collection-title": "Korpusbildung",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3813",
+        "editor": [
+            {
+                "family": "Gius",
+                "given": "Evelyn"
+            }
+        ],
+        "issue": "2",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    6,
+                    12
+                ]
+            ]
+        },
+        "title": "Ressourcenbeitrag: KOLIMO: Korpus der literarischen Moderne",
+        "type": "article-journal",
+        "URL": "https://fortext.net/ressourcen/textsammlungen/kolimo-korpus-der-literarischen-moderne",
+        "volume": "1"
+    },
+    {
+        "id": "horstmannRessourcenbeitragLyrikline2019",
+        "author": [
+            {
+                "family": "Horstmann",
+                "given": "Jan"
+            }
+        ],
+        "citation-key": "horstmannRessourcenbeitragLyrikline2019",
+        "collection-title": "Korpusbildung",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3814",
+        "editor": [
+            {
+                "family": "Gius",
+                "given": "Evelyn"
+            }
+        ],
+        "issue": "2",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    6,
+                    12
+                ]
+            ]
+        },
+        "title": "Ressourcenbeitrag: Lyrikline",
+        "type": "article-journal",
+        "URL": "https://fortext.net/ressourcen/textsammlungen/lyrikline",
+        "volume": "1"
+    },
+    {
+        "id": "horstmannRessourcenbeitragTextGridRepository2018",
+        "author": [
+            {
+                "family": "Horstmann",
+                "given": "Jan"
+            }
+        ],
+        "citation-key": "horstmannRessourcenbeitragTextGridRepository2018",
+        "collection-title": "Bibliografie",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3794",
+        "title": "Ressourcenbeitrag: TextGrid Repository",
+        "type": "article-journal",
+        "URL": "https://fortext.net/ressourcen/textsammlungen/textgrid-repository",
+        "issued": {
+            "date-parts": [
+                [
+                    "2018",
+                    8,
+                    21
+                ]
+            ]
+        }
+    },
+    {
+        "id": "horstmannToolbeitragPoemage2019",
+        "author": [
+            {
+                "family": "Horstmann",
+                "given": "Jan"
+            }
+        ],
+        "citation-key": "horstmannToolbeitragPoemage2019",
+        "collection-title": "Textvisualisierung",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3778",
+        "editor": [
+            {
+                "family": "Gius",
+                "given": "Evelyn"
+            }
+        ],
+        "title": "Toolbeitrag: Poemage",
+        "type": "article-journal",
+        "URL": "https://fortext.net/tools/tools/poemage",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    7,
+                    15
+                ]
+            ]
+        },
+        "volume": "1",
+        "issue": "5"
+    },
+    {
+        "id": "horstmannToolbeitragStylo2024",
+        "author": [
+            {
+                "family": "Horstmann",
+                "given": "Jan"
+            }
+        ],
+        "citation-key": "horstmannToolbeitragStylo2024",
+        "collection-title": "Stilometrie",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3770",
+        "editor": [
+            {
+                "family": "Gius",
+                "given": "Evelyn"
+            },
+            {
+                "family": "Gerstorfer",
+                "given": "Dominik"
+            }
+        ],
+        "issue": "1",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    2,
+                    26
+                ]
+            ]
+        },
+        "title": "Toolbeitrag: Stylo",
+        "type": "article-journal",
+        "URL": "https://fortext.net/tools/tools/stylo",
+        "volume": "1"
+    },
+    {
+        "id": "horstmannToolbeitragTranskribus2018",
+        "author": [
+            {
+                "family": "Horstmann",
+                "given": "Jan"
+            }
+        ],
+        "citation-key": "horstmannToolbeitragTranskribus2018",
+        "collection-title": "Textdigitalisierung und Edition",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3746",
+        "editor": [
+            {
+                "family": "Gius",
+                "given": "Evelyn"
+            }
+        ],
+        "issue": "3",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    6,
+                    12
+                ]
+            ]
+        },
+        "title": "Toolbeitrag: Transkribus",
+        "type": "article-journal",
+        "URL": "https://fortext.net/tools/tools/transkribus",
+        "volume": "1"
+    },
+    {
+        "id": "jackeMethodenbeitragEntwicklungKategoriensystemen2021",
+        "author": [
+            {
+                "family": "Jacke",
+                "given": "Janina"
+            },
+            {
+                "family": "Gerstorfer",
+                "given": "Dominik"
+            }
+        ],
+        "citation-key": "jackeMethodenbeitragEntwicklungKategoriensystemen2021",
+        "collection-title": "Projektkonzeption",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3805",
+        "title": "Methodenbeitrag: Entwicklung von Kategoriensystemen",
+        "type": "article-journal",
+        "URL": "https://fortext.net/routinen/methoden/entwicklung-von-kategoriensystemen",
+        "issued": {
+            "date-parts": [
+                [
+                    "2021",
+                    1,
+                    11
+                ]
+            ]
+        }
+    },
+    {
+        "id": "jackeMethodenbeitragKollaborativesLiteraturwissenschaftliches2018",
+        "author": [
+            {
+                "family": "Jacke",
+                "given": "Janina"
+            }
+        ],
+        "citation-key": "jackeMethodenbeitragKollaborativesLiteraturwissenschaftliches2018",
+        "collection-title": "Manuelle Annotation",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3749",
+        "title": "Methodenbeitrag: Kollaboratives literaturwissenschaftliches Annotieren",
+        "type": "article-journal",
+        "URL": "https://fortext.net/routinen/methoden/kollaboratives-literaturwissenschaftliches-annotieren",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    7,
+                    15
+                ]
+            ]
+        },
+        "volume": "1",
+        "issue": "4"
+    },
+    {
+        "id": "jackeMethodenbeitragManuelleAnnotation2018",
+        "author": [
+            {
+                "family": "Jacke",
+                "given": "Janina"
+            }
+        ],
+        "citation-key": "jackeMethodenbeitragManuelleAnnotation2018",
+        "collection-title": "Manuelle Annotation",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3748",
+        "title": "Methodenbeitrag: Manuelle Annotation",
+        "type": "article-journal",
+        "URL": "https://fortext.net/routinen/methoden/manuelle-annotation",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    7,
+                    15
+                ]
+            ]
+        },
+        "volume": "1",
+        "issue": "4"
+    },
+    {
+        "id": "jackeRessourcenbeitragTagsetNarratologie2020",
+        "author": [
+            {
+                "family": "Jacke",
+                "given": "Janina"
+            }
+        ],
+        "citation-key": "jackeRessourcenbeitragTagsetNarratologie2020",
+        "collection-title": "Manuelle Annotation",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3757",
+        "title": "Ressourcenbeitrag: Tagset Narratologie (histoire)",
+        "type": "article-journal",
+        "URL": "https://fortext.net/ressourcen/tagsets/tagset-narratologie-histoire",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    7,
+                    15
+                ]
+            ]
+        },
+        "volume": "1",
+        "issue": "4"
+    },
+    {
+        "id": "jackeRessourcenbeitragTagsetNarratologie2020a",
+        "author": [
+            {
+                "family": "Jacke",
+                "given": "Janina"
+            }
+        ],
+        "citation-key": "jackeRessourcenbeitragTagsetNarratologie2020a",
+        "collection-title": "Manuelle Annotation",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3756",
+        "title": "Ressourcenbeitrag: Tagset Narratologie (discours)",
+        "type": "article-journal",
+        "URL": "https://fortext.net/ressourcen/tagsets/tagset-narratologie-discours",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    7,
+                    15
+                ]
+            ]
+        },
+        "volume": "1",
+        "issue": "4"
+    },
+    {
+        "id": "jackeToolbeitragProtege2020",
+        "author": [
+            {
+                "family": "Jacke",
+                "given": "Janina"
+            }
+        ],
+        "citation-key": "jackeToolbeitragProtege2020",
+        "collection-title": "Projektkonzeption",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3806",
+        "title": "Toolbeitrag: Protégé",
+        "type": "article-journal",
+        "URL": "https://fortext.net/tools/tools/protege",
+        "issued": {
+            "date-parts": [
+                [
+                    "2020",
+                    3,
+                    9
+                ]
+            ]
+        }
+    },
+    {
+        "id": "schumacherLerneinheitCATMAAnnotationenAuswerten2022",
+        "author": [
+            {
+                "family": "Schumacher",
+                "given": "Mareike"
+            },
+            {
+                "family": "Vauth",
+                "given": "Michael"
+            }
+        ],
+        "citation-key": "schumacherLerneinheitCATMAAnnotationenAuswerten2022",
+        "collection-title": "Manuelle Annotation",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3753",
+        "title": "Lerneinheit: CATMA-Annotationen auswerten, Gold Standard erstellen und Inter-Annotator-Agreement berechnen mit GitMA",
+        "type": "article-journal",
+        "URL": "https://fortext.net/routinen/lerneinheiten/catma-annotationen-auswerten-gold-standard-erstellen-und-inter-annotator",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    7,
+                    15
+                ]
+            ]
+        },
+        "volume": "1",
+        "issue": "4"
+    },
+    {
+        "id": "schumacherLerneinheitDigitaleAnnotation2020",
+        "author": [
+            {
+                "family": "Schumacher",
+                "given": "Mareike"
+            }
+        ],
+        "citation-key": "schumacherLerneinheitDigitaleAnnotation2020",
+        "collection-title": "Manuelle Annotation",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3754",
+        "title": "Lerneinheit: Digitale Annotation mit CATMA lehren",
+        "type": "article-journal",
+        "URL": "https://fortext.net/routinen/lehrmodule/digitale-annotation-mit-catma-lehren",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    7,
+                    15
+                ]
+            ]
+        },
+        "volume": "1",
+        "issue": "4"
+    },
+    {
+        "id": "schumacherLerneinheitKorpusanalyseMit2020",
+        "author": [
+            {
+                "family": "Schumacher",
+                "given": "Mareike"
+            }
+        ],
+        "citation-key": "schumacherLerneinheitKorpusanalyseMit2020",
+        "collection-title": "Manuelle Annotation",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3751",
+        "title": "Lerneinheit: Korpusanalyse mit CATMA",
+        "type": "article-journal",
+        "URL": "https://fortext.net/routinen/lerneinheiten/korpusanalyse-mit-catma",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    7,
+                    15
+                ]
+            ]
+        },
+        "volume": "1",
+        "issue": "4"
+    },
+    {
+        "id": "schumacherLerneinheitNamedEntity2019",
+        "author": [
+            {
+                "family": "Schumacher",
+                "given": "Mareike"
+            }
+        ],
+        "citation-key": "schumacherLerneinheitNamedEntity2019",
+        "collection-title": "Named Entity Recognition",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3766",
+        "title": "Lerneinheit: Named Entity Recognition mit dem Stanford Named Entity Recognizer",
+        "type": "article-journal",
+        "URL": "https://fortext.net/routinen/lerneinheiten/named-entity-recognition-mit-dem-stanford-named-entity-recognizer",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    8,
+                    26
+                ]
+            ]
+        }
+    },
+    {
+        "id": "schumacherLerneinheitNamedEntity2020",
+        "author": [
+            {
+                "family": "Schumacher",
+                "given": "Mareike"
+            }
+        ],
+        "citation-key": "schumacherLerneinheitNamedEntity2020",
+        "collection-title": "Named Entity Recognition",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3768",
+        "title": "Lerneinheit: Named Entity Recognition mit Stanford NER lehren",
+        "type": "article-journal",
+        "URL": "https://fortext.net/routinen/lehrmodule/named-entity-recognition-mit-stanford-ner-lehren",
+        "issued": {
+            "date-parts": [
+                [
+                    "2020",
+                    2,
+                    7
+                ]
+            ]
+        }
+    },
+    {
+        "id": "schumacherLerneinheitNetzwerkanalyseMit2019",
+        "author": [
+            {
+                "family": "Schumacher",
+                "given": "Mareike"
+            }
+        ],
+        "citation-key": "schumacherLerneinheitNetzwerkanalyseMit2019",
+        "collection-title": "Netzwerkanalyse",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3780",
+        "title": "Lerneinheit: Netzwerkanalyse mit Gephi lehren",
+        "type": "article-journal",
+        "URL": "https://fortext.net/routinen/lehrmodule/netzwerkanalyse-mit-gephi-lehren",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    10,
+                    21
+                ]
+            ]
+        }
+    },
+    {
+        "id": "schumacherLerneinheitNetzwerkanalyseMit2020",
+        "author": [
+            {
+                "family": "Schumacher",
+                "given": "Mareike"
+            }
+        ],
+        "citation-key": "schumacherLerneinheitNetzwerkanalyseMit2020",
+        "collection-title": "Netzwerkanalyse",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3779",
+        "title": "Lerneinheit: Netzwerkanalyse mit Gephi",
+        "type": "article-journal",
+        "URL": "https://fortext.net/routinen/lerneinheiten/netzwerkanalyse-mit-gephi",
+        "issued": {
+            "date-parts": [
+                [
+                    "2020",
+                    12,
+                    4
+                ]
+            ]
+        }
+    },
+    {
+        "id": "schumacherLerneinheitPreprocessingMit2022",
+        "author": [
+            {
+                "family": "Schumacher",
+                "given": "Mareike"
+            },
+            {
+                "family": "Vauth",
+                "given": "Michael"
+            }
+        ],
+        "citation-key": "schumacherLerneinheitPreprocessingMit2022",
+        "collection-title": "Korpusbildung",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3809",
+        "editor": [
+            {
+                "family": "Gius",
+                "given": "Evelyn"
+            }
+        ],
+        "issue": "2",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    6,
+                    12
+                ]
+            ]
+        },
+        "title": "Lerneinheit: Preprocessing mit NLTK",
+        "type": "article-journal",
+        "URL": "https://fortext.net/routinen/lerneinheiten/preprocessing-mit-nltk",
+        "volume": "1"
+    },
+    {
+        "id": "schumacherLerneinheitWord2vecMit2023",
+        "author": [
+            {
+                "family": "Schumacher",
+                "given": "Mareike"
+            }
+        ],
+        "citation-key": "schumacherLerneinheitWord2vecMit2023",
+        "collection-title": "word2vec",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3816",
+        "title": "Lerneinheit: word2vec mit Gensim",
+        "type": "article-journal",
+        "URL": "https://fortext.net/routinen/lerneinheiten/word2vec-mit-gensim",
+        "issued": {
+            "date-parts": [
+                [
+                    "2023",
+                    4,
+                    20
+                ]
+            ]
+        }
+    },
+    {
+        "id": "schumacherMethodenbeitragNamedEntity2018",
+        "author": [
+            {
+                "family": "Schumacher",
+                "given": "Mareike"
+            }
+        ],
+        "citation-key": "schumacherMethodenbeitragNamedEntity2018",
+        "collection-title": "Named Entity Recognition",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3765",
+        "title": "Methodenbeitrag: Named Entity Recognition (NER)",
+        "type": "article-journal",
+        "URL": "https://fortext.net/routinen/methoden/named-entity-recognition-ner",
+        "issued": {
+            "date-parts": [
+                [
+                    "2018",
+                    5,
+                    17
+                ]
+            ]
+        }
+    },
+    {
+        "id": "schumacherMethodenbeitragNetzwerkanalyse2018",
+        "author": [
+            {
+                "family": "Schumacher",
+                "given": "Mareike"
+            }
+        ],
+        "citation-key": "schumacherMethodenbeitragNetzwerkanalyse2018",
+        "collection-title": "Netzwerkanalyse",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3759",
+        "title": "Methodenbeitrag: Netzwerkanalyse",
+        "type": "article-journal",
+        "URL": "https://fortext.net/routinen/methoden/netzwerkanalyse",
+        "issued": {
+            "date-parts": [
+                [
+                    "2018",
+                    11,
+                    12
+                ]
+            ]
+        }
+    },
+    {
+        "id": "schumacherMethodenbeitragWord2vec2023",
+        "author": [
+            {
+                "family": "Schumacher",
+                "given": "Mareike"
+            }
+        ],
+        "citation-key": "schumacherMethodenbeitragWord2vec2023",
+        "collection-title": "word2vec",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3815",
+        "title": "Methodenbeitrag: word2vec",
+        "type": "article-journal",
+        "URL": "https://fortext.net/routinen/methoden/word2vec-1",
+        "issued": {
+            "date-parts": [
+                [
+                    "2023",
+                    4,
+                    19
+                ]
+            ]
+        }
+    },
+    {
+        "id": "schumacherToolbeitragAbbyyFineReader2019",
+        "author": [
+            {
+                "family": "Schumacher",
+                "given": "Mareike"
+            }
+        ],
+        "citation-key": "schumacherToolbeitragAbbyyFineReader2019",
+        "collection-title": "Korpusbildung",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3811",
+        "issue": "2",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    6,
+                    12
+                ]
+            ]
+        },
+        "title": "Toolbeitrag: WebLicht",
+        "type": "article-journal",
+        "URL": "https://fortext.net/tools/tools/weblicht",
+        "volume": "1"
+    },
+    {
+        "id": "schumacherToolbeitragAbbyyFineReader2019",
+        "author": [
+            {
+                "family": "Schumacher",
+                "given": "Mareike"
+            }
+        ],
+        "citation-key": "schumacherToolbeitragAbbyyFineReader2019",
+        "collection-title": "Textdigitalisierung und Edition",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3742",
+        "editor": [
+            {
+                "family": "Gius",
+                "given": "Evelyn"
+            }
+        ],
+        "issue": "3",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    6,
+                    12
+                ]
+            ]
+        },
+        "title": "Toolbeitrag: Abbyy FineReader",
+        "type": "article-journal",
+        "URL": "https://fortext.net/tools/tools/abbyy-finereader",
+        "volume": "1"
+    },
+    {
+        "id": "schumacherToolbeitragCATMA2019",
+        "author": [
+            {
+                "family": "Schumacher",
+                "given": "Mareike"
+            }
+        ],
+        "citation-key": "schumacherToolbeitragCATMA2019",
+        "collection-title": "Manuelle Annotation",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3761",
+        "title": "Toolbeitrag: CATMA",
+        "type": "article-journal",
+        "URL": "https://fortext.net/tools/tools/catma",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    7,
+                    15
+                ]
+            ]
+        },
+        "volume": "1",
+        "issue": "4"
+    },
+    {
+        "id": "schumacherToolbeitragCitavi2020",
+        "author": [
+            {
+                "family": "Schumacher",
+                "given": "Mareike"
+            },
+            {
+                "family": "Benz",
+                "given": "Nele"
+            }
+        ],
+        "citation-key": "schumacherToolbeitragCitavi2020",
+        "collection-title": "Bibliografie",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3790",
+        "title": "Toolbeitrag: Citavi",
+        "type": "article-journal",
+        "URL": "https://fortext.net/tools/tools/citavi",
+        "issued": {
+            "date-parts": [
+                [
+                    "2020",
+                    10,
+                    19
+                ]
+            ]
+        }
+    },
+    {
+        "id": "schumacherToolbeitragCorpusExplorer2020",
+        "author": [
+            {
+                "family": "Schumacher",
+                "given": "Mareike"
+            },
+            {
+                "family": "Gius",
+                "given": "Evelyn"
+            }
+        ],
+        "citation-key": "schumacherToolbeitragCorpusExplorer2020",
+        "collection-title": "Korpusbildung",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3810",
+        "issue": "2",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    6,
+                    12
+                ]
+            ]
+        },
+        "title": "Toolbeitrag: CorpusExplorer",
+        "type": "article-journal",
+        "URL": "https://fortext.net/tools/tools/corpusexplorer",
+        "volume": "1"
+    },
+    {
+        "id": "schumacherToolbeitragDARIAHTopics2018",
+        "author": [
+            {
+                "family": "Schumacher",
+                "given": "Mareike"
+            }
+        ],
+        "citation-key": "schumacherToolbeitragDARIAHTopics2018",
+        "collection-title": "Topic Modeling",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3728",
+        "title": "Toolbeitrag: DARIAH Topics Explorer",
+        "type": "article-journal",
+        "URL": "https://fortext.net/tools/tools/dariah-topics-explorer",
+        "issued": {
+            "date-parts": [
+                [
+                    "2018",
+                    12,
+                    10
+                ]
+            ]
+        }
+    },
+    {
+        "id": "schumacherToolbeitragGensim2021",
+        "author": [
+            {
+                "family": "Schumacher",
+                "given": "Mareike"
+            },
+            {
+                "family": "Akazawa",
+                "given": "Mari"
+            }
+        ],
+        "citation-key": "schumacherToolbeitragGensim2021",
+        "collection-title": "word2vec",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3817",
+        "title": "Toolbeitrag: Gensim",
+        "type": "article-journal",
+        "URL": "https://fortext.net/tools/tools/gensim",
+        "issued": {
+            "date-parts": [
+                [
+                    "2021",
+                    5,
+                    3
+                ]
+            ]
+        }
+    },
+    {
+        "id": "schumacherToolbeitragGephi2019",
+        "author": [
+            {
+                "family": "Schumacher",
+                "given": "Mareike"
+            }
+        ],
+        "citation-key": "schumacherToolbeitragGephi2019",
+        "collection-title": "Netzwerkanalyse",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3783",
+        "title": "Toolbeitrag: Gephi",
+        "type": "article-journal",
+        "URL": "https://fortext.net/tools/tools/gephi",
+        "issued": {
+            "date-parts": [
+                [
+                    "2019",
+                    2,
+                    18
+                ]
+            ]
+        }
+    },
+    {
+        "id": "schumacherToolbeitragINCEpTION2021",
+        "author": [
+            {
+                "family": "Schumacher",
+                "given": "Mareike"
+            },
+            {
+                "family": "Becker",
+                "given": "Kristina"
+            }
+        ],
+        "citation-key": "schumacherToolbeitragINCEpTION2021",
+        "collection-title": "Manuelle Annotation",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3762",
+        "title": "Toolbeitrag: INCEpTION",
+        "type": "article-journal",
+        "URL": "https://fortext.net/tools/tools/inception",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    7,
+                    15
+                ]
+            ]
+        },
+        "volume": "1",
+        "issue": "4"
+    },
+    {
+        "id": "schumacherToolbeitragLyra2021",
+        "author": [
+            {
+                "family": "Schumacher",
+                "given": "Mareike"
+            },
+            {
+                "family": "Becker",
+                "given": "Kristina"
+            }
+        ],
+        "citation-key": "schumacherToolbeitragLyra2021",
+        "collection-title": "Textvisualisierung",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3777",
+        "editor": [
+            {
+                "family": "Gius",
+                "given": "Evelyn"
+            }
+        ],
+        "title": "Toolbeitrag: Lyra",
+        "type": "article-journal",
+        "URL": "https://fortext.net/tools/tools/lyra",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    7,
+                    15
+                ]
+            ]
+        },
+        "volume": "1",
+        "issue": "5"
+    },
+    {
+        "id": "schumacherToolbeitragOCR4all2019",
+        "author": [
+            {
+                "family": "Schumacher",
+                "given": "Mareike"
+            }
+        ],
+        "citation-key": "schumacherToolbeitragOCR4all2019",
+        "collection-title": "Textdigitalisierung und Edition",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3743",
+        "editor": [
+            {
+                "family": "Gius",
+                "given": "Evelyn"
+            }
+        ],
+        "issue": "3",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    6,
+                    12
+                ]
+            ]
+        },
+        "title": "Toolbeitrag: OCR4all",
+        "type": "article-journal",
+        "URL": "https://fortext.net/tools/tools/ocr4all",
+        "volume": "1"
+    },
+    {
+        "id": "schumacherToolbeitragStanfordNamed2018",
+        "author": [
+            {
+                "family": "Schumacher",
+                "given": "Mareike"
+            }
+        ],
+        "citation-key": "schumacherToolbeitragStanfordNamed2018",
+        "collection-title": "Named Entity Recognition",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3767",
+        "title": "Toolbeitrag: Stanford Named Entity Recognizer",
+        "type": "article-journal",
+        "URL": "https://fortext.net/tools/tools/stanford-named-entity-recognizer",
+        "issued": {
+            "date-parts": [
+                [
+                    "2018",
+                    9,
+                    20
+                ]
+            ]
+        }
+    },
+    {
+        "id": "schumacherToolbeitragStereoscope2018",
+        "author": [
+            {
+                "family": "Schumacher",
+                "given": "Mareike"
+            }
+        ],
+        "citation-key": "schumacherToolbeitragStereoscope2018",
+        "collection-title": "Textvisualisierung",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3776",
+        "editor": [
+            {
+                "family": "Gius",
+                "given": "Evelyn"
+            }
+        ],
+        "title": "Toolbeitrag: Stereoscope",
+        "type": "article-journal",
+        "URL": "https://fortext.net/tools/tools/stereoscope",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    7,
+                    15
+                ]
+            ]
+        },
+        "volume": "1",
+        "issue": "5"
+    },
+    {
+        "id": "schumacherToolbeitragTagtog2022",
+        "author": [
+            {
+                "family": "Schumacher",
+                "given": "Mareike"
+            },
+            {
+                "family": "Akazawa",
+                "given": "Mari"
+            }
+        ],
+        "citation-key": "schumacherToolbeitragTagtog2022",
+        "collection-title": "Manuelle Annotation",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3763",
+        "title": "Toolbeitrag: Tagtog",
+        "type": "article-journal",
+        "URL": "https://fortext.net/tools/tools/tagtog",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    7,
+                    15
+                ]
+            ]
+        },
+        "volume": "1",
+        "issue": "4"
+    },
+    {
+        "id": "schumacherToolbeitragWebAnno2018",
+        "author": [
+            {
+                "family": "Schumacher",
+                "given": "Mareike"
+            },
+            {
+                "family": "Bläß",
+                "given": "Sandra"
+            }
+        ],
+        "citation-key": "schumacherToolbeitragWebAnno2018",
+        "collection-title": "Manuelle Annotation",
+        "container-title": "forTEXT Heft",
+        "DOI": "10.48694/fortext.3764",
+        "title": "Toolbeitrag: WebAnno",
+        "type": "article-journal",
+        "URL": "https://fortext.net/tools/tools/webanno",
+        "issued": {
+            "date-parts": [
+                [
+                    "2024",
+                    7,
+                    15
+                ]
+            ]
+        },
+        "volume": "1",
+        "issue": "4"
+    }
+]

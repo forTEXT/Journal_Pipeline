@@ -1,0 +1,13 @@
+pdf-engine: lualatex
+template: cover.latex
+listings: true
+filters:
+   - tables.lua
+# - flatten-authors.lua
+
+variables:
+  linestretch: 1.2
+  colorlinks: true
+  geometry: a4paper,landscape,margin=2cm
+  documentclass: article
+  fontsize: 16pt

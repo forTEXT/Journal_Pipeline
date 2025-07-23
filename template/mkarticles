@@ -1,0 +1,182 @@
+#!/bin/bash
+
+# Bash Script to generate articles from Markdown files.
+# Generates HTML, XML, PDF and TEX files for each article. 
+
+# Set Paths
+BASE_DIR="../submission"
+BD=$(pwd)  # Base directory
+
+# set path to fortext logo according to used os
+LOGOPATH=$(realpath ./data/logo/fortext-logo.pdf)
+COVERPATH=$(realpath ./data/templates/cover.latex)
+if [[ "$OSTYPE" == "msys" || "$OSTYPE" == "cygwin" ]]; then
+  FORTEXTLOGO=$(cygpath -m "$LOGOPATH")
+  ATTACHMENT_COVER=$(cygpath -m "$COVERPATH")
+else
+  FORTEXTLOGO=$LOGOPATH
+  ATTACHMENT_COVER=$COVERPATH
+
+fi
+echo "Logo Pfad: $FORTEXTLOGO"
+
+# Update to the newest version using git
+git pull --rebase
+
+# Check if articles.txt is empty or missing
+if [ ! -s "articles.txt" ]; then
+  echo "articles.txt is empty or missing. Processing all directories in $INPUT_BASE_DIR."
+  # If articles.txt is empty or missing, iterate over all subdirectories in INPUT_BASE_DIR
+  ARTICLE_DIRS=("$BASE_DIR"/*/)
+else
+  echo "articles.txt found and contains entries. Processing directories listed in articles.txt."
+  # If articles.txt contains entries, read directories from the file
+  ARTICLE_DIRS=$(<articles.txt)
+fi
+
+# Iterate over the list of directories 
+for ARTICLE_DIR in ${ARTICLE_DIRS[@]}; do
+  echo "ARTICLE DIR: $ARTICLE_DIR"
+  
+  # Navigate to the current article directory
+  cd "$ARTICLE_DIR" || exit 1
+  
+  # Get the article name based on directory name
+  ARTICLE=$(basename "$ARTICLE_DIR") 
+
+  # Check if metadata file exists
+  METADATA_FILE="author_meta.yaml"
+  if [ ! -f "$METADATA_FILE" ]; then
+    echo "Error: Metadata file '$METADATA_FILE' not found in $ARTICLE_DIR. Exiting."
+    exit 1
+  fi
+
+  # Find the bibliography file (supports multiple formats like .json, .bib, etc.)
+  BIBLIOGRAPHY_FILE=$(find . -maxdepth 1 -type f -name 'bibliography.*' | head -n 1)
+  if [ -z "$BIBLIOGRAPHY_FILE" ]; then
+    echo "Error: No bibliography file found in $ARTICLE_DIR. Exiting."
+    exit 1
+  else
+    echo "Using bibliography file: $BIBLIOGRAPHY_FILE"
+  fi
+
+  # Check if the main markdown file exists
+  MARKDOWN_FILE="text.md"
+  if [ ! -f "$MARKDOWN_FILE" ]; then
+    echo "Error: Markdown file '$MARKDOWN_FILE' not found in $ARTICLE_DIR. Exiting."
+    exit 1
+  fi
+
+  # Identify and select the correct table file (either .csv or .md)
+  TABLE_FILE=""
+  if [ -f "table.csv" ]; then
+    TABLE_FILE="table.csv"
+  elif [ -f "table.md" ]; then
+    TABLE_FILE="table.md"
+  else
+    echo "Warning: No table file found for $ARTICLE.Continuing without table file"
+  fi
+
+# If a table file exists, run the Python script to insert the table into the Markdown
+if [ -n "$TABLE_FILE" ]; then
+  echo "Running insert_table.py with $MARKDOWN_FILE and $TABLE_FILE"
+  python3 "$BD/scripts/insert_table.py" "$MARKDOWN_FILE" "$TABLE_FILE" \
+  && git add "table_processed.csv" \
+  && git add "table_processed.md" \
+  && git add "table.md" \
+  && git commit -m "data(output): generated table files" \
+  && git add "${ARTICLE}_intext_replaced.md" \
+  && git commit -m "data(output): generated ${ARTICLE}_intext_replaced.md" \
+  && git push
+  echo -e "done"
+else
+  # No table file exists, create intext_replaced as a copy of the markdown file
+  echo "No table file found. Creating ${ARTICLE}_intext_replaced.md as copy of $MARKDOWN_FILE"
+  cp "$MARKDOWN_FILE" "${ARTICLE}_intext_replaced.md" \
+  && git add "${ARTICLE}_intext_replaced.md" \
+  && git commit -m "data(output): generated ${ARTICLE}_intext_replaced.md (copy)" \
+  && git push
+  echo -e "done"
+fi
+  
+
+  # Generate HTML file
+  echo -e "\n\ngenerating $ARTICLE.html"
+  pandoc \
+    --defaults="$BD/fortext-hefte.yaml" \
+    --defaults=html.yaml \
+    --metadata-file="$METADATA_FILE" \
+    --bibliography="$BIBLIOGRAPHY_FILE" \
+    "${ARTICLE}_intext_replaced.md" \
+    --output "$ARTICLE.html" \
+  && git add "$ARTICLE.html" \
+  && git commit -m "data(output): generated $ARTICLE.html" \
+  && git push
+  echo -e "done"
+
+  # Generate PDF file
+  echo -e "\n\ngenerating $ARTICLE.pdf"
+  pandoc \
+    --defaults="$BD/fortext-hefte.yaml" \
+    --defaults=latex.yaml \
+    --variable=logo:"$FORTEXTLOGO" \
+    --defaults=font-plex.yaml \
+    --include-in-header=caption.tex \
+    --metadata-file="$METADATA_FILE" \
+    --bibliography="$BIBLIOGRAPHY_FILE" \
+    "${ARTICLE}_intext_replaced.md" \
+    --output "$ARTICLE.pdf" \
+  && git add "$ARTICLE.pdf" \
+  && git commit -m "data(output): generated $ARTICLE.pdf" \
+  && git push
+  echo -e "done"
+
+  # Generate Cover for Appendices
+  echo -e "\n\ngenerating appendix covers for $ARTICLE"
+  "$BD/mkappendix"
+
+  # Generate XML File
+  echo -e "\n\ngenerating $ARTICLE.xml"
+  pandoc \
+    --defaults="$BD/fortext-hefte.yaml" \
+    --defaults=jats.yaml \
+    --metadata-file="$METADATA_FILE" \
+    --bibliography="$BIBLIOGRAPHY_FILE" \
+    ${ARTICLE}_intext_replaced.md \
+    --to jats \
+    --output $ARTICLE.xml \
+  && git add $ARTICLE.xml \
+  && git commit -m "data(output): generated $ARTICLE.xml" \
+  && git push
+  echo -e "done"
+
+  # Format the XML file using the Python script
+  echo -e "\nFormatting $ARTICLE.xml"
+  python3 "$BD/scripts/format_xml.py" "$ARTICLE.xml" \
+  && echo -e "The XML file '$ARTICLE.xml' has been formatted." \
+  && git add "$ARTICLE.xml" \
+  && git commit -m "data(output): formatted $ARTICLE.xml" \
+  && git push
+  echo -e "done"
+
+  # Generate TeX file
+  echo -e "\n\ngenerating $ARTICLE.tex"
+  pandoc \
+    --defaults="$BD/fortext-hefte.yaml" \
+    --defaults=latex.yaml \
+    --defaults=font-plex.yaml \
+    --include-in-header=caption.tex \
+    --metadata-file="$METADATA_FILE" \
+    --bibliography="$BIBLIOGRAPHY_FILE" \
+    "${ARTICLE}_intext_replaced.md" \
+    --output "$ARTICLE.tex" \
+  && git add "$ARTICLE.tex" \
+  && git commit -m "data(output): generated $ARTICLE.tex" \
+  && git push
+  echo -e "done"
+  
+# Return to the base directory for the next iteration
+  cd "$BD" || exit 1
+
+done
+

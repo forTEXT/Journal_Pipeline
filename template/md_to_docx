@@ -1,0 +1,48 @@
+#!/bin/bash
+
+# Set Paths
+BASE_DIR="../submission"
+BD=$(pwd)  # Base directory
+
+# Update to the newest version using git
+git pull --rebase
+
+# Check if articles.txt is empty or missing
+if [ ! -s "articles.txt" ]; then
+  echo "articles.txt is empty or missing. Processing all directories in $INPUT_BASE_DIR."
+  # If articles.txt is empty or missing, iterate over all subdirectories in INPUT_BASE_DIR
+  ARTICLE_DIRS=("$BASE_DIR"/*/)
+else
+  echo "articles.txt found and contains entries. Processing directories listed in articles.txt."
+  # If articles.txt contains entries, read directories from the file
+  ARTICLE_DIRS=$(<articles.txt)
+fi
+
+# Iterate over the list of directories 
+for ARTICLE_DIR in ${ARTICLE_DIRS[@]}; do
+  echo "ARTICLE DIR: $ARTICLE_DIR"
+  
+  # Navigate to the current article directory
+  cd "$ARTICLE_DIR" || exit 1
+  
+  # Get the article name based on directory name
+  ARTICLE=$(basename "$ARTICLE_DIR") 
+
+  # Check if the main markdown file exists
+  MARKDOWN_FILE="${ARTICLE}_intext_replaced.md"
+  if [ ! -f "$MARKDOWN_FILE" ]; then
+    echo "Error: Markdown file '$MARKDOWN_FILE' not found in $ARTICLE_DIR. Exiting."
+    exit 1
+  fi
+
+  # Generate DOCX file
+  echo -e "\n\ngenerating $ARTICLE.docx"
+  pandoc \
+    "${ARTICLE}_intext_replaced.md" \
+    --output "$ARTICLE.docx" \
+  && git add "$ARTICLE.docx" \
+  && git commit -m "data(output): generated $ARTICLE.docx" \
+  && git push
+  echo -e "done"
+
+  done

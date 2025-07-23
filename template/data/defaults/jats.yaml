@@ -1,0 +1,4 @@
+template: article.jats
+filters:
+  - remove-references-heading.lua
+  - origdate.lua

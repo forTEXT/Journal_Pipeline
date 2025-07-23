@@ -1,0 +1,32 @@
+standalone: true
+
+from: markdown+footnotes
+
+data-dir: ${.}/data
+resource-path:
+  - .
+  - ${.}/data
+  - ${.}/data/bib
+  - ${.}/data/csl
+
+metadata:
+  lang: de
+  link-citations: true
+  reference-links: true
+
+# variables:
+# logo: "${.}/data/fortext-logo.png"
+
+filters:
+ # - pangloss.lua
+  - pandoc-quotes.lua
+#  - colors.lua
+
+citeproc: true
+
+# bibliography:
+  # - example.json
+  # - 2604fortextnet_bib_origdate.json
+  # - 1806_fortextnet_bib.json
+
+csl: chicago-author-date-de.csl
