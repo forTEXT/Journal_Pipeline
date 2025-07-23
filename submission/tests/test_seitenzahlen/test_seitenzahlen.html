@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Selbststudieneinheit „Textannotion mit CATMA“</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+    th, td {
+    text-align: left;
+    vertical-align: top;
+    }
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Selbststudieneinheit „Textannotion mit CATMA“</h1>
+<p class="author">true</p>
+</header>
+<h1 id="einführungstext">Einführungstext</h1>
+<h2 id="rahmenbedingungen">1.1. Rahmenbedingungen</h2>
+<p>Das vorliegende Lehrkonzept stellt eine vierteilige
+Selbststudieneinheit zum Thema „Textannotation (mit CATMA)“ vor. Es
+handelt sich um eine Kombination aus asynchroner und synchroner Lehre<a
+href="#fn1" class="footnote-ref" id="fnref1"
+role="doc-noteref"><sup>1</sup></a>, die über einen Zeitraum von vier
+Semesterwochen im Rahmen der Einführungsveranstaltung „Grundkurs
+Literaturwissenschaft 2“ im Sommersemester an der Technischen
+Universität Darmstadt durchgeführt wird. Der Grundkurs 2 ist der zweite
+Teil des zweiteiligen Einführungsmoduls zur Einführung in die
+Literaturwissenschaft, das im Germanistikstudium in den ersten zwei
+Studiensemestern die Grundlagen der deutschsprachigen
+Literaturwissenschaft abdecken soll, um die Studierenden auf das
+literaturwissenschaftliche Arbeiten in den darauf aufbauenden Pro- und
+Hauptseminaren der höheren Semester vorzubereiten <span class="citation"
+data-cites="modulhandbuch_2019">(<a href="#ref-modulhandbuch_2019"
+role="doc-biblioref">Institut für Sprach- und Literaturwissenschaft
+2019</a>)</span>.</p>
+<p>Die Selbststudieneinheit repräsentiert eine Schnittstelle zwischen
+Geisteswissenschaften und Digital Humanities. Sie integriert digitale
+Methoden in die literaturwissenschaftliche Forschung und Lehre, indem
+sie den Studierenden die Nutzung von CATMA<a href="#fn2"
+class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> als
+Annotations- und Analysetool nahebringt. Diese Interdisziplinarität
+ermöglicht es, traditionelle geisteswissenschaftliche Fragestellungen
+durch den Einsatz von Technologien zu vertiefen und zu erweitern, und
+fördert gleichzeitig die digitalen Kompetenzen der Studierenden.</p>
+<p>Die Selbststudieneinheit deckt zeitlich 1/5 der Semesterwochen (4
+Wochen) ab und ist vor allem im Sommersemester zur thematischen
+Abdeckung der Wochen mit Feiertagsausfällen synchroner Sitzungen
+praktisch im Semesterplan zu integrieren. Geprüft wird der erfolgreiche
+Abschluss der Lehrveranstaltung durch eine 90-minütige schriftliche
+Klausur am Ende der Vorlesungszeit. Nach erfolgreichem Bestehen der
+Abschlussklausur erhalten die Teilnehmenden 5 ECTS-Punkte.</p>
+<p>Der Grundkurs 2 und die Selbststudieneinheit wurden in dieser Form
+bereits dreimal durchgeführt (im Sommersemester 2022, 2023 und 2024 an
+der TU Darmstadt). Der Kurs wird als synchrone Lehrveranstaltung in
+Lehrform eines Grundkurses mit zwei Semesterwochenstunden für eine
+Gruppe von ca. 20-30 Studierenden (Germanistik Bachelor / Deutsch
+Lehramt an Gymnasien) angeboten, die i.d.R. aber nicht zwingend bereits
+den ersten Teil des Grundkurses besucht haben und somit erste
+grundlegende Erfahrungen in Literaturwissenschaft mitbringen.</p>
+<p>Die vorgesehenen Lerninhalte des Grundkurses als
+Rahmenlehrveranstaltung sind laut Modulbeschreibung die „Einführung in
+erweiterte Gebiete der Literaturwissenschaft. Studierende sollen am Ende
+des Kurses mit Themen der Narrationstheorie, der Literaturgeschichte und
+der Editionswissenschaft sowie mit den entsprechenden Theorien und
+Konzepten vertraut sein und diese unter Anleitung kritisch einordnen und
+diskutieren können” <span class="citation"
+data-cites="modulhandbuch_2019">(<a href="#ref-modulhandbuch_2019"
+role="doc-biblioref">Institut für Sprach- und Literaturwissenschaft
+2019</a>)</span>. Die unter den Literaturwissenschaftsdozent:innen
+abgestimmten großen Themen der Lehrveranstaltung Grundkurs
+Literaturwissenschaft 2 umfassen zwei Sitzungen zu Literaturtheorien,
+zwei Sitzungen zur Literaturgeschichte (19. und 20. Jahrhundert), vier
+Sitzungen zur Großgattung Prosa, drei Sitzungen zur Großgattung Lyrik
+sowie drei Sitzungen zu Organisatorischem, Klausurvorbereitung und
+Klausurdurchführung. Eine erfolgreiche Teilnahme am Kurs befähigt die
+Studierenden zum Umgang mit Begriffen und Konzepten erweiterter Gebiete
+der Literaturwissenschaft. Sie können Analysen mittels wichtiger
+Methoden des jeweiligen Teilgebiets durchführen. Darüber hinaus haben
+sie ein grundlegendes Verständnis der Literaturwissenschaft und ihrer
+Unterdisziplinen erlangt und sind mit den Grundlagen der
+literaturwissenschaftlichen Analyse, dem analytischen Lesen und dem
+wissenschaftlichen Arbeiten vertraut.</p>
+<h2 id="voraussetzungen-der-teilnehmenden">1.2. Voraussetzungen der
+Teilnehmenden</h2>
+<p>Als Ausstattung zur Durchführung der Selbststudieneinheit müssen die
+Studierenden Zugang zu einem internetverbundenen Laptop haben und einen
+der gängigen Browser verwenden können (z.B. Firefox, Chrome oder Safari)
+sowie grundlegende Sprachkenntnisse im Englischen mitbringen, um das
+Optical User Interface der Textannotationssoftware CATMA verstehen und
+nutzen zu können. Die benötigten technischen Vorkenntnisse erarbeiten
+sich die Studierenden als Teil der Selbststudieneinheit, wodurch weitere
+vorbereitende technische Kenntnisse nicht über die Verwendung eines
+Internetbrowsers hinausgehen. Als fachliche Vorkenntnis wird ein
+generelles Verständnis im Umgang mit literarischen Texten und
+literarischer Erzähltextanalyse vorausgesetzt, das dem Niveau des
+Oberstufendeutschunterrichts bzw. darauf aufbauend ggf. dem Besuch des
+Grundkurses 1 Literaturwissenschaft an der Technischen Universität
+Darmstadt entspricht.</p>
+<h2 id="ausführung-der-selbststudieneinheit">1.3 Ausführung der
+Selbststudieneinheit</h2>
+<p>Die Selbststudieneinheit erstreckt sich über vier Semesterwochen:</p>
+<ol type="1">
+<li>eine vorbereitende synchrone Sitzung zur Einführung in die
+Erzähltextanalyse,</li>
+<li>eine asynchrone Lernphase von zwei Wochen, in der die Studierenden
+die Videotutorials und die vorbereitende Lektüre (Primär- und
+Sekundärliteratur) durcharbeiten,</li>
+<li>eine synchrone Sitzung zur Einführung in die
+literaturwissenschaftliche Annotationspraxis mit Zeit für Fragen und für
+die Anwendungsaufgabe der Verwendung von CATMA für die Annotation und
+anschließende Figurenanalyse des Primärtexts,</li>
+<li>eine Aufgabe zur manuellen Textannotation in der Abschlussklausur
+zur Überprüfung des Erreichens der Lernziele der
+Selbststudieneinheit.</li>
+</ol>
+<p>Für die synchronen Veranstaltungssitzungen benötigt die/der Lehrende
+einen internetverbundenen Laptop sowie einen Beamer. Die asynchronen
+Anteile wie Lektüre und Links zu den Videotutorials der
+Selbststudieneinheit werden über den begleitenden Moodlekurs zur
+Verfügung gestellt.</p>
+<p>Zur Vermittlung von Kompetenzen wurden verschiedene Medien
+eingesetzt:<br />
+In der asynchronen Selbststudieneinheit haben die Studierenden Zugang zu
+Videotutorials. Diese Tutorials bieten eine Einführung in die manuelle
+Annotation mit dem digitalen Tool CATMA <span class="citation"
+data-cites="fortext_tutorial_2019 fortext_tutorial_2020 fortext_tutorial_2019-1 fortext_tutorial_2019-2 fortext_tutorial_2020-1">(<a
+href="#ref-fortext_tutorial_2019" role="doc-biblioref">forTEXT
+2019a</a>; <a href="#ref-fortext_tutorial_2020"
+role="doc-biblioref">forTEXT 2020a</a>; <a
+href="#ref-fortext_tutorial_2019-1" role="doc-biblioref">forTEXT
+2019b</a>; <a href="#ref-fortext_tutorial_2019-2"
+role="doc-biblioref">forTEXT 2019c</a>; <a
+href="#ref-fortext_tutorial_2020-1" role="doc-biblioref">forTEXT
+2020b</a>)</span>. Zudem wurden vorbereitend drei Einführungstexte zum
+manuellen und kollaborativen Annotieren (analog und digital mit CATMA)
+zur Verfügung gestellt <span class="citation"
+data-cites="schumacherToolbeitragCATMA2019 jackeMethodenbeitragManuelleAnnotation2018 jackeMethodenbeitragKollaborativesLiteraturwissenschaftliches2018">(<a
+href="#ref-schumacherToolbeitragCATMA2019"
+role="doc-biblioref">Schumacher 2024</a>; <a
+href="#ref-jackeMethodenbeitragManuelleAnnotation2018"
+role="doc-biblioref">Jacke 2024a</a>; <a
+href="#ref-jackeMethodenbeitragKollaborativesLiteraturwissenschaftliches2018"
+role="doc-biblioref">Jacke 2024b</a>)</span>. Während der synchronen
+Lehrveranstaltungen wurde als kurzer Primärtext die Erzählung
+<em>Krambambuli</em> von <span class="citation"
+data-cites="von_ebner-eschenbach_marie_1896">Ebner-Eschenbach (<a
+href="#ref-von_ebner-eschenbach_marie_1896"
+role="doc-biblioref">1896</a>)</span> diskutiert und die
+Annotationsaufgabe für die Verwendung von CATMA literaturtheoretisch und
+methodisch eingebettet mit Fokus auf literarische Erzähltext- und
+Figurenanalyse <span class="citation"
+data-cites="krogh_figuren_2016">(<a href="#ref-krogh_figuren_2016"
+role="doc-biblioref">Hansen 2016</a>)</span>.</p>
+<p>Zur Unterstützung der Studierenden wurde in der dritten Iteration
+dieser Selbststudieneinheit ein:e Tutor:in eingesetzt. Diese:r stand
+während der asynchronen Selbststudieneinheit in einem Moodleforum für
+Fragen und Hilfestellungen zur Verfügung. Während der synchronen
+Sitzungen half er/sie bei technischen Problemen mit dem Annotationstool
+CATMA und unterstützte die Studierenden bei der Durchführung der
+Annotationsaufgabe.</p>
+<p>In der Abschlussklausur ist eine Aufgabe zur manuellen Textannotation
+vorgesehen, um das Erreichen der Lernziele der Selbststudieneinheit zu
+überprüfen (siehe <span class="citation" data-cites="Abschnitt_4">(<a
+href="#ref-Abschnitt_4"
+role="doc-biblioref"><strong>Abschnitt_4?</strong></a>)</span>).</p>
+<h1 id="beschreibung-des-gesamtablaufs">Beschreibung des
+Gesamtablaufs</h1>
+<p>Die Selbststudieneinheit verortet sich im Semesterplan als Teil des
+Themas „Einführung in die Gattungstheorie: Prosa“ und baut auf den
+Inhalten der Sitzungen zu Literaturgeschichte des 19. Jahrhunderts und
+Literaturtheorie auf. Sie besteht aus vier Teilen: 1. Der erste Teil
+beinhaltet eine theoretische Einführung in die Analyse von Figuren und
+in das Formulieren von literaturwissenschaftlichen Fragestellungen in
+einer synchronen Lehrveranstaltungssitzung. 2. Im zweiten Teil findet
+eine asynchrone Lerneinheit über zwei Wochen statt, die gerade im
+Sommersemester z.B. praktisch als Feiertagsüberbrückung verwendet werden
+kann. In dieser Phase erarbeiten die Studierenden zusammengestellte
+Materialien zur Einarbeitung in die literaturwissenschaftliche
+Textannotation. Diese Materialien umfassen Einführungstexte ins manuelle
+und kollaborative Annotieren (analog und digital mit CATMA) sowie kurze
+Video-Tutorials zur Einführung in die manuelle Annotation mit dem
+digitalen Annotationstool CATMA und den Primärtext <em>Krambambuli</em>
+von <span class="citation"
+data-cites="von_ebner-eschenbach_marie_1896">Ebner-Eschenbach (<a
+href="#ref-von_ebner-eschenbach_marie_1896"
+role="doc-biblioref">1896</a>)</span>. 3. Der dritte Teil besteht aus
+einer synchronen Lehrveranstaltung zur Einführung in die
+literaturwissenschaftliche Annotationspraxis mit Zeit für Fragen und für
+die Anwendungsaufgabe der Verwendung von CATMA für die Annotation und
+anschließende Figurenanalyse des Primärtexts. 4. Im vierten und letzten
+Teil wird das Gelernte durch eine Prüfungsaufgabe in der Klausur
+überprüft, die sich auf die literaturwissenschaftliche Textannotation
+fokussiert.</p>
+<p>Die Selbststudieneinheit zielt darauf ab, die Lerninhalte Großgattung
+Prosa und Narrationstheorie, die Erzählung <em>Krambambuli</em> von
+Marie von Ebner-Eschenbach sowie die Einführung und Anwendung der
+literaturwissenschaftlichen Methode des Annotierens (manuell analog und
+manuell digital mit dem Annotationstool CATMA) zu vermitteln. Zudem
+beinhaltet die Einheit die Einzeltextanalyse der Primärlektüre mit einem
+besonderen Fokus auf Figurenanalyse.</p>
+<p>Die Qualifikationsziele und Lernergebnisse umfassen die Vertiefung
+der Kenntnisse zur Narrationstheorie und ihrer Methodenanwendung. Die
+Studierenden sollen nach Abschluss der Selbststudieneinheit in der Lage
+sein, Methoden der Narrationstheorie auf bekannte literarische
+Primärtexte des 19. Jahrhunderts anzuwenden und drei
+literaturwissenschaftliche Annotationsmethoden durchzuführen:
+manuell-analoges Annotieren literarischer Texte, manuell-digitales
+Annotieren literarischer Texte und kollaborativ manuell-digitales
+Annotieren literarischer Texte. Des Weiteren sollen die Studierenden die
+Nützlichkeit literaturwissenschaftlicher Textannotation reflektieren und
+lernen, situationsabhängig zu entscheiden, wie diese Methode am
+sinnvollsten anzuwenden ist, z.B. indem sie entdecken, wie
+Annotationstagsets entwickelt und sinnvoll eingesetzt werden, um sich
+einer ausgewählten Forschungsfrage zu nähern. Schließlich sollen sie
+literaturwissenschaftliche Forschungsfragen formulieren und sich der
+Beantwortung dieser Fragen mit Hilfe literaturwissenschaftlicher
+Textannotation annähern können.</p>
+<h1
+id="detaillierte-darstellung-der-sitzungen-bzw.-einheiten-zum-thema-textannotation">Detaillierte
+Darstellung der Sitzungen bzw. Einheiten zum Thema Textannotation</h1>
+<h2
+id="sitzung-1-theoretische-einführung-in-die-analyse-von-figuren">Sitzung
+1: Theoretische Einführung in die Analyse von Figuren</h2>
+<p>In der ersten Sitzung erhalten die Studierenden eine theoretische
+Einführung in die Analyse von Figuren <span class="citation"
+data-cites="krogh_figuren_2016">(aufbauend auf <a
+href="#ref-krogh_figuren_2016" role="doc-biblioref">Hansen
+2016</a>)</span> sowie in das Formulieren von
+literaturwissenschaftlichen Fragestellungen. Diese synchrone
+Lehrveranstaltung beginnt mit einem Vortrag der Lehrperson (siehe <span
+class="citation" data-cites="Foliensatz_Figuren">(<a
+href="#ref-Foliensatz_Figuren"
+role="doc-biblioref"><strong>Foliensatz_Figuren?</strong></a>)</span>),
+in dem die grundlegenden Konzepte und Methoden der Figurenanalyse
+behandelt werden. Zunächst wird die Bedeutung und Funktion von Figuren
+in literarischen Texten erläutert. Danach werden die drei funktionalen
+Dimensionen nach <span class="citation" data-cites="Phelan_2005">(<a
+href="#ref-Phelan_2005"
+role="doc-biblioref"><strong>Phelan_2005?</strong></a>)</span>, die
+Unterscheidung von flachen und runden Charakteren nach <span
+class="citation" data-cites="Forster_1927">(<a href="#ref-Forster_1927"
+role="doc-biblioref"><strong>Forster_1927?</strong></a>)</span> und das
+Figurenmodell nach <span class="citation" data-cites="Hansen_2000">(<a
+href="#ref-Hansen_2000"
+role="doc-biblioref"><strong>Hansen_2000?</strong></a>)</span> mit
+seiner Unterscheidung von „showing“ und „telling“ präsentiert. Der
+Inputvortrag wird abgeschlossen mit einer Diskussion, in der das Gehörte
+durch die Studierenden angewendet werden soll, indem sie diskutieren,
+welche Figuren im vorbereiteten Primärtext Krambambuli von <span
+class="citation"
+data-cites="von_ebner-eschenbach_marie_1896">Ebner-Eschenbach (<a
+href="#ref-von_ebner-eschenbach_marie_1896"
+role="doc-biblioref">1896</a>)</span> vorkommen und wie diese
+hinsichtlich der vorgestellten Figurenmodelle eingeordnet werden
+können.</p>
+<p>Im Anschluss an den theoretischen Input wird das Formulieren von
+literaturwissenschaftlichen Forschungsfragen thematisiert. Die
+Studierenden lernen, wie sie präzise und relevante Fragen zur
+Figurenanalyse entwickeln können. Die Sitzung umfasst Diskussionen und
+Gruppenarbeit, bei der die Studierenden anhand eines kurzen
+Textausschnitts der Primärlektüre Forschungsfragen formulieren, denen
+sich mit Figurenanalyse genähert werden kann.</p>
+<p>Ziel dieser Sitzung ist es, ein Verständnis der grundlegenden
+Konzepte der Figurenanalyse zu vermitteln, die Fähigkeit zur
+Unterscheidung und Anwendung verschiedener Ansätze der Figurenanalyse zu
+entwickeln und die Kompetenz zu fördern, literaturwissenschaftliche
+Forschungsfragen zu formulieren. Im Rahmen des Grundkurses 2 Einführung
+in die Literaturwissenschaft an der TU Darmstadt wurde diese Sitzung als
+Teil der umfassenderen Lehrveranstaltung zur Einführung in die
+Gattungstheorie - Fokus Prosa durchgeführt. Dieser Sitzungsteil deckt
+ca. 30min einer 90min Lehrveranstaltungssitzung ab.</p>
+<h2
+id="sitzung-2-selbststudium-einführung-in-die-literaturwissenschaftliche-textannotation-asynchrone-selbststudieneinheit-über-zwei-wochen">Sitzung
+2: Selbststudium: Einführung in die literaturwissenschaftliche
+Textannotation (asynchrone Selbststudieneinheit über zwei Wochen)</h2>
+<p>Die zweite „Sitzung“ besteht aus einer asynchronen
+Selbststudieneinheit, welche sich über zwei Wochen erstreckt. Der
+Abschnitt bietet sich daher beispielsweise als Feiertagsüberbrückung an.
+In dieser Zeit haben die Studierenden die Gelegenheit, sich eigenständig
+in die Grundlagen der literaturwissenschaftlichen Textannotation
+einzuarbeiten. Sie setzen sich mit drei Einführungstexten auseinander,
+die das manuelle und kollaborative Annotieren sowohl in analoger als
+auch digitaler Form behandeln <span class="citation"
+data-cites="schumacherToolbeitragCATMA2019 jackeMethodenbeitragManuelleAnnotation2018 jackeMethodenbeitragKollaborativesLiteraturwissenschaftliches2018">(<a
+href="#ref-schumacherToolbeitragCATMA2019"
+role="doc-biblioref">Schumacher 2024</a>; <a
+href="#ref-jackeMethodenbeitragManuelleAnnotation2018"
+role="doc-biblioref">Jacke 2024a</a>; <a
+href="#ref-jackeMethodenbeitragKollaborativesLiteraturwissenschaftliches2018"
+role="doc-biblioref">Jacke 2024b</a>)</span>. Ergänzend dazu stehen
+Video-Tutorials zur Einführung in die manuelle Annotation mit dem
+digitalen Annotationstool CATMA zur Verfügung <span class="citation"
+data-cites="fortext_tutorial_2019 fortext_tutorial_2020 fortext_tutorial_2019-1 fortext_tutorial_2019-2 fortext_tutorial_2020-1">(<a
+href="#ref-fortext_tutorial_2019" role="doc-biblioref">forTEXT
+2019a</a>; <a href="#ref-fortext_tutorial_2020"
+role="doc-biblioref">forTEXT 2020a</a>; <a
+href="#ref-fortext_tutorial_2019-1" role="doc-biblioref">forTEXT
+2019b</a>; <a href="#ref-fortext_tutorial_2019-2"
+role="doc-biblioref">forTEXT 2019c</a>; <a
+href="#ref-fortext_tutorial_2020-1" role="doc-biblioref">forTEXT
+2020b</a>)</span>. Diese Materialien bieten den Studierenden eine
+umfassende Einführung in die Annotationsmethoden und ermöglichen ihnen,
+das Gelernte praktisch auszuprobieren.</p>
+<p>Ziel dieser Einheit ist es, die Grundlagen des manuellen und
+digitalen Annotierens zu vermitteln, die Fähigkeit zur Nutzung des Tools
+CATMA zu entwickeln und ein Verständnis für die Vor- und Nachteile
+verschiedener Annotationsmethoden zu schaffen. Die Studierenden lesen
+die Einführungstexte, schauen sich die Video-Tutorials an und führen
+erste praktische Übungen zur Annotation mit CATMA durch.</p>
+<h2
+id="sitzung-3-einführung-in-die-literaturwissenschaftliche-annotationspraxis-synchrone-lehrveranstaltung-90-bzw.-120min">Sitzung
+3: Einführung in die literaturwissenschaftliche Annotationspraxis
+(Synchrone Lehrveranstaltung, 90 bzw. 120min)</h2>
+<p>In der dritten Sitzung steht die praktische Anwendung der
+Annotationsmethoden im Fokus. Die Studierenden haben vorbereitend für
+die Sitzung einen CATMA-Account eingerichtet, erste Anwendungsbeispiele
+geübt und setzen die während der asynchronen Selbststudieneinheit
+erworbenen Kenntnisse in einer synchronen Lehrveranstaltung in die
+Praxis um. Begleitet wird die Sitzung vom <span class="citation"
+data-cites="Foliensatz_Einführung_Textannotation">(<a
+href="#ref-Foliensatz_Einführung_Textannotation"
+role="doc-biblioref"><strong>Foliensatz_Einführung_Textannotation?</strong></a>)</span>.
+Die Sitzung wurde für 90min konzipiert. Um den Studierenden mehr Zeit
+für die Diskussionen und Anwendungsaufgaben zu geben, empfiehlt sich
+eine Sitzung von ca. 120min. Ziel dieser Sitzung ist es, die Anwendung
+der Annotationsmethoden in der Praxis zu vertiefen und die Fähigkeit zur
+kritischen Reflexion von Textannotation zu fördern.</p>
+<p>Die Sitzung beginnt mit der Begrüßung der Studierenden sowie einem
+Brainstorming (5min) in Partnerarbeit zur Aktivierung des Gelernten aus
+der zweiwöchigen Selbststudieneinheitsphase. Diese Aktivierung
+unterstützt das Ankommen der Studierenden in der Sitzung, das warm
+werden mit dem Thema sowie das ins Sprechen kommen durch die
+Wiederholung des thematischen Vokabulars der Sitzung im geschützten Raum
+der Partnerarbeit. Anschließend gibt es einen kurzen Austausch im Plenum
+im Sinn einer reduzierten Form der „Think-Pair-Share“ Lernmethode von
+<span class="citation" data-cites="lyman_responsive_1998">Lyman (<a
+href="#ref-lyman_responsive_1998"
+role="doc-biblioref">1998</a>)</span>.</p>
+<p>Es folgt ein Inputvortrag (8-10min) der Lehrperson zur Einführung in
+Annotationen vom Generellen (Bildannotationen, Markup Languages,
+Glossen) zum Spezifischen (Annotation als textwissenschaftliche Praktik
+in der Literaturwissenschaft). Es werden drei verschiedene
+Annotationsarten in der Sprach- und Literaturwissenschaft vorgestellt
+und drei Textannotationsmethoden mit Beispielen unterlegt
+gegenübergestellt.</p>
+<p>Am Ende des Inputvortrags werden die Studierenden gebeten in
+Einzelarbeit manuell loszuannotieren („Bitte annotieren Sie manuell
+analog den ausgedruckten Textausschnitt aus Marie von Ebener-Eschenbachs
+<em>Krambambuli</em>“). Dazu wurde vor Sitzungsbeginn der Anfang des
+Primärtexts ausgedruckt ausgeteilt. Die Studierenden bekommen dafür
+5min. Das Ziel dieser Aufgabe ist es, verschiedene Annotationsideen
+auszuprobieren, die während des Impulsvortrags aufgekommen sind. Der
+Erfahrung nach variieren die Annotationen von Unterstreichungen von
+Wortarten zu lexikalischen Wortfamilien, die Studierenden
+unterstreichen, umkreisen, umkasten und markieren frei nach ihren
+Vorstellungen. Nach 5min haben die Studierenden kurz die Möglichkeit,
+dem Plenum vorzustellen, was sie wie annotiert haben. Dieses
+Zusammenkommen im Plenum bildet den Übergang zur Diskussionsfrage:
+„Braucht man Vorgaben zum Annotieren?“. Der Erfahrung nach sprechen die
+Studierenden in der Diskussion ihre anfängliche Unsicherheit mit der
+Annotationsaufgabe an, weil sie nicht wussten, was genau sie annotieren
+sollten. Der nächste Punkt der Diskussion wird eingeleitet durch die
+Reflexionsfragen: „Welche Vorgaben hätten Sie sich gewünscht?“ und
+„Welche Vorgaben haben Sie sich selbst gegeben?“. Durch diese offenen
+Fragen werden sich die Studierenden der Notwendigkeit von
+Annotationsrichtlinien bewusst. Sie diskutieren ihre selbstdefinierten
+Vorgaben, z.B. wann unterstrichen und wann umkreist wurde und welche
+Farbe welche Annotationseinheit bedeutete. Die Lehrperson leitet sodann
+über zum zweiten Impulsvortrag.</p>
+<p>Im zweiten Inputvortrag (6-8min) stellt die Lehrperson den Nutzen und
+Aufbau von Annotationsrichtlinien vor. Unterstützt durch die Abbildung
+von <span class="citation" data-cites="gius_jacke_2016">Gius und Jacke
+(<a href="#ref-gius_jacke_2016" role="doc-biblioref">2016</a>)</span>, 7
+wird die Komplexität des Annotationsprozess verdeutlicht. Anschließend
+folgt eine kurze Wiederholung zu Annotationskategorien und Tagsets, die
+Verbildlichung von Textannotation als iterativer und zyklischer Prozess
+(nach <span class="citation" data-cites="rapp_manuelle_2017">Rapp (<a
+href="#ref-rapp_manuelle_2017" role="doc-biblioref">2017</a>)</span> und
+<span class="citation"
+data-cites="zinsmeister_korpuslinguistik_2015">Zinsmeister und Lemnitzer
+(<a href="#ref-zinsmeister_korpuslinguistik_2015"
+role="doc-biblioref">2015</a>)</span>) sowie ein sehr kurzer Ausblick
+auf die Evaluation des Annotationsprozesses sowie Goldannotationen. Nach
+einer kurzen Unterbrechung für Fragen der Studierenden folgt der
+Anwendungsteil „Annotation mit CATMA“.</p>
+<p>Für den Anwendungsteil schlägt die Lehrperson eine Forschungsfrage,
+Hypothese und Annotationsmethode vor und bringt ein CATMA-Gruppenprojekt
+mit vorbereitetem Tagset mit, das die Studierenden anwenden können. Nach
+einer kurzen Vorstellung der Materialien sowie dem Einwählen der
+Teilnehmer:innen in das CATMA-Gruppenprojekt erhalten die Studierenden
+den folgenden Arbeitsauftrag (ca. 20min):</p>
+<blockquote>
+<p>Bitte annotieren Sie <strong>manuell digital</strong> den Anfang aus
+Marie von Ebener-Eschenbachs <em>Krambambuli</em>. 1. Erstellen Sie eine
+<strong>Annotation Collection</strong> nach dem Schema:
+„Name_Annotation_Collection“. 2. Öffnen Sie den Text im
+<strong>Annotationsmodus</strong> („Annotate“). 3. Wählen Sie Ihre
+Annotation Collection aus und <strong>annotieren</strong> Sie den Anfang
+von <em>Krambambuli</em> unter Anwendung des Tagsets zur
+Figurenannotation. 4. <strong>Synchronisieren</strong> Sie Ihre
+Annotationen auf der Projektstartseite („SYNC“ → synchronize with the
+team).</p>
+</blockquote>
+<p>Während der Arbeitsphase steht die Lehrperson für Fragen und
+technische Unterstützung zur Verfügung. Ggf. wird die Lehrperson dabei
+durch eine:n Tutor:in vor Ort unterstützt. Die Arbeitsphase wird mit
+einer Reflexion abgeschlossen, in der die Studierenden berichten, wie
+sie mit den Annotationskategorien und den technischen Prozessen
+zurechtkamen, aufführen, welche Tags ihnen gefehlt haben oder welche sie
+gar nicht verwendet haben und schließlich auf der Grundlage ihrer
+Annotationserfahrung argumentieren, wie die Forschungsfrage beantwortet
+werden könnte.</p>
+<p>Daran anschließend stellt die Lehrperson beispielhaft Abfragen,
+Visualisierungen und halbautomatisierte Annotation mit CATMA vor, um
+eine mögliche Annäherung an die Forschungsfrage mithilfe quantitativer
+Annotationsauswertung (der vorbereiteten Annotationen) vorzustellen. Den
+Abschluss der Sitzung bildet eine letzte Diskussion im Plenum mit der
+Ausblickfrage, welche weiteren Forschungsfragen zum Primärtext und
+darüber hinaus die Studierenden interessieren würden, der sie sich mit
+einem CATMA-Annotationsprojekt nähern könnten.</p>
+<h2
+id="sitzung-4-überprüfung-des-gelernten-durch-klausuraufgabe-ca.-15-bzw.-25min">Sitzung
+4: Überprüfung des Gelernten durch Klausuraufgabe (ca. 15 bzw.
+25min)</h2>
+<p>In der vierten Sitzung wird das in den vorangegangenen Einheiten
+Gelernte anhand einer Aufgabe in der Abschlussklausur angewendet. Im
+Rahmen des Grundkurses 2 Einführung in die Literaturwissenschaft wurden
+im Sommersemester 2022, 2023 und 2024 Variationen der folgenden zwei
+Klausuraufgaben eingesetzt:</p>
+<h3 id="aufgabe-1">Aufgabe 1:</h3>
+<p>Eine Klausuraufgabe mit Umfang von 5,5P. (ca. 15min Aufwand): &gt; a)
+Erklären Sie kurz die Methode der manuellen Textannotation (1P.). &gt;
+b) Entwickeln Sie ein Tagset bestehend aus <strong>min. drei
+verschiedenen Tags</strong> für die Annotation des
+Primärtextausschnitts. Nennen Sie dafür den Tagnamen und erläutern Sie
+(kurz) Ihr Annotationsvorgehen (3,5P.: jeweils 0,5P. pro Nennung des
+Namens (Tagset und 3 Tags) und jeweils 0,5P. pro Kurzerläuterung des
+Annotationsvorgehens pro Tag, z.B. Unterstreichen, Tagfarbe, gewählte
+Kategorie). &gt; c) Annotieren Sie den Textausschnitt systematisch mit
+Ihren neudefinierten Tags (1P.).</p>
+<p>Die erste vorgeschlagene Klausuraufgabe sollte im Klausuraufbau einen
+mittleren Platz einnehmen. Sie deckt die ersten drei Taxonomiestufen
+kognitiver Lernziele nach <span class="citation"
+data-cites="anderson_taxonomy_2001">Anderson und Krathwohl (<a
+href="#ref-anderson_taxonomy_2001" role="doc-biblioref">2001</a>)</span>
+ab: Einerseits wird bereits das reine Nennen von Tagsetnamen und
+Tagnamen mit Punkten vergütet (Taxonomiestufe 1), andererseits aber auch
+die Erklärung der Methode gefordert sowie die Erläuterung des
+Annotationsvorgehens (Taxonomiestufe 2) und die Anwendung der
+Annotationsmethode auf den gegebenen Primärtextausschnitt
+(Taxonomiestufe 3).</p>
+<h3 id="aufgabe-2">Aufgabe 2:</h3>
+<p>Eine Klausuraufgabe mit Umfang von 7P. (ca. 20-25min Aufwand): &gt;
+Lesen Sie den Primärtextausschnitt. &gt; a) Formulieren Sie eine
+Forschungsfrage hinsichtlich der im Kurs behandelten Inhalte (z.B. aus
+dem Bereich zu Prosatheorie, Erzähltheorie – etwa Diskurs, Geschichte,
+Figuren – oder Literaturgeschichte). Beachten Sie bei der Formulierung
+die im Kurs besprochenen inhaltlichen und formalen Anforderungen an eine
+Forschungsfrage (1 Satz = 1P.). &gt; b) Begründen Sie die
+(literaturwissenschaftliche) Relevanz Ihrer Forschungsfrage kurz, indem
+Sie sie in den literaturwissenschaftlichen Forschungskontext einordnen
+(1-2 Sätze, 2P.). &gt; c) Entscheiden Sie, ob und wie
+literaturwissenschaftliche Textannotation als Grundlage der Annäherung
+an die Beantwortung Ihrer Forschungsfrage angewendet werden kann.
+Begründen Sie Ihre Entscheidung und beschreiben Sie Ihre mögliche
+Herangehensweise (3-5 Sätze, 4P.).</p>
+<p>Die zweite vorgeschlagene Klausuraufgabe sollte im Klausuraufbau den
+Platz einer der letzten oder der letzten Aufgabe einnehmen. Sie deckt
+die höchsten Taxonomiestufen kognitiver Lernziele nach <span
+class="citation" data-cites="anderson_taxonomy_2001">Anderson und
+Krathwohl (<a href="#ref-anderson_taxonomy_2001"
+role="doc-biblioref">2001</a>)</span> ab, indem eine Forschungsfrage
+formuliert (Produktion, Taxonomiestufe 6), ihre Relevanz begründet
+(Beurteilung, Taxonomiestufe 5) sowie für oder gegen die Anwendung von
+Textannotation als Methode entschieden werden muss (Entscheidung,
+Taxonomiestufe 5).</p>
+<p>Anhand der erfolgreichen Bearbeitung der Klausuraufgabe beweisen die
+Studierenden das Erreichen des Lernziels, theoretische Konzepte in
+konkreten Analysekontexten anzuwenden, indem sie
+literaturwissenschaftlich relevante Forschungsfragen formulieren und
+Textannotation als Methode zur Annäherung an die selbstformulierte
+Forschungsfrage verwenden sowie die Anwendung reflektieren.</p>
+<h1
+id="reflexion-des-lehrkonzepts-gelungene-ansätze-und-herausforderungen">Reflexion
+des Lehrkonzepts: Gelungene Ansätze und Herausforderungen</h1>
+<h2 id="rahmenbedingungen-und-ausführung-der-veranstaltung">5.1.
+Rahmenbedingungen und Ausführung der Veranstaltung</h2>
+<p>Im Rahmen des Grundkurses Einführung in die Literaturwissenschaft 2
+wurde die vorgestellte Selbststudieneinheit insgesamt drei Mal
+durchgeführt (Sommersemester 2022, 2023 und 2024), wobei ihr Aufbau seit
+der ersten Iteration nicht verändert wurde. Für eine erneute
+Durchführung im Sommersemester 2025 wird jedoch eine Anpassung von CATMA
+6 auf CATMA 7 notwendig sein.</p>
+<p>Retrospektiv konnte ich feststellen, dass die Vierteilung der
+Lehreinheit zur „Textannotation (mit CATMA)“ von den Studierenden gut
+angenommen wurde. Vor allem das Angebot einer asynchronen
+Selbststudieneinheit anstelle einer synchronen Sitzung wurde positiv
+aufgenommen. Außerdem konnte so jeweils eine (z.B. gerade im
+Sommersemester feiertagsbedingt) ausfallende Sitzung überbrückt werden.
+In Bezug auf das Feedback der Studierenden wurde deutlich, dass sie die
+Mischung aus synchronen und asynchronen Einheiten sowie die
+praxisorientierte Anwendung der Theorie schätzten. Besonders die
+Video-Tutorials fanden die Studierenden hilfreich, weil sie sich dadurch
+die Inhalte in ihrem eigenen Tempo erarbeiten und wahlweise Teile des
+Tutorials wiederholen konnten. Die Teilnehmenden meldeten außerdem
+positiv zurück, dass sie das Gelernte aus der Selbststudieneinheit und
+den Theorieinputvorträgen in der synchronen Sitzung (3) selbst anwenden
+konnten und zum Weiterdenken angeregt wurden.</p>
+<p>Die synchrone Sitzung (3) zur Einführung in die
+literaturwissenschaftliche Annotationspraxis, das Herzstück des
+vorgestellten Lehrkonzepts, verlief in allen drei Iterationen ohne
+Probleme. Die technischen Voraussetzungen waren gegeben: Der Beamer und
+das WLAN funktionierten, die Studierenden brachten internetverbundene
+Laptops mit sowie eingerichtete CATMA-Accounts, sodass sie die
+Anwendungsaufgaben durchführen konnten.</p>
+<p>Den Erfolg der zweiwöchigen asynchronen Lernphase konnte ich
+überprüfen, weil die Studierenden, die an der synchronen Sitzung
+teilnahmen, sie als Vorbereitung durchgeführt haben mussten, um während
+der Sitzung gut mitarbeiten zu können. Beim Umhergehen während der
+Bearbeitungszeit der Anwendungsaufgaben konnte ich außerdem feststellen,
+ob die grundsätzliche Verwendung von CATMA verstanden worden war. Ich
+schaute auf die Bildschirme der Teilnehmenden und gab aktionales
+Feedback zu den Arbeitsschritten, half bei Schwierigkeiten und
+beantwortete individuelle Fragen.</p>
+<p>Der Einsatz eine:r Tutor:in ab der dritten Iteration war eine
+wertvolle Bereicherung der Unterstützung der Studierenden beim Umgang
+mit CATMA und der individuellen Vorbereitung. Sollte bei Übernahme
+dieses Lehrkonzepts in externe Veranstaltungskontexte keine
+Tutorunterstützung möglich ist, könnte ein von den Studierenden
+selbstmoderiertes Onlineforum (z.B. bei Moodle) eingesetzt werden, in
+dem Fragen während der asynchronen Lernphase individuell gestellt und
+beantwortet werden können (auch unterstützt durch die Lehrperson).
+Außerhalb des Grundkurskontextes könnte zudem ein kürzerer Primärtext
+zur Annotation zur Verfügung gestellt werden, damit die Teilnehmenden
+einen vollständigen Text annotieren können und nicht nur einen kurzen
+Ausschnitt. Dafür könnte zum Beispiel ein Märchen als Textgrundlage zum
+Einsatz kommen. Ein kürzerer Text würde es den Teilnehmenden
+ermöglichen, den gesamten Text zu erfassen und somit ein besseres
+Verständnis für die Struktur und die narrativen Techniken zu
+entwickeln.</p>
+<p>Die Klausuraufgabe erwies sich als sinnvolles Maß für das Erreichen
+der Lernziele, wobei auffiel, dass auch Studierende, die nicht an der
+synchronen Sitzung (3) teilgenommen hatten, sich durch das Nachbereiten
+der bereitgestellten Materialien ausreichend für eine erfolgreiche
+Bearbeitung der Klausuraufgabe vorbereiten konnten.</p>
+<p>Insgesamt bin ich zufrieden mit dem Aufbau und allen drei
+Durchführungen des Lehrkonzepts. Meine Bedenken, dass die geplanten
+Zeitabschnitte für Arbeitsaufgaben und Plenumsdiskussionen zu eng
+getaktet sein könnten, hatten sich nicht bestätigt. Dafür war es jedoch
+wichtig, die Zeitplanung durchgängig im Blick zu haben und die
+Diskussionen so zu moderieren, dass der vorgesehene Zeitrahmen
+eingehalten wurde.</p>
+<p>Ich kann mir vorstellen, dass eine Verlängerung der synchronen
+Sitzung (3) um 30min sinnvoll sein könnte, um den Studierenden mehr Zeit
+für Annotation, Austausch und Diskussion zu geben oder eine Pause vor
+dem zweiten Inputvortrag einzuplanen, damit die Studierenden für den
+zweiten Teil der synchronen Veranstaltung mehr Energie und
+Aufmerksamkeit haben sowie die gelernten Inhalte besser verarbeiten
+können. Je nach Gruppengröße sowie bei erwartbar mehr technischen Hürden
+bei den Teilnehmenden wäre auch eine Zweiteilung der synchronen Sitzung
+auf zwei Sitzungen denkbar.</p>
+<h2 id="studierende">5.2. Studierende</h2>
+<p>Mit Blick auf die tatsächlich teilnehmenden Studierenden habe ich in
+den drei Iterationen der Lehreinheit (Sommersemester 2022, 2023 und
+2024) ganz unterschiedliche Erfahrungen gesammelt. Vor allem die Anzahl
+der Teilnehmenden an der synchronen Sitzung (3) variierte: In den ersten
+beiden Iterationen waren es jeweils 15 Teilnehmende, die sich aktiv in
+den synchronen Sitzungen engagierten und in der Abschlussklausuraufgabe
+zur Textannotation gute bis sehr gute Ergebnisse erzielten. Bei der
+dritten Iteration waren nur vier Studierende in der zweiten synchronen
+Sitzung anwesend, die sich dementsprechend aber auch sehr engagiert
+beteiligten. Ich verpasste leider die Gelegenheit zu eruieren, ob es am
+geringen Interesse für Textannotation oder der nicht ausreichend
+vehementen Ankündigung von Textannotation als Klausurthema lag, dass so
+wenige Studierende in der synchronen Sitzung anwesend waren (oder ganz
+andere Gründe für das Fernbleiben vorlagen). Die Ergebnisse in der
+Abschlussklausuraufgabe fielen jedoch überwiegend gut bis sehr gut aus,
+was bedeutet, dass die zur Verfügung gestellten Materialien ausreichten,
+um die Lernziele zu erreichen.</p>
+<p>Alle Teilnehmenden waren wie geplant eingeschriebene Studierende im
+Bachelor Germanistik oder Deutsch Lehramt an Gymnasien und brachten die
+verlangten Vorkenntnisse und technischen Voraussetzungen mit, wobei bei
+jeder Iteration immer min. ein:e Studierende:r dabei war, die/der
+anstelle eines Laptops ein Tablet als internetfähiges Endgerät in die
+Veranstaltung mitbrachte, auf dem zwar die Annotationen einsehbar aber
+nicht selbst vorgenommen werden können. Diese Studierenden führten die
+Anwendungsaufgabe in der synchronen Sitzung in Partnerarbeit durch.</p>
+<p>Die Unterstützung durch eine:n Tutor:in erwies sich als sehr
+hilfreich. Insbesondere bei technischen Fragen und individuellen
+Problemen konnte der/die Tutor:in direkt vor Ort oder bereits vorher
+online im Moodleforum Hilfestellung geben und die Studierenden bei der
+Anwendung von CATMA unterstützen.</p>
+<p>Zusammenfassend lässt sich sagen, dass die Selbststudieneinheit
+„Textannotation (mit CATMA)“ in ihrer vorgestellten Form durch die
+Kombination verschiedener Lehr- und Lernformate erfolgreich die
+Studierenden unterstützt, die definierten Lernziele zu erreichen.</p>
+<div id="refs" class="references csl-bib-body hanging-indent"
+data-entry-spacing="0" role="list">
+<div id="ref-anderson_taxonomy_2001" class="csl-entry" role="listitem">
+Anderson, Lorin W. und David R. Krathwohl, Hrsg. 2001. <em>A taxonomy
+for learning, teaching, and assessing: a revision of
+<span>Bloom</span>’s taxonomy of educational objectives</em>. Complete
+ed. New York: Longman.
+</div>
+<div id="ref-von_ebner-eschenbach_marie_1896" class="csl-entry"
+role="listitem">
+Ebner-Eschenbach, Marie von. 1896. <em>Marie von
+<span>Ebner</span>-<span>Eschenbach</span>:
+<span>Krambambuli</span></em>. <a
+href="https://www.projekt-gutenberg.org/ebnresch/krambamb/krambamb.html">https://www.projekt-gutenberg.org/ebnresch/krambamb/krambamb.html</a>
+(zugegriffen: 14. Oktober 2024).
+</div>
+<div id="ref-fortext_tutorial_2019" class="csl-entry" role="listitem">
+forTEXT. 2019a. Tutorial: <span>CATMA</span> 6 zur manuellen
+<span>Annotation</span> nutzen. Oktober. doi: <a
+href="https://doi.org/10.5281/zenodo.10353556">10.5281/zenodo.10353556</a>,
+<a
+href="https://zenodo.org/records/10353556">https://zenodo.org/records/10353556</a>.
+</div>
+<div id="ref-fortext_tutorial_2019-1" class="csl-entry" role="listitem">
+———. 2019b. Tutorial: <span>Projektmanagement</span> in
+<span>CATMA</span> 6. November. doi: <a
+href="https://doi.org/10.5281/zenodo.10353713">10.5281/zenodo.10353713</a>,
+<a
+href="https://zenodo.org/records/10353713">https://zenodo.org/records/10353713</a>.
+</div>
+<div id="ref-fortext_tutorial_2019-2" class="csl-entry" role="listitem">
+———. 2019c. Tutorial: <span>Tagsets</span> in <span>CATMA</span> 6
+anlegen. Dezember. doi: <a
+href="https://doi.org/10.5281/zenodo.10377968">10.5281/zenodo.10377968</a>,
+<a
+href="https://zenodo.org/records/10377968">https://zenodo.org/records/10377968</a>.
+</div>
+<div id="ref-fortext_tutorial_2020" class="csl-entry" role="listitem">
+———. 2020a. Tutorial: <span>In</span> <span>CATMA</span> 6 annotieren.
+Januar. doi: <a
+href="https://doi.org/10.5281/zenodo.10353910">10.5281/zenodo.10353910</a>,
+<a
+href="https://doi.org/10.5281/zenodo.10353910">https://doi.org/10.5281/zenodo.10353910</a>.
+</div>
+<div id="ref-fortext_tutorial_2020-1" class="csl-entry" role="listitem">
+———. 2020b. Tutorial: <span>Analysieren</span> und visualisieren mit
+<span>CATMA</span>. Februar. doi: <a
+href="https://doi.org/10.5281/zenodo.10276637">10.5281/zenodo.10276637</a>,
+<a
+href="https://doi.org/10.5281/zenodo.10276637">https://doi.org/10.5281/zenodo.10276637</a>.
+</div>
+<div id="ref-gius_jacke_2016" class="csl-entry" role="listitem">
+Gius, Evelyn und Janina Jacke. 2016. Zur <span>Annotation</span>
+narratologischer <span>Kategorien</span> der <span>Zeit</span>.
+<span>Guidelines</span> zur <span>Nutzung</span> des
+<span>CATMA</span>-<span>Tagsets</span>. <a
+href="http://heureclea.de/wp-content/uploads/2016/11/guidelinesV2.pdf">http://heureclea.de/wp-content/uploads/2016/11/guidelinesV2.pdf</a>.
+</div>
+<div id="ref-graham_framework_2013" class="csl-entry" role="listitem">
+Graham, Charles R., Wendy Woodfield und J. Buckley Harrison. 2013. A
+framework for institutional adoption and implementation of blended
+learning in higher education. <em>The Internet and Higher Education</em>
+18: 4–14. doi: <a
+href="https://doi.org/10.1016/j.iheduc.2012.09.003">10.1016/j.iheduc.2012.09.003</a>,
+<a
+href="https://linkinghub.elsevier.com/retrieve/pii/S1096751612000607">https://linkinghub.elsevier.com/retrieve/pii/S1096751612000607</a>
+(zugegriffen: 14. Oktober 2024).
+</div>
+<div id="ref-krogh_figuren_2016" class="csl-entry" role="listitem">
+Hansen, Per Krogh. 2016. <span>IV</span>. 3.3 <span>Figuren</span>. In:
+<em>Einführung in die <span>Erzähltextanalyse</span></em>, hg. von Silke
+Lahn und Jan Christoph Meister, übers. von Marie Isabel Schlinzig,
+234–249. 3. Aufl. Lehrbuch. Stuttgart: J. B. Metzler Verlag. <a
+href="https://doi.org/10.1007/978-3-476-05415-9">https://doi.org/10.1007/978-3-476-05415-9</a>
+(zugegriffen: 27. Januar 2021).
+</div>
+<div id="ref-modulhandbuch_2019" class="csl-entry" role="listitem">
+Institut für Sprach- und Literaturwissenschaft. 2019. Modulhandbuch
+<span>Germanistik</span> <span>J</span>.<span>B</span>.<span>A</span>.
+Technische Universität Darmstadt. <a
+href="https://www.tu-darmstadt.de/media/daa_responsives_design/02_studium_medien/01_studieninteressierte_medien/02_studienangebot_medien/joint_bachelor_of_arts_2/germanistik_1/modulhandbuch_7/MHB-JBA-Germanistik-2019.pdf">https://www.tu-darmstadt.de/media/daa_responsives_design/02_studium_medien/01_studieninteressierte_medien/02_studienangebot_medien/joint_bachelor_of_arts_2/germanistik_1/modulhandbuch_7/MHB-JBA-Germanistik-2019.pdf</a>
+(zugegriffen: 14. Oktober 2024).
+</div>
+<div
+id="ref-jackeMethodenbeitragKollaborativesLiteraturwissenschaftliches2018"
+class="csl-entry" role="listitem">
+Jacke, Janina. 2024b. Methodenbeitrag: <span>Kollaboratives</span>
+literaturwissenschaftliches <span>Annotieren</span>. <em>forTEXT
+Heft</em> 1, Nr. 4 (August). doi: <a
+href="https://doi.org/10.48694/fortext.3749">10.48694/fortext.3749</a>,
+<a
+href="https://fortext.net/routinen/methoden/kollaboratives-literaturwissenschaftliches-annotieren">https://fortext.net/routinen/methoden/kollaboratives-literaturwissenschaftliches-annotieren</a>.
+</div>
+<div id="ref-jackeMethodenbeitragManuelleAnnotation2018"
+class="csl-entry" role="listitem">
+———. 2024a. Methodenbeitrag: <span>Manuelle</span>
+<span>Annotation</span>. <em>forTEXT Heft</em> 1, Nr. 4 (August). doi:
+<a
+href="https://doi.org/10.48694/fortext.3748">10.48694/fortext.3748</a>,
+<a
+href="https://fortext.net/routinen/methoden/manuelle-annotation">https://fortext.net/routinen/methoden/manuelle-annotation</a>.
+</div>
+<div id="ref-lyman_responsive_1998" class="csl-entry" role="listitem">
+Lyman, F. T. 1998. The responsive classroom discussion: <span>The</span>
+inclusion of all students. In: <em>Mainstreaming
+<span>Digest</span></em>, hg. von A. S. Anderson, 109–113. College Park:
+University of Maryland Press.
+</div>
+<div id="ref-rapp_manuelle_2017" class="csl-entry" role="listitem">
+Rapp, Andrea. 2017. Manuelle und automatische <span>Annotation</span>.
+In: <em>Digital <span>Humanities</span>. <span>Eine</span>
+<span>Einführung</span></em>, hg. von Fotis Jannidis, Hubertus Kohle,
+und Malte Rehbein, 253–267.
+</div>
+<div id="ref-schumacherToolbeitragCATMA2019" class="csl-entry"
+role="listitem">
+Schumacher, Mareike. 2024. Toolbeitrag: <span>CATMA</span>. <em>forTEXT
+Heft</em> 1, Nr. 4 (August). doi: <a
+href="https://doi.org/10.48694/fortext.3761">10.48694/fortext.3761</a>,
+<a
+href="https://fortext.net/tools/tools/catma">https://fortext.net/tools/tools/catma</a>.
+</div>
+<div id="ref-zinsmeister_korpuslinguistik_2015" class="csl-entry"
+role="listitem">
+Zinsmeister, Heike und Lothar Lemnitzer. 2015. <em>Korpuslinguistik.
+<span>Eine</span> <span>Einführung</span></em>.
+</div>
+</div>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Für mehr Informationen zu Blended Learning-Methoden,
+siehe <span class="citation" data-cites="graham_framework_2013">(<a
+href="#ref-graham_framework_2013" role="doc-biblioref">Graham, Woodfield
+und Harrison 2013</a>)</span>.<a href="#fnref1" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>CATMA steht für Computer Assisted Text Markup and
+Analysis, siehe [gius_catma_2016].<a href="#fnref2"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+</body>
+</html>
