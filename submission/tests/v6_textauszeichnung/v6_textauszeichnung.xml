@@ -1,15 +1,13 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.3 20210610//EN"
-                  "http://jats.nlm.nih.gov/archiving/1.3/JATS-archivearticle1-3.dtd">
-<!-- <article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" article-type="other">
+<?xml version='1.0' encoding='utf-8'?>
+<article xmlns:ns0="http://www.niso.org/schemas/ali/1.0/" xmlns:ns1="http://www.w3.org/1999/xlink" dtd-version="1.3" article-type="other">
 <front>
 <journal-meta>
-<journal-id></journal-id>
+<journal-id />
 <journal-title-group>
 </journal-title-group>
-<issn></issn>
+<issn />
 <publisher>
-<publisher-name></publisher-name>
+<publisher-name />
 </publisher>
 </journal-meta>
 <article-meta>
@@ -25,7 +23,7 @@ Kommentierung</article-title>
 <given-names>Patrick D.</given-names>
 </name>
 <email>Patrick.Brookshire@adwmainz.de</email>
-<xref ref-type="aff" rid="aff-1"/>
+<xref ref-type="aff" rid="aff-1" />
 </contrib>
 <contrib contrib-type="author">
 <contrib-id contrib-id-type="orcid">https://orcid.org/0000-0001-6867-1511</contrib-id>
@@ -34,7 +32,7 @@ Kommentierung</article-title>
 <given-names>Philipp</given-names>
 </name>
 <email>Philipp.Hegel@adwmainz.de</email>
-<xref ref-type="aff" rid="aff-1"/>
+<xref ref-type="aff" rid="aff-1" />
 </contrib>
 <aff id="aff-1">
 <institution-wrap>
@@ -45,7 +43,7 @@ Mainz</institution>
 </contrib-group>
 <permissions>
 <license license-type="open-access">
-<ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/">https://creativecommons.org/licenses/by-sa/4.0/</ali:license_ref>
+<ns0:license_ref>https://creativecommons.org/licenses/by-sa/4.0/</ns0:license_ref>
 <license-p>-This work is licensed under a Creative Commons
 Attribution-ShareAlike 4.0 International License.</license-p>
 </license>
@@ -139,7 +137,7 @@ Attribution-ShareAlike 4.0 International License.</license-p>
     Erfahrungen aus Projektberatungen basiert. Das Konzept wurde über
     mehr als zehn Jahre erprobt und angepasst. Behandelt werden
     digitalisierte Privatbriefe der 1950er Jahre aus dem
-    <ext-link ext-link-type="uri" xlink:href="https://liebesbriefarchiv.de/">Liebesbriefarchiv</ext-link>,
+    <ext-link ext-link-type="uri" ns1:href="https://liebesbriefarchiv.de/">Liebesbriefarchiv</ext-link>,
     die in einem Projekt des Dozenten untersucht werden. Dabei liegen
     Schwerpunkte auf der Transkription und dem Kommentieren der Briefe.
     Ziel des Lehrkonzepts ist die Vermittlung theoretischer und
@@ -167,7 +165,7 @@ Attribution-ShareAlike 4.0 International License.</license-p>
     eigenständig geeignete Lernstrategien anwenden können und mit dem
     wissenschaftlichen Arbeiten vertraut sind.</p>
     <p>Technisch wird außerdem eine Klassenraumlizenz für den
-    <ext-link ext-link-type="uri" xlink:href="https://www.oxygenxml.com/">Oxygen
+    <ext-link ext-link-type="uri" ns1:href="https://www.oxygenxml.com/">Oxygen
     XML Editor</ext-link> vorausgesetzt sowie eine dazu passende
     Hardwareausstattung der Studierenden. Die in der Lehrveranstaltung
     gemachten technischen Voraussetzungen haben sich bisher nicht als
@@ -317,159 +315,159 @@ Attribution-ShareAlike 4.0 International License.</license-p>
       </colgroup>
       <thead>
         <tr>
-          <th>Sitzung</th>
-          <th>Modus</th>
-          <th>Thema</th>
-          <th>Inhalt</th>
-          <th>Lernziele</th>
-          <th>Vorbereitung</th>
-          <th>Für Lehrende</th>
-          <th>Abgabe/Aufgabe</th>
+          <th align="left" valign="top">Sitzung</th>
+          <th align="left" valign="top">Modus</th>
+          <th align="left" valign="top">Thema</th>
+          <th align="left" valign="top">Inhalt</th>
+          <th align="left" valign="top">Lernziele</th>
+          <th align="left" valign="top">Vorbereitung</th>
+          <th align="left" valign="top">Für Lehrende</th>
+          <th align="left" valign="top">Abgabe/Aufgabe</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>1</td>
-          <td>synchron, Präsenz</td>
-          <td>Organisation der Veranstaltung und Grundlagen des
+          <td align="left" valign="top">1</td>
+          <td align="left" valign="top">synchron, Präsenz</td>
+          <td align="left" valign="top">Organisation der Veranstaltung und Grundlagen des
           Edierens</td>
-          <td>Vorstellungsrunde. Semesterplan mit
+          <td align="left" valign="top">Vorstellungsrunde. Semesterplan mit
           Leistungsanforderungen, Quiz zu editionswissenschaftlichen
           Grundbegriffen</td>
-          <td>Selbsteinschätzung bezüglich Gegenstand und
+          <td align="left" valign="top">Selbsteinschätzung bezüglich Gegenstand und
           Leitungsanforderungen. Grundlegendes Verständnis editorischer
           Aufgaben</td>
-          <td>-</td>
-          <td>Auswahl der Quellenmaterialien. Prüfung der
+          <td align="left" valign="top">-</td>
+          <td align="left" valign="top">Auswahl der Quellenmaterialien. Prüfung der
           Leistungsanforderungen</td>
-          <td>Vorstellung der eigenen Person und der eigenen
+          <td align="left" valign="top">Vorstellung der eigenen Person und der eigenen
           Lerninteressen. Beteiligung an Quiz und Diskussion. Vergleich
           von digitalen Editionen</td>
         </tr>
         <tr>
-          <td>2</td>
-          <td>synchron, Präsenz</td>
-          <td>Grundlagen der Briefforschung</td>
-          <td>Wissenschaftliche Definitionen und Explikationen des
+          <td align="left" valign="top">2</td>
+          <td align="left" valign="top">synchron, Präsenz</td>
+          <td align="left" valign="top">Grundlagen der Briefforschung</td>
+          <td align="left" valign="top">Wissenschaftliche Definitionen und Explikationen des
           Begriffs <italic>Brief</italic></td>
-          <td>Reflexion der medialen und generischen Besonderheiten des
+          <td align="left" valign="top">Reflexion der medialen und generischen Besonderheiten des
           Briefes und verwandter Korrespondenzformen (Postkarte,
           E-Mail)</td>
-          <td>Ggf. Anfrage nach einem Lizenzschlüssel für Oxygen XML
+          <td align="left" valign="top">Ggf. Anfrage nach einem Lizenzschlüssel für Oxygen XML
           Editor</td>
-          <td>Wissensvermittlung über foliengestützten Vortrag</td>
-          <td>Gruppendiskussion zu Spezifika der Gattung</td>
+          <td align="left" valign="top">Wissensvermittlung über foliengestützten Vortrag</td>
+          <td align="left" valign="top">Gruppendiskussion zu Spezifika der Gattung</td>
         </tr>
         <tr>
-          <td>3</td>
-          <td>synchron, Präsenz</td>
-          <td>Grundlagen der Briefedition</td>
-          <td>Zusammenführung von Wissen über die Gattung und über
+          <td align="left" valign="top">3</td>
+          <td align="left" valign="top">synchron, Präsenz</td>
+          <td align="left" valign="top">Grundlagen der Briefedition</td>
+          <td align="left" valign="top">Zusammenführung von Wissen über die Gattung und über
           editiorische Aufgaben anhand von drei
           Forschungspositionen.</td>
-          <td>Kritische Rekonstruktion, Diskussion und Vergleich
+          <td align="left" valign="top">Kritische Rekonstruktion, Diskussion und Vergleich
           verschiedener Forschungspositionen. Ableitung von Konsequenzen
           für die digitale Edition von Briefen</td>
-          <td>Verpflichtung zur Einhaltung der datenschutzrechtlichen
+          <td align="left" valign="top">Verpflichtung zur Einhaltung der datenschutzrechtlichen
           Anforderungen; Zusendung von in Sitzung 2 erarbeiteten
           Definitionen zum Brief; Lektüre der gruppenweise zugeordneten
           Texten zu Briefeditionen</td>
-          <td>Hilfestellungen. Diskussionsleitung</td>
-          <td>Präsentation der Argumentation des gelesenen Textes;
+          <td align="left" valign="top">Hilfestellungen. Diskussionsleitung</td>
+          <td align="left" valign="top">Präsentation der Argumentation des gelesenen Textes;
           Beteiligung an Gruppenarbeit</td>
         </tr>
         <tr>
-          <td>4</td>
-          <td>synchron, Präsenz</td>
-          <td>Grundlagen der Textauszeichnung gemäß TEI</td>
-          <td>TEI <monospace>core</monospace>,
+          <td align="left" valign="top">4</td>
+          <td align="left" valign="top">synchron, Präsenz</td>
+          <td align="left" valign="top">Grundlagen der Textauszeichnung gemäß TEI</td>
+          <td align="left" valign="top">TEI <monospace>core</monospace>,
           <monospace>textstucture</monospace> (Auswahl)</td>
-          <td>Erstellung eines ersten eigenen Dokuments</td>
-          <td>Transkription eines Briefes als Textdatei</td>
-          <td>Wissensvermittlung über foliengestützten Vortrag;
+          <td align="left" valign="top">Erstellung eines ersten eigenen Dokuments</td>
+          <td align="left" valign="top">Transkription eines Briefes als Textdatei</td>
+          <td align="left" valign="top">Wissensvermittlung über foliengestützten Vortrag;
           Bereitstellung von Materialien/Beispielen</td>
-          <td>Beteiligung an Diskussion. Bearbeitung des eigenen
+          <td align="left" valign="top">Beteiligung an Diskussion. Bearbeitung des eigenen
           Beispiels</td>
         </tr>
         <tr>
-          <td>5</td>
-          <td>synchron, Präsenz</td>
-          <td>Quellenbeschreibungen</td>
-          <td>TEI <monospace>header</monospace>,
+          <td align="left" valign="top">5</td>
+          <td align="left" valign="top">synchron, Präsenz</td>
+          <td align="left" valign="top">Quellenbeschreibungen</td>
+          <td align="left" valign="top">TEI <monospace>header</monospace>,
           <monospace>msdescription</monospace> (Auswahl)</td>
-          <td>Beispielhafte Ergänzung von Auszeichnungen im Rückgriff
+          <td align="left" valign="top">Beispielhafte Ergänzung von Auszeichnungen im Rückgriff
           auf die Spezifika der Gattung und der editorischen
           Aufgabe</td>
-          <td>-</td>
-          <td>Wissensvermittlung über foliengestützten Vortrag</td>
-          <td>Beteiligung an Diskussion. Bearbeitung des eigenen
+          <td align="left" valign="top">-</td>
+          <td align="left" valign="top">Wissensvermittlung über foliengestützten Vortrag</td>
+          <td align="left" valign="top">Beteiligung an Diskussion. Bearbeitung des eigenen
           Beispiels</td>
         </tr>
         <tr>
-          <td>6</td>
-          <td>synchron, Präsenz</td>
-          <td>Transkription</td>
-          <td>TEI <monospace>transcr</monospace> (Auswahl)</td>
-          <td>Beispielhafte Ergänzung von Auszeichnungen im Rückgriff
+          <td align="left" valign="top">6</td>
+          <td align="left" valign="top">synchron, Präsenz</td>
+          <td align="left" valign="top">Transkription</td>
+          <td align="left" valign="top">TEI <monospace>transcr</monospace> (Auswahl)</td>
+          <td align="left" valign="top">Beispielhafte Ergänzung von Auszeichnungen im Rückgriff
           auf die Spezifika der Gattung und der editorischen
           Aufgabe</td>
-          <td>Ergänzung der Quellenbeschreibung zum transkribierten
+          <td align="left" valign="top">Ergänzung der Quellenbeschreibung zum transkribierten
           Brief</td>
-          <td>Wissensvermittlung über foliengestützten Vortrag</td>
-          <td>Beteiligung an Diskussion und Übung zur Paläographie.</td>
+          <td align="left" valign="top">Wissensvermittlung über foliengestützten Vortrag</td>
+          <td align="left" valign="top">Beteiligung an Diskussion und Übung zur Paläographie.</td>
         </tr>
         <tr>
-          <td>7–9</td>
-          <td>synchron, Präsenz</td>
-          <td>Zwischenberichte zu Quellenbeschreibungen und
+          <td align="left" valign="top">7–9</td>
+          <td align="left" valign="top">synchron, Präsenz</td>
+          <td align="left" valign="top">Zwischenberichte zu Quellenbeschreibungen und
           Transkriptionen</td>
-          <td>Präsentationen der Studierenden</td>
-          <td>Kooperative Lösung bestehender Probleme und Beantwortung
+          <td align="left" valign="top">Präsentationen der Studierenden</td>
+          <td align="left" valign="top">Kooperative Lösung bestehender Probleme und Beantwortung
           offener Fragen</td>
-          <td>Erstellung von mindestens fünf Transkriptionen als
+          <td align="left" valign="top">Erstellung von mindestens fünf Transkriptionen als
           XML-Dateien</td>
-          <td>Hilfestellungen. Diskussionsleitung</td>
-          <td>Präsentation zum Zwischenstand. Beteiligung an
+          <td align="left" valign="top">Hilfestellungen. Diskussionsleitung</td>
+          <td align="left" valign="top">Präsentation zum Zwischenstand. Beteiligung an
           Diskussion</td>
         </tr>
         <tr>
-          <td>10</td>
-          <td>synchron, Präsenz</td>
-          <td>Kommentierung</td>
-          <td>V.a. TEI <monospace>namedates</monospace> (Auswahl),
+          <td align="left" valign="top">10</td>
+          <td align="left" valign="top">synchron, Präsenz</td>
+          <td align="left" valign="top">Kommentierung</td>
+          <td align="left" valign="top">V.a. TEI <monospace>namedates</monospace> (Auswahl),
           Ergänzungen aus TEI <monospace>core</monospace></td>
-          <td>Beispielhafte Ergänzung von Auszeichnungen. Kenntnis von
+          <td align="left" valign="top">Beispielhafte Ergänzung von Auszeichnungen. Kenntnis von
           Hilfsmitteln und Anforderungen an den Kommentar</td>
-          <td>Überarbeitung der fünf transkribierten Briefe</td>
-          <td>Wissensvermittlung über foliengestützten Vortrag</td>
-          <td>Beteiligung an Diskussion und Übung zum Kommentar</td>
+          <td align="left" valign="top">Überarbeitung der fünf transkribierten Briefe</td>
+          <td align="left" valign="top">Wissensvermittlung über foliengestützten Vortrag</td>
+          <td align="left" valign="top">Beteiligung an Diskussion und Übung zum Kommentar</td>
         </tr>
         <tr>
-          <td>11–13</td>
-          <td>synchron, Präsenz</td>
-          <td>Zwischenberichte zur Kommentierung</td>
-          <td>Präsentationen der Studierenden</td>
-          <td>Kooperative Lösung bestehender Probleme und Beantwortung
+          <td align="left" valign="top">11–13</td>
+          <td align="left" valign="top">synchron, Präsenz</td>
+          <td align="left" valign="top">Zwischenberichte zur Kommentierung</td>
+          <td align="left" valign="top">Präsentationen der Studierenden</td>
+          <td align="left" valign="top">Kooperative Lösung bestehender Probleme und Beantwortung
           offener Fragen</td>
-          <td>Erstellung von mindestens fünf transkribierten und
+          <td align="left" valign="top">Erstellung von mindestens fünf transkribierten und
           kommentierten Briefen im XML-Format</td>
-          <td>Hilfestellung. Diskussionsleitung</td>
-          <td>Präsentation der Zwischenstände. Beteiligung an
+          <td align="left" valign="top">Hilfestellung. Diskussionsleitung</td>
+          <td align="left" valign="top">Präsentation der Zwischenstände. Beteiligung an
           Diskussion</td>
         </tr>
         <tr>
-          <td>14</td>
-          <td>synchron, Präsenz</td>
-          <td>Abschlussdiskussion</td>
-          <td>Beantwortung offener Fragen und Problemstellungen.
+          <td align="left" valign="top">14</td>
+          <td align="left" valign="top">synchron, Präsenz</td>
+          <td align="left" valign="top">Abschlussdiskussion</td>
+          <td align="left" valign="top">Beantwortung offener Fragen und Problemstellungen.
           Evaluation.</td>
-          <td>Kooperative Lösung bestehender Probleme und Beantwortung
+          <td align="left" valign="top">Kooperative Lösung bestehender Probleme und Beantwortung
           offener Fragen</td>
-          <td>Zusendung ausgewählter Problemstellen an zugeloste
+          <td align="left" valign="top">Zusendung ausgewählter Problemstellen an zugeloste
           Kommiliton:innen</td>
-          <td>Hilfestellung. Diskussionsleitung. Erstellung und
+          <td align="left" valign="top">Hilfestellung. Diskussionsleitung. Erstellung und
           Präsentation einer exemplarischen HTML-Ansicht</td>
-          <td>Arbeit an weiteren Briefen. Mitteilung von Fragen und
+          <td align="left" valign="top">Arbeit an weiteren Briefen. Mitteilung von Fragen und
           Problemen</td>
         </tr>
       </tbody>
@@ -718,11 +716,11 @@ Attribution-ShareAlike 4.0 International License.</license-p>
     gesetzt. Auf diese Weise können mehrere Stellen mit einer Anmerkung
     verknüpft werden. Exemplarisch kann die Auszeichnung wie folgt
     aussehen:</p>
-    <preformat>&lt;seg corresp=&quot;#note-01&quot; xml:id=&quot;seg-01&quot;&gt;
-  &lt;rs ref=&quot;#Mariawald&quot;&gt;Mariawald&lt;/rs&gt;
+    <preformat>&lt;seg corresp="#note-01" xml:id="seg-01"&gt;
+  &lt;rs ref="#Mariawald"&gt;Mariawald&lt;/rs&gt;
 &lt;/seg&gt;
 . . .
-&lt;note type=&quot;editorial&quot; corresp=&quot;#seg-01&quot; xml:id=&quot;note-01&quot;&gt;
+&lt;note type="editorial" corresp="#seg-01" xml:id="note-01"&gt;
   &lt;term&gt;Mariawald&lt;/term&gt;
   &lt;gloss&gt;Anspielung auf das Schweigegelübde in einem Kloster in der Eifel am gleichnamigen Ort. In seiner Autobiographie beschreibt ...&lt;/gloss&gt;
 &lt;/note&gt;</preformat>
@@ -977,7 +975,7 @@ Attribution-ShareAlike 4.0 International License.</license-p>
       <p>In einem zweiten Schritt entwickeln die Teilnehmenden unter
       Hilfestellung ein XSLT-Skript, das Personen und Orte extrahiert.
       Das so generierte Personenregister wird dann mit um Normdaten
-      (<ext-link ext-link-type="uri" xlink:href="https://gnd.network/">GND</ext-link>-IDs)
+      (<ext-link ext-link-type="uri" ns1:href="https://gnd.network/">GND</ext-link>-IDs)
       angereichert. Umgekehrt erfolgt die Anreicherung des Ortsregister
       durch manuelle Recherche in , sodass die Teilnehmenden beide Wege
       kennenlernen. Des weiteren erfassen die Studierenden Normdaten als
@@ -1025,7 +1023,7 @@ Attribution-ShareAlike 4.0 International License.</license-p>
 </body>
 <back>
 <ref-list>
-  <title></title>
+  <title />
   <ref id="ref-Behrmann-1991">
     <mixed-citation>Behrmann, Alfred. 1991. <italic>Philologische
     Praxis</italic>. Bd. 2. Stuttgart: Metzler.</mixed-citation>
@@ -1041,7 +1039,7 @@ Attribution-ShareAlike 4.0 International License.</license-p>
   <ref id="ref-Burghart-2017">
     <mixed-citation>Burghart, Marjorie und Elena Pierazzo. 2017. Digital
     Scholarly Editions: Manuscripts, Texts and TEI Encoding. 17. Juli.
-    <ext-link ext-link-type="uri" xlink:href="https://teach.dariah.eu/course/view.php?id=32&amp;section=0">https://teach.dariah.eu/course/view.php?id=32&amp;section=0</ext-link>
+    <ext-link ext-link-type="uri" ns1:href="https://teach.dariah.eu/course/view.php?id=32&amp;section=0">https://teach.dariah.eu/course/view.php?id=32&amp;section=0</ext-link>
     (zugegriffen: 21. Februar 2025).</mixed-citation>
   </ref>
   <ref id="ref-Burnard-2018">
@@ -1062,15 +1060,15 @@ Attribution-ShareAlike 4.0 International License.</license-p>
     Förderkriterien für wissenschaftliche Editionen in der
     Literaturwissenschaft. <italic>Informationen für Geistes- und
     Sozialwissenschaftler/innen</italic>, Nr. 11.
-    <ext-link ext-link-type="uri" xlink:href="https://www.dfg.de/resource/blob/172080/895fcc3cb72ec6cd1d5dc84292fb2758/foerderkriterien-editionen-literaturwissenschaft-data.pdf">https://www.dfg.de/resource/blob/172080/895fcc3cb72ec6cd1d5dc84292fb2758/foerderkriterien-editionen-literaturwissenschaft-data.pdf</ext-link>
+    <ext-link ext-link-type="uri" ns1:href="https://www.dfg.de/resource/blob/172080/895fcc3cb72ec6cd1d5dc84292fb2758/foerderkriterien-editionen-literaturwissenschaft-data.pdf">https://www.dfg.de/resource/blob/172080/895fcc3cb72ec6cd1d5dc84292fb2758/foerderkriterien-editionen-literaturwissenschaft-data.pdf</ext-link>
     (zugegriffen: 21. Februar 2025).</mixed-citation>
   </ref>
   <ref id="ref-Dumont-2016">
     <mixed-citation>Dumont, Stefan. 2016. correspSearch – Connecting
     Scholarly Editions of Letters. <italic>Journal of the Text Encoding
     Initiative</italic>, Nr. 10. doi:
-    <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.4000/jtei.1742">10.4000/jtei.1742</ext-link>,
-    <ext-link ext-link-type="uri" xlink:href="https://journals.openedition.org/jtei/1742">https://journals.openedition.org/jtei/1742</ext-link>
+    <ext-link ext-link-type="uri" ns1:href="https://doi.org/10.4000/jtei.1742">10.4000/jtei.1742</ext-link>,
+    <ext-link ext-link-type="uri" ns1:href="https://journals.openedition.org/jtei/1742">https://journals.openedition.org/jtei/1742</ext-link>
     (zugegriffen: 21. Februar 2025).</mixed-citation>
   </ref>
   <ref id="ref-Dumont-2020">
@@ -1078,7 +1076,7 @@ Attribution-ShareAlike 4.0 International License.</license-p>
     Dominik Leipold und Gerlinde Schneider. 2020. Correspondence
     Metadata Interchange Format (CMIF). Berlin-Brandenburg Academy of
     Sciences; Humanities, 22. April.
-    <ext-link ext-link-type="uri" xlink:href="https://encoding-correspondence.bbaw.de/v1/CMIF.html">https://encoding-correspondence.bbaw.de/v1/CMIF.html</ext-link>
+    <ext-link ext-link-type="uri" ns1:href="https://encoding-correspondence.bbaw.de/v1/CMIF.html">https://encoding-correspondence.bbaw.de/v1/CMIF.html</ext-link>
     (zugegriffen: 21. Februar 2025).</mixed-citation>
   </ref>
   <ref id="ref-Goldfarb-1981">
@@ -1108,7 +1106,7 @@ Attribution-ShareAlike 4.0 International License.</license-p>
     <mixed-citation>Hegel, Philipp, Thorsten Ries und Gabriel
     Viehhauser. 2023. Workshop: Digitale Edition – Grundlagen und
     Perspektiven.
-    <ext-link ext-link-type="uri" xlink:href="https://events.gwdg.de/event/531/overview">https://events.gwdg.de/event/531/overview</ext-link>
+    <ext-link ext-link-type="uri" ns1:href="https://events.gwdg.de/event/531/overview">https://events.gwdg.de/event/531/overview</ext-link>
     (zugegriffen: 21. Februar 2025).</mixed-citation>
   </ref>
   <ref id="ref-Landmann-2015">
@@ -1190,7 +1188,7 @@ Attribution-ShareAlike 4.0 International License.</license-p>
     Bedingungen des Medienwandels</italic>. Bd. 2. Schriften des
     Instituts für Dokumentologie und Editorik 8. Norderstedt: Book on
     Demand.
-    <ext-link ext-link-type="uri" xlink:href="http://nbn-resolving.de/urn:nbn:de:hbz:38-53523">http://nbn-resolving.de/urn:nbn:de:hbz:38-53523</ext-link>.</mixed-citation>
+    <ext-link ext-link-type="uri" ns1:href="http://nbn-resolving.de/urn:nbn:de:hbz:38-53523">http://nbn-resolving.de/urn:nbn:de:hbz:38-53523</ext-link>.</mixed-citation>
   </ref>
   <ref id="ref-Sahle-2015">
     <mixed-citation>———. 2015. Digital Humanities? Gibt’s doch gar
@@ -1202,1254 +1200,7 @@ Attribution-ShareAlike 4.0 International License.</license-p>
     Tagging with an Application to German. In: <italic>Proceedings of
     the ACL SIGDAT-Workshop</italic>, 1–9. Dublin: Association for
     Computational Linguistics.
-    <ext-link ext-link-type="uri" xlink:href="https://cis.uni-muenchen.de/~schmid/tools/TreeTagger/data/tree-tagger2.pdf">https://cis.uni-muenchen.de/~schmid/tools/TreeTagger/data/tree-tagger2.pdf</ext-link>.</mixed-citation>
-  </ref>
-  <ref id="ref-Strobel-2019">
-    <mixed-citation>Strobel, Jochen. 2019. Performanz in der
-    Briefkommunikation und ihre editorische Repräsentation.
-    <italic>Editio</italic> 33: 129–140.</mixed-citation>
-  </ref>
-  <ref id="ref-Trilcke-2018">
-    <mixed-citation>Trilcke, Peer und Frank Fischer. 2018.
-    Literaturwissenschaft als Hackathon: Zur Praxeologie der Digital
-    Literary Studies und ihren epistemischen Dingen. In: <italic>Wie
-    Digitalität die Geisteswissenschaften verändert. Neue
-    Forschungsgegenstände und Methoden</italic>, hg. von Martin Huber
-    und Sybille Krämer. Sonderbände der Zeitschrift für digitale
-    Geisteswissenschaften 3. Wolfenbüttel: Herzog August
-    Bibliothek.</mixed-citation>
-  </ref>
-  <ref id="ref-Valla-1994">
-    <mixed-citation>Valla, Laurentius. 1994. <italic>De falso credita et
-    ementita constantini donatione declamatio</italic>. Hg. von Walther
-    Schwahn. Stuttgart: Teubner.</mixed-citation>
-  </ref>
-  <ref id="ref-Walsh-2023">
-    <mixed-citation>Walsh, Brandon. 2023. The Three-Speed Problem in
-    Digital Humanities Pedagogy. In: <italic>What We Teach When We Teach
-    DH. Digital Humanities in the Classroom</italic>, hg. von Brian
-    Croxall und Diane K. Jakacki. Debates in the Digital Humanities 10.
-    Minneapolis: University of Minnesota Press.</mixed-citation>
-  </ref>
-  <ref id="ref-Zeller-2002">
-    <mixed-citation>Zeller, Hans. 2002. Authentizität in der
-    Briefedition: Integrale Darstellung nichtsprachlicher Informationen
-    des Originals. <italic>Editio</italic> 16: 36–56.</mixed-citation>
-  </ref>
-  <ref id="ref-Zimmermann-2000">
-    <mixed-citation>Zimmermann, Barry J. 2000. Attaining
-    Self-Regulation: A Social Cognitive Perspective. In:
-    <italic>Handbook of Self-Regulation</italic>, hg. von Monique
-    Boekaerts, Paul R. Pintrich, und Moche Zeidner, 13–39. San Diego:
-    Academic Press.</mixed-citation>
-  </ref>
-</ref-list>
-</back>
-</article>
- -->
-
-<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" article-type="other">
-<front>
-<journal-meta>
-<journal-id></journal-id>
-<journal-title-group>
-</journal-title-group>
-<issn></issn>
-<publisher>
-<publisher-name></publisher-name>
-</publisher>
-</journal-meta>
-<article-meta>
-<title-group>
-<article-title>Textauszeichnung: Digitale Edition und
-Kommentierung</article-title>
-</title-group>
-<contrib-group>
-<contrib contrib-type="author">
-<contrib-id contrib-id-type="orcid">https://orcid.org/0000-0002-5843-7577</contrib-id>
-<name>
-<surname>Brookshire</surname>
-<given-names>Patrick D.</given-names>
-</name>
-<email>Patrick.Brookshire@adwmainz.de</email>
-<xref ref-type="aff" rid="aff-1"/>
-</contrib>
-<contrib contrib-type="author">
-<contrib-id contrib-id-type="orcid">https://orcid.org/0000-0001-6867-1511</contrib-id>
-<name>
-<surname>Hegel</surname>
-<given-names>Philipp</given-names>
-</name>
-<email>Philipp.Hegel@adwmainz.de</email>
-<xref ref-type="aff" rid="aff-1"/>
-</contrib>
-<aff id="aff-1">
-<institution-wrap>
-<institution>Akademie der Wissenschaften und der Literatur
-Mainz</institution>
-</institution-wrap>
-</aff>
-</contrib-group>
-<permissions>
-<license license-type="open-access">
-<ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/">https://creativecommons.org/licenses/by-sa/4.0/</ali:license_ref>
-<license-p>-This work is licensed under a Creative Commons
-Attribution-ShareAlike 4.0 International License.</license-p>
-</license>
-</permissions>
-<kwd-group kwd-group-type="author">
-<kwd>Digitale Editorik</kwd>
-<kwd>Text Encoding Initiative</kwd>
-<kwd>X-Technologien</kwd>
-<kwd>Briefedition</kwd>
-<kwd>Masterstudium</kwd>
-</kwd-group>
-</article-meta>
-</front>
-<body>
-<sec id="abstract">
-  <title>Abstract</title>
-  <p>Das vorgestellte Lehrkonzept vermittelt Kompetenzen der digitalen
-  Editorik im Rahmen der Hochschullehre. Der technische Schwerpunkt der
-  vorgestellten Lehrveranstaltung liegt dabei auf der Vermittlung von
-  Auszeichnungssprachen. Ziel ist es, den Teilnehmenden zu ermöglichen,
-  ihren Lernprozess in der praktischen Erprobung editorischer Aufgaben
-  mittels digitaler Annotationen teilweise selbst zu regulieren. Dafür
-  werden Schriftstücke aus dem Liebesbriefarchiv transkribiert und
-  kommentiert.</p>
-</sec>
-<sec id="inhalt">
-  <title>Inhalt</title>
-  <list list-type="order">
-    <list-item>
-      <p><xref alt="Einführung" rid="einführung">Einführung</xref></p>
-    </list-item>
-    <list-item>
-      <p><xref alt="Gesamtablauf" rid="gesamtablauf">Gesamtablauf</xref></p>
-    </list-item>
-    <list-item>
-      <p><xref alt="Sitzungsübersicht" rid="sitzungsübersicht">Sitzungsübersicht</xref></p>
-    </list-item>
-    <list-item>
-      <p><xref alt="Reflexion" rid="reflexion">Reflexion</xref></p>
-    </list-item>
-  </list>
-</sec>
-<sec id="einführung">
-  <title>1. Einführung</title>
-  <p>Ziel der folgenden Darstellung ist nicht, den Inhalt der
-  Veranstaltung vollständig darzubieten und eine unmittelbare
-  Nachnutzung zu ermöglichen, da dies bei 14 Sitzungen den gebotenen
-  Umfang übersteigen würde. Zudem liegen zu wesentlichen Inhalten der
-  Veranstaltung, nämlich zu XML, zum „Dialekt“ der Text Encoding
-  Initiative (TEI) und auch zu den im Bereich der digitalen Editorik
-  besonders relevanten TEI-Modulen bereits ausreichend Lehrmaterialien
-  vor
-  (<xref alt="Schoech-2014?" rid="ref-Schoech-2014" ref-type="bibr"><bold>Schoech-2014?</bold></xref>).
-  Die Darstellung reflektiert vielmehr die Ansprüche an das Lehrkonzept
-  und bereits vorgenommene Anpassungen. Darüber hinaus zeigt ein
-  Vergleich mit einer ähnlichen Lehrveranstaltung weitere
-  Anpassungsmöglichkeiten an eigene Angebote auf.</p>
-  <p>Diese Lehrinhalte können dem Bereich der digitalen Textannotation
-  zugeordnet werden (siehe
-  <xref alt="Rapp 2017, 255" rid="ref-Rapp-2017" ref-type="bibr">Rapp
-  2017, 255</xref>). In der digitalen Editorik haben sich seit den
-  1980er Jahren die Vorschläge der TEI verbreitet. Sie werden auch in
-  Richtlinien und Vorgaben von Förderinstitutionen (siehe zum Beispiel
-  <xref alt="Deutsche Forschungsgemeinschaft 2015" rid="ref-DFG-2015" ref-type="bibr">Deutsche
-  Forschungsgemeinschaft 2015</xref>) nahegelegt oder gefordert. Die
-  Vorschläge der TEI beziehen sich auf die Auszeichnungssprache XML.
-  Derartige Sprachen können nicht nur Informationen zu Formatierungen
-  vom eigentlichen Text trennen, sondern auch Strukturen wie Abschnitte
-  und Absätze markieren (siehe
-  <xref alt="DeRose u. a. 1990" rid="ref-DeRose-1990" ref-type="bibr">DeRose
-  u. a. 1990</xref>;
-  <xref alt="Goldfarb 1981" rid="ref-Goldfarb-1981" ref-type="bibr">Goldfarb
-  1981</xref>;
-  <xref alt="Goldfarb und Prescod 2004, 7–10" rid="ref-Goldfarb-2004" ref-type="bibr">Goldfarb
-  und Prescod 2004, 7–10</xref>). Die in XML gegebene Erweiterbarkeit
-  erlaubt zudem Anpassungen, um mit Annotationen regelgeleitet und
-  maschinenlesbar unter anderem linguistisch, literaturwissenschaftlich
-  und editionsphilologisch relevante Textmerkmale und Schreibphänomene
-  auszuzeichnen. Die Annotationsschemata sind zum einen ein Modell des
-  interessierenden Gegenstandes; zum anderen bilden sie die Grundlage
-  für Suchen und Datenanalysen, in welche die annotierten Dokumente
-  einbezogen werden können.</p>
-  <sec id="rahmenbedingungen">
-    <title>1.1 Rahmenbedingungen</title>
-    <p>Dieser Beitrag stellt ein Konzept für die Vermittlung digitaler
-    Editorik im Rahmen der Hochschullehre vor, das von einem der
-    Autoren, Philipp Hegel, in der Übung
-    <italic>Textauszeichnung</italic> im Masterstudiengang
-    <italic>Literary and Linguistic Computing</italic> an der
-    Technischen Universität Darmstadt angewendet wird und auf
-    Erfahrungen aus Projektberatungen basiert. Das Konzept wurde über
-    mehr als zehn Jahre erprobt und angepasst. Behandelt werden
-    digitalisierte Privatbriefe der 1950er Jahre aus dem
-    <ext-link ext-link-type="uri" xlink:href="https://liebesbriefarchiv.de/">Liebesbriefarchiv</ext-link>,
-    die in einem Projekt des Dozenten untersucht werden. Dabei liegen
-    Schwerpunkte auf der Transkription und dem Kommentieren der Briefe.
-    Ziel des Lehrkonzepts ist die Vermittlung theoretischer und
-    praktischer Grundkenntnisse des digitalen Editierens und
-    entsprechender Auszeichnungssprachen.</p>
-    <p>An der Lehrveranstaltung nehmen in der Regel fünf bis fünfzehn
-    Studierende teil und der Arbeitsaufwand entspricht fünf
-    Leistungspunkten. Zur Prüfungsleistung zählen die aktive Teilnahme
-    in Form von Beteiligungen an praktischen Übungen, zwei
-    Präsentationen, die als Zwischenberichte dienen, sowie
-    Projektarbeiten in Form von zehn transkribierten und kommentierten
-    Briefen im XML-Format. Alle Sitzungen finden in der Regel synchron
-    in Präsenz statt. Die Zahl der Sitzungen kann variieren, wobei im
-    Folgenden von 14 Semesterwochen ausgegangen wird und jede Sitzung 90
-    Minuten umfasst.</p>
-  </sec>
-  <sec id="voraussetzungen-der-teilnehmenden">
-    <title>1.2 Voraussetzungen der Teilnehmenden</title>
-    <p>Es werden digitale Kompetenzen vorausgesetzt, weshalb sich die
-    Lehrveranstaltung dezidiert an Masterstudierende richtet.
-    Kursteilnehmende verfügen über grundlegende Kenntnisse und
-    Erfahrungen im Programmieren, haben mit X-Technologien, welche im
-    Lehrkonzept eine zentrale Rolle spielen, jedoch zuvor meist wenig
-    Kontakt gehabt. Zudem wird vorausgesetzt, dass Teilnehmende
-    eigenständig geeignete Lernstrategien anwenden können und mit dem
-    wissenschaftlichen Arbeiten vertraut sind.</p>
-    <p>Technisch wird außerdem eine Klassenraumlizenz für den
-    <ext-link ext-link-type="uri" xlink:href="https://www.oxygenxml.com/">Oxygen
-    XML Editor</ext-link> vorausgesetzt sowie eine dazu passende
-    Hardwareausstattung der Studierenden. Die in der Lehrveranstaltung
-    gemachten technischen Voraussetzungen haben sich bisher nicht als
-    problematisch erwiesen. Es wird versucht, Studierende dazu zu
-    motivieren, etwaige Hindernisse anzusprechen. Sollten
-    Schwierigkeiten benannt oder offenkundig werden, werden Lösungen
-    seitens des Dozenten in Kooperation mit dem Institut und der
-    Hochschule gesucht. Studierende werden im Rahmen des Kurses auf
-    Unterstützungsangebote wie die Studienberatung und
-    Mentoringprogramme am Institut sowie auf Beratungsstellen an der
-    Universität hingewiesen.</p>
-  </sec>
-  <sec id="ausführungen-der-lehrveranstaltung">
-    <title>1.3 Ausführungen der Lehrveranstaltung</title>
-    <sec id="lehrmaterial">
-      <title>1.3.1 Lehrmaterial</title>
-      <p>Zur Durchführung der Lehrveranstaltung werden verschiedene
-      Materialien bzw. Medien genutzt und benötigt: Präsentationsfolien,
-      der Oxygen XML Editor sowie eine WLAN-Verbindung. Für besondere
-      Fragen werden Bildschirmaufnahmen erstellt. Auf der Lernplattform
-      werden diese ebenso wie die zu lesenden Texte hinterlegt. Die
-      Lehrmaterialien wurden vom Dozenten selbst erstellt und
-      angepasst.</p>
-    </sec>
-    <sec id="aufgabentypen">
-      <title>1.3.2 Aufgabentypen</title>
-      <p>Es gibt wöchentliche Aufgaben (s. Spalte
-      <italic>Abgabe/Aufgabe</italic> in der tabellarischen
-      Sitzungsübersicht). In den Sitzungen selbst werden Ratespiele und
-      Gruppenarbeiten durchgeführt. Zudem sind zwei Zwischenberichte
-      vorgesehen, die als eine Art „Hackathon“ veranstaltet werden, bei
-      denen Studierende Kodierungsvorschläge diskutieren,
-      Schwierigkeiten bei der Transkription lösen und
-      kommentierungsbedürftige Stellen klären (vgl. zum Hackathon als
-      „temporäres Labor“
-      <xref alt="Trilcke und Fischer 2018" rid="ref-Trilcke-2018" ref-type="bibr">Trilcke
-      und Fischer 2018</xref>; und zur Umsetzung in der akademischen
-      Lehre
-      <xref alt="Mischke, Trilcke und Sluyter-Gäthje 2022" rid="ref-Mischke-2022" ref-type="bibr">Mischke,
-      Trilcke und Sluyter-Gäthje 2022</xref>).</p>
-    </sec>
-    <sec id="lehrstrategischer-ansatz">
-      <title>1.3.3 Lehrstrategischer Ansatz</title>
-      <p>Die Struktur der Übung hängt eng mit dem gewählten
-      lehrstrategischen Ansatz zusammen, der auf Selbstregulation setzt
-      (siehe hierzu zusammenfassend
-      <xref alt="Landmann u. a. 2015, 53" rid="ref-Landmann-2015" ref-type="bibr">Landmann
-      u. a. 2015, 53</xref>). Der Planung, Beobachtung, Reflexion und
-      Anpassung von Motivationen, Verfahren und Zielsetzungen im
-      Lernprozess durch die Studierenden selbst sind jedoch
-      institutionelle und organisatorische Grenzen gesetzt. Zum einen
-      sind curriculare Lernziele vorgegeben, zum anderen müssen am Ende
-      Noten für vergleichbare Leistungen vergeben werden (vgl. zu diesen
-      Schwierigkeiten
-      <xref alt="Boekaerts und Niemivirta 2000, 418–419, 432" rid="ref-Boekaerts-2000" ref-type="bibr">Boekaerts
-      und Niemivirta 2000, 418–419, 432</xref>;
-      <xref alt="Götz und Nett 2017, 148" rid="ref-Goetz-2017" ref-type="bibr">Götz
-      und Nett 2017, 148</xref>). In selbstreflexiven Phasen können
-      jedoch diese beiden Aspekte als Kriterien der sogenannten
-      „Meisterschaft“ und des normativen Vergleichs auch der
-      studentischen Selbstbewertung dienen (vgl.
-      <xref alt="Zimmermann 2000, 21–22" rid="ref-Zimmermann-2000" ref-type="bibr">Zimmermann
-      2000, 21–22</xref>).</p>
-      <p>Der Ansatz kann als verteiltes Lernen anhand konkreter
-      Beispiele und Vertiefungsfragen mit Ansätzen zu Verschachtelungen
-      und Lerntests beschrieben werden. Verteilt ist das Lernen, weil
-      diskontinuierlich Themen wiederholt werden (vgl.
-      <xref alt="Moerth, Paridon und Sonntag 2021, 43" rid="ref-Moerth-2021" ref-type="bibr">Moerth,
-      Paridon und Sonntag 2021, 43</xref>). Insbesondere dienen die
-      Zwischenberichte dazu, Gelerntes auf das Quellenmaterial
-      anzuwenden und die Ergebnisse sowie Problemfelder gemeinsam zu
-      diskutieren. Zur Motivation und Metakognition (vgl.
-      <xref alt="Götz und Nett 2017, 152" rid="ref-Goetz-2017" ref-type="bibr">Götz
-      und Nett 2017, 152</xref>) werden Präsentationen als Selbsttest
-      eingesetzt. Der Motivation und Elaboration dient die Illustration
-      durch verschiedene konkrete Beispiele, darunter vor allem die den
-      Studierenden zugeordneten Briefe. Fragen nach Methode, Zweck und
-      Begründung der eigenen Untersuchungen unterstützen die Elaboration
-      (vgl.
-      <xref alt="Moerth, Paridon und Sonntag 2021, 45–56" rid="ref-Moerth-2021" ref-type="bibr">Moerth,
-      Paridon und Sonntag 2021, 45–56</xref>). Verschachtelt ist das
-      Lernen insoweit, als innerhalb von Unterrichtseinheiten
-      Themenwechsel vollzogen werden (vgl.
-      <xref alt="Moerth, Paridon und Sonntag 2021, 44" rid="ref-Moerth-2021" ref-type="bibr">Moerth,
-      Paridon und Sonntag 2021, 44</xref>).</p>
-      <p>Präaktional legt der Dozent Lehrinhalte dar,
-      Bewertungskriterien offen und erkundet mit Umfragen die
-      Vorkenntnisse bzw. macht diese bewusst. Aktional erfolgt die
-      Betreuung mit Einladungen zur Sprechstunde und möglichst vielen
-      Fragemöglichkeiten in den Sitzungen. Die Rückmeldungen dienen auch
-      postaktional der Betreuung (vgl. zu den Phasen
-      <xref alt="Zimmermann 2000, 16" rid="ref-Zimmermann-2000" ref-type="bibr">Zimmermann
-      2000, 16</xref>; sowie zusammenfassend
-      <xref alt="Otto, Perels und Schmitz 2015, 45–46" rid="ref-Otto-2015" ref-type="bibr">Otto,
-      Perels und Schmitz 2015, 45–46</xref>).</p>
-    </sec>
-  </sec>
-</sec>
-<sec id="gesamtablauf">
-  <title>2. Gesamtablauf</title>
-  <p>Inhaltlich lässt sich die Lehrveranstaltung in sechs Blöcke
-  gliedern. Im ersten Block (Sitzungen 1 bis 3) wird ein gemeinsamer
-  Wissensstand zur Editorik, zum Brief, zu Briefeditionen und zu
-  Auszeichnungssprachen erarbeitet. Auf diese Weise werden etwaige
-  Kompetenzunterschiede eruiert und möglichst ausgeglichen, da diese
-  Themen grundlegend für den weiteren Verlauf der Lehrveranstaltung
-  sind.</p>
-  <p>Daran schließt sich ein Block an, in dem die Studierenden mit
-  verschiedenen Modulen der TEI-Richtlinien anhand von Beispielen
-  vertraut gemacht werden (Sitzungen 4 bis 6). Nach dem Abgabetermin für
-  die ersten Transkriptionen folgen mehrere Sitzungen, in denen die
-  Studierenden ihre bisherigen Ergebnisse und Probleme vorstellen. Je
-  nach Kursgröße kann die Zahl dieser Sitzungen variieren. Im
-  exemplarischen Plan wurden drei Sitzungen vorgesehen (Sitzungen 7 bis
-  9).</p>
-  <p>Es folgt eine Sitzung zur Kommentierung (Sitzung 10). Nach dem
-  Abgabetermin für die ersten kommentierten Transkriptionen folgen
-  wieder entsprechend viele Sitzungen für Zwischenberichte (im Plan
-  Sitzungen 11 bis 13). Abgeschlossen wird die Veranstaltung mit einem
-  Ausblick auf die Fertigstellung der digitalen Edition und
-  weiterführende X-Technologien (Sitzung 14). In längeren Semestern kann
-  dieser Ausblick vertieft werden.</p>
-  <p>Editorische und gattungstheoretische Konzepte (Sitzungen 1 bis 3)
-  werden in den Sitzungen zur digitalen Annotation (Sitzungen 4 bis 6
-  sowie 10) aufgegriffen und in der praktischen Anwendung auf konkrete
-  Beispiele von den Lernenden selbständig geübt (Sitzungen 7 bis 9 sowie
-  11 bis 13). Die Anwendung wird mehrfach in der Gruppe diskutiert und
-  Lernende müssen ihre Entscheidungen und Vorgehen wissenschaftlich
-  begründen. Die Anwendung des Gelernten und die Präsentation der
-  Ergebnisse haben die Funktion von Lerntests. Dabei soll verknüpftes
-  Wissen abgerufen werden, während die Lernfortschritte beobachtet und
-  Rückmeldungen gegeben werden können.</p>
-</sec>
-<sec id="tabellarische-sitzungsübersicht">
-  <title>4. Tabellarische Sitzungsübersicht</title>
-  <table-wrap>
-    <table>
-      <colgroup>
-        <col width="1%" />
-        <col width="2%" />
-        <col width="8%" />
-        <col width="15%" />
-        <col width="19%" />
-        <col width="26%" />
-        <col width="12%" />
-        <col width="17%" />
-      </colgroup>
-      <thead>
-        <tr>
-          <th>Sitzung</th>
-          <th>Modus</th>
-          <th>Thema</th>
-          <th>Inhalt</th>
-          <th>Lernziele</th>
-          <th>Vorbereitung</th>
-          <th>Für Lehrende</th>
-          <th>Abgabe/Aufgabe</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>synchron, Präsenz</td>
-          <td>Organisation der Veranstaltung und Grundlagen des
-          Edierens</td>
-          <td>Vorstellungsrunde. Semesterplan mit
-          Leistungsanforderungen, Quiz zu editionswissenschaftlichen
-          Grundbegriffen</td>
-          <td>Selbsteinschätzung bezüglich Gegenstand und
-          Leitungsanforderungen. Grundlegendes Verständnis editorischer
-          Aufgaben</td>
-          <td>-</td>
-          <td>Auswahl der Quellenmaterialien. Prüfung der
-          Leistungsanforderungen</td>
-          <td>Vorstellung der eigenen Person und der eigenen
-          Lerninteressen. Beteiligung an Quiz und Diskussion. Vergleich
-          von digitalen Editionen</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>synchron, Präsenz</td>
-          <td>Grundlagen der Briefforschung</td>
-          <td>Wissenschaftliche Definitionen und Explikationen des
-          Begriffs <italic>Brief</italic></td>
-          <td>Reflexion der medialen und generischen Besonderheiten des
-          Briefes und verwandter Korrespondenzformen (Postkarte,
-          E-Mail)</td>
-          <td>Ggf. Anfrage nach einem Lizenzschlüssel für Oxygen XML
-          Editor</td>
-          <td>Wissensvermittlung über foliengestützten Vortrag</td>
-          <td>Gruppendiskussion zu Spezifika der Gattung</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>synchron, Präsenz</td>
-          <td>Grundlagen der Briefedition</td>
-          <td>Zusammenführung von Wissen über die Gattung und über
-          editiorische Aufgaben anhand von drei
-          Forschungspositionen.</td>
-          <td>Kritische Rekonstruktion, Diskussion und Vergleich
-          verschiedener Forschungspositionen. Ableitung von Konsequenzen
-          für die digitale Edition von Briefen</td>
-          <td>Verpflichtung zur Einhaltung der datenschutzrechtlichen
-          Anforderungen; Zusendung von in Sitzung 2 erarbeiteten
-          Definitionen zum Brief; Lektüre der gruppenweise zugeordneten
-          Texten zu Briefeditionen</td>
-          <td>Hilfestellungen. Diskussionsleitung</td>
-          <td>Präsentation der Argumentation des gelesenen Textes;
-          Beteiligung an Gruppenarbeit</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>synchron, Präsenz</td>
-          <td>Grundlagen der Textauszeichnung gemäß TEI</td>
-          <td>TEI <monospace>core</monospace>,
-          <monospace>textstucture</monospace> (Auswahl)</td>
-          <td>Erstellung eines ersten eigenen Dokuments</td>
-          <td>Transkription eines Briefes als Textdatei</td>
-          <td>Wissensvermittlung über foliengestützten Vortrag;
-          Bereitstellung von Materialien/Beispielen</td>
-          <td>Beteiligung an Diskussion. Bearbeitung des eigenen
-          Beispiels</td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>synchron, Präsenz</td>
-          <td>Quellenbeschreibungen</td>
-          <td>TEI <monospace>header</monospace>,
-          <monospace>msdescription</monospace> (Auswahl)</td>
-          <td>Beispielhafte Ergänzung von Auszeichnungen im Rückgriff
-          auf die Spezifika der Gattung und der editorischen
-          Aufgabe</td>
-          <td>-</td>
-          <td>Wissensvermittlung über foliengestützten Vortrag</td>
-          <td>Beteiligung an Diskussion. Bearbeitung des eigenen
-          Beispiels</td>
-        </tr>
-        <tr>
-          <td>6</td>
-          <td>synchron, Präsenz</td>
-          <td>Transkription</td>
-          <td>TEI <monospace>transcr</monospace> (Auswahl)</td>
-          <td>Beispielhafte Ergänzung von Auszeichnungen im Rückgriff
-          auf die Spezifika der Gattung und der editorischen
-          Aufgabe</td>
-          <td>Ergänzung der Quellenbeschreibung zum transkribierten
-          Brief</td>
-          <td>Wissensvermittlung über foliengestützten Vortrag</td>
-          <td>Beteiligung an Diskussion und Übung zur Paläographie.</td>
-        </tr>
-        <tr>
-          <td>7–9</td>
-          <td>synchron, Präsenz</td>
-          <td>Zwischenberichte zu Quellenbeschreibungen und
-          Transkriptionen</td>
-          <td>Präsentationen der Studierenden</td>
-          <td>Kooperative Lösung bestehender Probleme und Beantwortung
-          offener Fragen</td>
-          <td>Erstellung von mindestens fünf Transkriptionen als
-          XML-Dateien</td>
-          <td>Hilfestellungen. Diskussionsleitung</td>
-          <td>Präsentation zum Zwischenstand. Beteiligung an
-          Diskussion</td>
-        </tr>
-        <tr>
-          <td>10</td>
-          <td>synchron, Präsenz</td>
-          <td>Kommentierung</td>
-          <td>V.a. TEI <monospace>namedates</monospace> (Auswahl),
-          Ergänzungen aus TEI <monospace>core</monospace></td>
-          <td>Beispielhafte Ergänzung von Auszeichnungen. Kenntnis von
-          Hilfsmitteln und Anforderungen an den Kommentar</td>
-          <td>Überarbeitung der fünf transkribierten Briefe</td>
-          <td>Wissensvermittlung über foliengestützten Vortrag</td>
-          <td>Beteiligung an Diskussion und Übung zum Kommentar</td>
-        </tr>
-        <tr>
-          <td>11–13</td>
-          <td>synchron, Präsenz</td>
-          <td>Zwischenberichte zur Kommentierung</td>
-          <td>Präsentationen der Studierenden</td>
-          <td>Kooperative Lösung bestehender Probleme und Beantwortung
-          offener Fragen</td>
-          <td>Erstellung von mindestens fünf transkribierten und
-          kommentierten Briefen im XML-Format</td>
-          <td>Hilfestellung. Diskussionsleitung</td>
-          <td>Präsentation der Zwischenstände. Beteiligung an
-          Diskussion</td>
-        </tr>
-        <tr>
-          <td>14</td>
-          <td>synchron, Präsenz</td>
-          <td>Abschlussdiskussion</td>
-          <td>Beantwortung offener Fragen und Problemstellungen.
-          Evaluation.</td>
-          <td>Kooperative Lösung bestehender Probleme und Beantwortung
-          offener Fragen</td>
-          <td>Zusendung ausgewählter Problemstellen an zugeloste
-          Kommiliton:innen</td>
-          <td>Hilfestellung. Diskussionsleitung. Erstellung und
-          Präsentation einer exemplarischen HTML-Ansicht</td>
-          <td>Arbeit an weiteren Briefen. Mitteilung von Fragen und
-          Problemen</td>
-        </tr>
-      </tbody>
-    </table>
-  </table-wrap>
-</sec>
-<sec id="sitzungsübersicht">
-  <title>3. Sitzungsübersicht</title>
-  <sec id="grundlagen-der-editorik-sitzung-1">
-    <title>3.1 Grundlagen der Editorik (Sitzung 1)</title>
-    <p>Editorische Konzepte und Operationen sind Studierenden vor der
-    Veranstaltung in der Regel nur oberflächlich oder gar nicht
-    vertraut. In der ersten Sitzung wird daher auf verschiedene
-    Problemstellungen der Editorik eingegangen:</p>
-    <list list-type="order">
-      <list-item>
-        <p><italic>Heuristik</italic> als die Aufgabe, alle relevanten
-        Textzeugen zu identifizieren, ist für die Veranstaltung selbst
-        von untergeordneter Bedeutung. Da Privatbriefe behandelt werden,
-        die dem Liebesbriefarchiv gespendet wurden, liegen bereits
-        Katalogeinträge vor. In einzelnen Fällen ist dennoch eine
-        Prüfung und gegebenenfalls neue Zuordnung notwendig, wenn
-        beispielsweise Briefe unvollständig oder Seiten falsch sortiert
-        sind.</p>
-      </list-item>
-      <list-item>
-        <p>Im Zusammenhang mit der <italic>Prüfung der
-        Authentizität</italic> von Textzeugen wird auf das Beispiel von
-        Valla
-        (<xref alt="1994" rid="ref-Valla-1994" ref-type="bibr">1994</xref>)
-        und die Konstantinische Schenkung eingegangen sowie auf
-        Möglichkeiten der Materialanalyse hingewiesen. Da in der
-        Veranstaltung mit Digitalisaten gearbeitet wird, spielen diese
-        Möglichkeiten in späteren Einheiten keine Rolle mehr.</p>
-      </list-item>
-      <list-item>
-        <p>Die <italic>Quellenbeschreibung</italic> als ein Moment der
-        Erschließung und als Voraussetzung der editorischen Arbeit ist
-        aufgrund der Verwendung von digitalen Reproduktionen
-        eingeschränkt. Metadaten, die sich speziell auf schriftliche
-        Korrespondenzen beziehen, werden jedoch ausführlich
-        thematisiert.</p>
-      </list-item>
-      <list-item>
-        <p>Von besonderer Relevanz für die Lehrveranstaltung sind die
-        <italic>Transkription</italic> und die Berücksichtigung der
-        <italic>Textgenese</italic>, verstanden als die Entstehung des
-        Textes auf dem überlieferten Dokument. Diese Schritte bilden
-        einen der beiden Schwerpunkte.</p>
-      </list-item>
-      <list-item>
-        <p><italic>Textkritik</italic>, <italic>Kollation</italic> und
-        <italic>Stemmatologie</italic> sowie die Methoden der
-        <italic>recensio</italic> und <italic>emendatio</italic> werden
-        erklärt. Weil aber Briefe untersucht werden, die unikal
-        überliefert sind, finden diese im weiteren Kursverlauf keine
-        praktische Anwendung.</p>
-      </list-item>
-      <list-item>
-        <p>Neben der Transkription stellt der <italic>Kommentar</italic>
-        den zweiten Schwerpunkt dar. Nach einem Vortrag des Lehrenden
-        über Theorie und Praxis des Kommentars wird das Augenmerk auf
-        die Methoden und die benutzten Quellen bei der Erstellung von
-        Einzelstellenkommentaren gelenkt.</p>
-      </list-item>
-      <list-item>
-        <p>Abschließend wird die Frage der <italic>medialen
-        Präsentation</italic> angesprochen. Übliche Verfahren zur
-        Transformation und die Möglichkeiten, die der <italic>Author
-        Mode</italic> im Oxygen XML Editor bietet, werden benannt und
-        zum Teil angewandt.</p>
-      </list-item>
-    </list>
-    <p>Dieses Wissen wird in Form einer Umfrage zunächst abgefragt und
-    durch begleitende Erläuterungen des Dozenten vermittelt. Dies ist
-    notwendig, weil es im weiteren Verlauf darum geht, diese Strukturen
-    und Phänomene digital zu modellieren und durch Annotationen zu
-    erfassen.</p>
-    <p>Es kann demotivierend sein, dass die mediale Präsentation der
-    Ergebnisse kein wesentlicher Teil der Übung ist. In der ersten
-    Sitzung betrachten und analysieren die Studierenden jedoch gedruckte
-    und digitale Editionen und vergleichen deren Schichten und
-    Funktionalitäten. In der abschließenden Sitzung wird dann anhand
-    eines Briefes eine exemplarische Umsetzung in HTML mit dem
-    vorgeführt, um den gesamten Produktionsprozess der Edition nicht aus
-    dem Blick zu verlieren. Für die Vertiefung werden die Teilnehmenden
-    auf Plachta
-    (<xref alt="2013" rid="ref-Plachta-2013" ref-type="bibr">2013</xref>),
-    Plachta
-    (<xref alt="2020" rid="ref-Plachta-2020" ref-type="bibr">2020</xref>)
-    sowie Sahle
-    (<xref alt="2013" rid="ref-Sahle-2013" ref-type="bibr">2013</xref>)
-    hingewiesen.</p>
-  </sec>
-  <sec id="gattungstheorie-des-briefes-sitzungen-2-und-3">
-    <title>3.2 Gattungstheorie des Briefes (Sitzungen 2 und 3)</title>
-    <p>In der Lehrveranstaltung wird in der Folge mit einer Sitzung zur
-    Gattung des Briefes an lebensweltliche und wissenschaftliche
-    Kenntnisse der Teilnehmenden zu diesem Thema angeknüpft. Ziel ist,
-    ein Bewusstsein für die Spezifika des Briefes im Hinblick auf
-    Textstrukturen und Textphänomene zu schaffen, das für deren
-    Behandlung in Editionen und Editionsrichtlinien grundlegend ist. In
-    Gruppen wird zunächst an Definitionen und Explikationen gearbeitet.
-    Die Ergebnisse werden mit Lexikonartikeln verglichen. Für die
-    Vertiefung zu diesem Themenfeld werden Matthews-Schlinzig u. a.
-    (<xref alt="2020a" rid="ref-Matthews-Schlinzig-2020-a" ref-type="bibr">2020a</xref>)
-    und Matthews-Schlinzig u. a.
-    (<xref alt="2020b" rid="ref-Matthews-Schlinzig-2020-b" ref-type="bibr">2020b</xref>)
-    genannt.</p>
-    <p>Es werden anschließend Aufsätze zur Edition von Briefen
-    behandelt, die jeweils unterschiedliche Aspekte betonen. Konkret
-    werden die editionswissenschaftlichen Ansätze von Gregolin
-    (<xref alt="1990" rid="ref-Gregolin-1990" ref-type="bibr">1990</xref>),
-    Zeller
-    (<xref alt="2002" rid="ref-Zeller-2002" ref-type="bibr">2002</xref>)
-    und Strobel
-    (<xref alt="2019" rid="ref-Strobel-2019" ref-type="bibr">2019</xref>)
-    jeweils in Gruppen behandelt und dann gemeinsam im Plenum
-    diskutiert. Auf diese Weise wird das Wissen über Editionen mit dem
-    Wissen über Briefe in Verbindung gebracht. Ausgewählt wurden diese
-    Aufsätze wegen ihrer konträren Positionen. Der Kurs wird in drei
-    Gruppen geteilt. Jede Gruppe konzentriert sich auf einen der Texte,
-    fasst die Argumentation zusammen und erarbeitet mögliche
-    Gegenargumente sowie deren etwaige Entkräftung. Ein Ergebnis kann
-    sein, dass bei Briefen sowohl textuelle als auch materielle und
-    pragmatische Aspekte editorisch zu beachten sind. Es kann diskutiert
-    werden, wo Schwerpunkte zu legen und wie die Aspekte editorisch
-    umzusetzen sind.</p>
-  </sec>
-  <sec id="grundlagen-der-textauszeichnung-sitzungen-2-und-4">
-    <title>3.3 Grundlagen der Textauszeichnung (Sitzungen 2 und
-    4)</title>
-    <p>Im informatischen Bereich stehen das Erlernen und das Verständnis
-    von Auszeichnungssprachen im Mittelpunkt der Veranstaltung. Deren
-    Grundannahmen und -anliegen werden daher ausführlicher behandelt.
-    Auszeichnungssprachen (<italic>Markup Languages</italic>) wie SGML,
-    HTML und XML werden eingeführt, ihre Entwicklungen und Funktionen
-    erläutert und reflektiert.</p>
-    <p>Da in der Lehrveranstaltung keine Kenntnisse im Umgang mit
-    XML-Daten vorausgesetzt werden (siehe Abschnitt 1.2), sind zunächst
-    die Grundlagen in diesem Bereich zu vermitteln (Sitzungen 2 und 4).
-    Diese umfassen unter anderem die Konzepte von deskriptivem Markup
-    sowie von Wohlgeformtheit und Validität. Auf dieser Basis können
-    anschließend die Grundlagen von Textauszeichnungen nach den
-    Richtlinien der TEI vorgestellt werden. Diese umfassen unter anderem
-    die Unterteilung der Dokumente in Kopf
-    (<monospace>teiHeader</monospace>) und Textkörper
-    (<monospace>body</monospace>), aber auch die Erfassung elementarer
-    Textstrukturen wie Abschnitte (<monospace>div</monospace>) und
-    Absätze (<monospace>p</monospace>). Insgesamt werden vor allem aus
-    den folgenden TEI-Modulen Elemente eingeführt und verwendet:</p>
-    <list list-type="bullet">
-      <list-item>
-        <p><monospace>core</monospace></p>
-      </list-item>
-      <list-item>
-        <p><monospace>header</monospace></p>
-      </list-item>
-      <list-item>
-        <p><monospace>msdescription</monospace></p>
-      </list-item>
-      <list-item>
-        <p><monospace>namesdate</monospace></p>
-      </list-item>
-      <list-item>
-        <p><monospace>textstructure</monospace></p>
-      </list-item>
-      <list-item>
-        <p><monospace>transcr</monospace></p>
-      </list-item>
-    </list>
-    <p>Zentraler Referenzpunkt für Studierenden sind neben den zur
-    Verfügung gestellten Folien die der TEI die auf der entsprechenden
-    Webseite versammelten Lehrmaterialien. Für die praktische
-    Umsetzungen werden den Studierenden in der Übung eine Beispieldatei,
-    ein RELAX-NG-Schema sowie ein Glossar in der verwendeten
-    Lernplattform zur Verfügung gestellt. Obwohl nur die besagten Module
-    im Kurs detailliert behandelt werden, weicht die Schemadatei nur
-    geringfügig von <italic>TEI-All</italic> ab.
-    <italic>TEI-All</italic> dient als Orientierungspunkt, weil in den
-    Briefen zahlreiche Phänomene wie Bilder, Noten, Verse oder Fragmente
-    aus Theaterstücken auftreten. Die Abweichung von
-    <italic>TEI-All</italic> betrifft die Modellierung von Grußformeln
-    (<monospace>salute</monospace>) in Briefen. Innerhalb der
-    Veranstaltung und des mit ihr verbundenen Projekts werden diese
-    zusätzlich der Klasse <monospace>segLike</monospace> zugeordnet,
-    sodass sie abweichend vom Standardmodell auch innerhalb von Absätzen
-    (<monospace>p</monospace>) vorkommen können.</p>
-    <p>Falls genug Zeit vorhanden ist und innerhalb des Kurses Interesse
-    besteht, wird gezeigt und erklärt, wie Schemadateien aufgebaut sind
-    und mit dem Werkzeug Änderungen am Schema vorgenommen werden können.
-    Die Schemadatei dient den Studierenden, um die Validität ihrer
-    Dateien zu prüfen. Die Validität ist zudem neben der Wohlgeformtheit
-    ein Bewertungskriterium für die eingereichten Dateien. Die
-    Beispieldatei zeigt in Verbindung mit dem Glossar und dem Schema
-    auf, welche Tiefe der Auszeichnung bei verschiedenen Textphänomenen
-    erwartet wird.</p>
-  </sec>
-  <sec id="quellenbeschreibung-sitzung-5">
-    <title>3.4 Quellenbeschreibung (Sitzung 5)</title>
-    <p>Obwohl in der Übung mit Digitalisaten gearbeitet wird, sollen die
-    materiellen Aspekte der Quellenbeschreibung, die in der Gattungs-
-    und Editionstheorie des Briefes angesprochen werden, nicht
-    vollständig ausgeblendet werden. So wird die mediale Form
-    bezeichnet, indem zum Beispiel zwischen Briefen, Post- und
-    Grußkarten, Telegrammen und Feldpost unterschieden wird. Außerdem
-    werden Schriftträger und Beschreibstoffe grob klassifiziert (vor
-    allem im Rückgriff auf den ) sowie die Erscheinung der Schrift, zum
-    Beispiel die Schriftrichtung, mit <monospace>@rend</monospace>,
-    <monospace>@rendition</monospace> und CSS erfasst. Zur
-    Handschriftenbeschreibung (<monospace>msDesc</monospace>) werden
-    Angaben zu Handlungen, Orten und Personen im Zusammenhang mit dem
-    Korrespondenzgeschehen in <monospace>correspDesc</monospace>
-    ergänzt. Es werden Register für Entitäten erstellt und in Verbindung
-    mit Briefmarken, Vordrucken und Stempeln
-    (<monospace>stamp</monospace> und <monospace>fw</monospace>) können
-    diese Informationen Hinweise auf die situativen Umstände und den
-    historischen Kontext geben. Anhänge und Beilagen
-    (<monospace>accMat</monospace> und <monospace>back</monospace>)
-    werden verzeichnet, beschrieben und gegebenenfalls transkribiert.
-    Damit wird die pragmatische Dimension des Briefwechsels
-    erschlossen.</p>
-  </sec>
-  <sec id="transkriptionen-sitzungen-6-bis-9">
-    <title>3.5 Transkriptionen (Sitzungen 6 bis 9)</title>
-    <p>Bei der wissenschaftlichen Umschrift wird vor allem die textuelle
-    Dimension der Briefe adressiert. Es wird eine Einheit zur deutschen
-    Paläographie des 20. Jahrhunderts angeboten. In dieser Sitzung wird
-    eine Übersicht über die Entwicklung der Schrift anhand von Tafeln
-    gegeben und ein kurzer Brief aus dem Korpus gemeinsam entziffert.
-    Außerdem werden textgenetische Phänomene wie Ersetzungen
-    (<monospace>subst</monospace>) behandelt.</p>
-  </sec>
-  <sec id="kommentierung-sitzungen-10-bis-13">
-    <title>3.6 Kommentierung (Sitzungen 10 bis 13)</title>
-    <p>In der Übung ist die Kommentierung von Einzelstellen die zweite
-    zentrale Aufgabe. Die Kommentierung erfolgt mit den Elementen
-    <monospace>note</monospace>, <monospace>term</monospace> und
-    <monospace>gloss</monospace>. Das Lemma
-    (<monospace>term</monospace>) muss nicht identisch mit dem Ausdruck
-    im Text sein. Als Referenzpunkt im Text können bestehende
-    Auszeichnungen, etwa Absätze (<monospace>p</monospace>), oder
-    ergänzte Elemente wie <monospace>seg</monospace> genutzt werden. Das
-    Attribut <monospace>@corresp</monospace> dient der Verknüpfung von
-    Textstelle und Anmerkung. Die Referenz wird in beide Richtungen
-    gesetzt. Auf diese Weise können mehrere Stellen mit einer Anmerkung
-    verknüpft werden. Exemplarisch kann die Auszeichnung wie folgt
-    aussehen:</p>
-    <preformat>&lt;seg corresp=&quot;#note-01&quot; xml:id=&quot;seg-01&quot;&gt;
-  &lt;rs ref=&quot;#Mariawald&quot;&gt;Mariawald&lt;/rs&gt;
-&lt;/seg&gt;
-. . .
-&lt;note type=&quot;editorial&quot; corresp=&quot;#seg-01&quot; xml:id=&quot;note-01&quot;&gt;
-  &lt;term&gt;Mariawald&lt;/term&gt;
-  &lt;gloss&gt;Anspielung auf das Schweigegelübde in einem Kloster in der Eifel am gleichnamigen Ort. In seiner Autobiographie beschreibt ...&lt;/gloss&gt;
-&lt;/note&gt;</preformat>
-    <p>Der Kommentierung bedürftige Ausdrücke können sich zum Beispiel
-    auf Objekte, Orte, Personen und Körperschaften, Zitate und
-    Anspielungen, historische Ereignisse und Zustände beziehen. Die
-    Arbeit an diesen umfasst Verweise auf Normdaten für Entitäten, soll
-    sich aber nicht hierauf beschränken. Vielmehr soll ergänzend
-    kommentiert werden, wenn Identifizierungen schwierig oder nicht
-    eindeutig sind. Ist die Identifikation unproblematisch, wird kein
-    Kommentar verfasst und nur Normdaten im Index verzeichnet.</p>
-    <p>Den Studierenden wird eingangs eine Liste mit Hilfsmitteln, vor
-    allem Hand- und Wörterbücher verschiedener Disziplinen, an die Hand
-    gegeben. In diesem Fall soll jedoch wie überhaupt versucht werden,
-    die verwendeten Informationen mindestens durch zwei möglichst
-    voneinander unabhängige Quellen zu belegen. Fachspezifische
-    Handbücher und Lexika sollen vor allem „Relais“ auf dem Weg zu
-    wichtiger Fachliteratur und historischen Belegen sein, die von den
-    Teilnehmenden auszuwerten ist. Die Kommentare sind somit Ergebnisse
-    zum Teil aufwändiger, von den Studierenden selbst zu leistender
-    Forschung. Quellen für die Erläuterung sollten dem historischen und
-    kulturellen Umfeld immer möglichst nah sein. Da die Briefe
-    Privatdokumente sind, können biographische Quellen, beispielsweise
-    Querverweise zwischen den Briefen, aufschlussreich sein. Um
-    Wiederholungen zu vermeiden, kann auf Kommentare in anderen Briefen
-    verwiesen werden (<monospace>ref[@target]</monospace>).</p>
-    <p>Die Studierenden werden in den Briefen oft mit der Lebenswelt der
-    Korrespondierenden unmittelbar konfrontiert. Gerade das, was
-    Schreibenden selbstverständlich und vertraut ist, erschwert oft die
-    Kommentierung. Da die Gruppe manchmal sehr heterogen ist, ergeben
-    sich manchmal lange und komplizierte Recherchepfade, aber auch
-    lehrreiche Diskussionen. Während die Einzelstellenkommentare
-    möglichst kurz sein sollen, wurden in einigen Durchführungen der
-    Übung diese Wege zur Erkenntnis exemplarisch in einem Bericht
-    dargestellt. Im hier vorgestellten Konzept kommen diese Recherchen
-    ausschließlich in den Zwischenberichten vor. Neben Korrektheit,
-    Vollständigkeit und Konsistenz ist aber Selbstständigkeit nach wie
-    vor ein Kriterium von hohem Gewicht bei der Bewertung der
-    Kommentare.</p>
-    <p>In der ersten Sitzung dieses Blocks wird der Brief, der bereits
-    für die paläographische Übung genutzt wurde, kommentiert. Die
-    Teilnehmenden bestimmen zunächst für sich, was kommentiert werden
-    soll. Nach einer Aussprache darüber, recherchieren sie zunächst für
-    sich alleine, bevor die Ergebnisse in der Gruppe vorgestellt und
-    gemeinsam Kommentare verfasst werden. In der letzten Sitzung der
-    Einheit bringen Studierende ihre Rechercheergebnisse zu ausgewählten
-    Fragen zugeloster anderer Teilnehmender ein.</p>
-  </sec>
-</sec>
-<sec id="reflexion">
-  <title>4. Reflexion</title>
-  <sec id="rahmenbedingungen-und-ausführung-der-veranstaltung">
-    <title>4.1 Rahmenbedingungen und Ausführung der
-    Veranstaltung</title>
-    <list list-type="order">
-      <list-item>
-        <p>Aufgetreten sind in der Lehrveranstaltung vormals
-        Schwierigkeiten vor allem beim selbstbestimmten Formulieren
-        einer Forschungsfrage sowie bei der Begrenzung der Fragestellung
-        in Hinblick auf die zur Verfügung stehende Zeit. Es wurden schon
-        im Vorhinein Maßnahmen getroffen, um auf diese erwarteten
-        Schwierigkeiten zu reagieren. Um Fehlplanungen vorzubeugen,
-        wurden eingangs jeweils eine Projektplanung mit Zeitgerüst von
-        den Studierenden entwickelt sowie mehrere Zwischenberichte mit
-        Rückmeldungen eingeplant. Um Blockaden bei der Themenfindung
-        vorzubeugen, wurde vom Dozenten ein Repertoire von Materialien
-        und Aufgaben angelegt, auf das bei Bedarf und nach individuellem
-        Interesse der Studierenden zurückgegriffen werden konnte.</p>
-      </list-item>
-      <list-item>
-        <p>Im Laufe der Jahre wurde mit einer stärkeren Normierung von
-        Material und Aufgaben auf die genannten Probleme reagiert.
-        Ursprünglich wurde in der Übung, die das selbstregulierte Lernen
-        fördern soll und dieses auch voraussetzt, den Teilnehmenden
-        selbst überlassen, eine für sie interessante Forschungsfrage zu
-        formulieren. Der Gegenstand musste im Bereich der digitalen
-        Annotationen liegen, aber nicht notwendigerweise in dem der
-        digitalen Editorik. Dies führte zu einem hohen
-        Betreuungsaufwand, da die Leistungen trotz heterogener Profile
-        der Studierenden in Bezug auf editorische, informatische und
-        sprachliche Kompetenzen vergleichbar sein müssen (siehe
-        Abschnitt 1.3.3). Die beiden genannten Strategien, also der
-        Entwurf eines Zeitplans und die Bereithaltung von Materialien,
-        wurden auch beibehalten, nachdem das Lehrkonzept angepasst
-        wurde. Die Quellen aus dem Liebesbriefarchiv waren zunächst nur
-        eine solche Option aus dem Repertoire, wurden im Sinne der
-        Vergleichbarkeit aber später zu dem gemeinsam bearbeiteten
-        Material. Diese gemeinsame Datengrundlage hat dabei auch zu mehr
-        Austausch zwischen den Teilnehmenden geführt sowie gegenseitigen
-        Hilfestellungen ermöglicht. In der Lernplattform wird zur
-        Unterstützung dieses Austausches ein Forum genutzt. Die
-        Entwicklung einer eigenen Forschungsfrage wurde zwischenzeitlich
-        auf einen schriftlichen Bericht zu einer für besonders
-        interessant gehaltenen Frage der Kommentierung reduziert.
-        Mittlerweile wird nur noch bei den zwei mündlichen
-        Präsentationen berichtet. Entwarfen die Studierenden zuvor ihre
-        eigenen Projekte, so arbeiten sie nun gemeinsam an einem Projekt
-        mit. Der Anteil selbstregulierten Lernens ist damit
-        eingeschränkt gegenüber dem früheren Vorgehen und auch gegenüber
-        anderen Konzepten, wie sie Walsh
-        (<xref alt="2023" rid="ref-Walsh-2023" ref-type="bibr">2023</xref>)
-        im Hinblick auf heterogene Lerngruppen beschreibt.</p>
-      </list-item>
-      <list-item>
-        <p>Das Fehlen einer praktischen Einheit zur Erstellung einer
-        Webpräsentation, wie sie im holistischen Ansatz von Rehbein und
-        Fritze
-        (<xref alt="2012" rid="ref-Rehbein-2012" ref-type="bibr">2012</xref>)
-        und in vergleichbaren Lehrveranstaltungen (siehe Abschnitt 4.3)
-        beinhaltet ist, kann ein Nachteil für die studentische
-        Motivation sein, da nicht der gesamte Produktionsprozess einer
-        digitalen Edition durchlaufen wird. Umgekehrt bewirkt diese
-        Reduktion eine Konzentration der Lehrinhalte und -ziele auf
-        andere Aspekte der editorischen Arbeit und schließt auch nicht
-        aus, dass der gesamte Prozess bis zur fertigen Edition samt
-        verschiedener dazu geeigneter Technologien angesprochen wird. Um
-        den Prozess vollständig dazustellen und den erfolgreichen
-        Abschluss der Arbeit vor Augen zu führen, spielt nunmehr der
-        Dozent die Daten in eine eher minimalistisch gehaltene
-        Oberfläche ein, um das Ergebnis in der Abschlusssitzung zu
-        zeigen (siehe Abschnitt 3.1).</p>
-      </list-item>
-      <list-item>
-        <p>Es blieb trotz der Änderungen am Gesamtkonzept ein Ziel,
-        selbstreguliertes Lernen zu fördern. Dabei sollte zum einen ein
-        hoher Grad an Transparenz für die Benotung gegeben sein, zum
-        anderen sollten die Studierenden durch den computer- und
-        editionsphilologischen Umgang mit historischen Archivmaterialien
-        in ein Arbeitsfeld eingeführt werden, mit dem viele zuvor nur am
-        Rande oder gar nicht in Kontakt gekommen sind. Auf
-        selbstreguliertes Lernen wird damit nicht vollkommen verzichtet,
-        zumal die Studierenden die Zeit für die Transkription und
-        Kommentierung weitgehend selbst einschätzen müssen. Sie arbeiten
-        dabei zwischen den Sitzungen und nach Ende der Vorlesungszeit
-        unter Selbstkontrolle und -regulation, das heißt weitgehend ohne
-        Kontakt mit dem Lehrenden (siehe
-        <xref alt="Zimmermann 2000, 30–31" rid="ref-Zimmermann-2000" ref-type="bibr">Zimmermann
-        2000, 30–31</xref>). Ein eigener Gestaltungsraum zur Umsetzung
-        des Vorhabens wird gewahrt, indem für die Zwischenberichte nur
-        Mindestzahlen an Briefen festgelegt werden. Auch können die
-        Studierenden zu diesen Zeitpunkten die Materialien
-        unterschiedlich tief erschlossen haben. Eigene Nachforschungen
-        sind zudem für die Kommentierung unumgänglich. Bei den
-        Transkriptionen treten ferner oftmals neue Phänomene auf, die
-        modelliert und ausgezeichnet werden müssen. Mit den
-        Zwischenberichten haben die Teilnehmenden die Möglichkeit,
-        Schwierigkeiten anzusprechen und gemeinsam mit dem Dozenten und
-        der Gruppe Lösungen zu finden. Es wurden auch in jedem Kurs
-        Einheiten vorgesehen, in denen sich je zwei Studierende
-        gegenseitig austauschen und ihre Arbeiten beurteilen (siehe
-        Abschnitt 3.6).</p>
-      </list-item>
-    </list>
-  </sec>
-  <sec id="studierende">
-    <title>4.2 Studierende</title>
-    <p>Da die Lernenden insbesondere im Bereich der Editorik sowie im
-    Umgang mit XML heterogene Vorkenntnisse aufweisen, werden in der
-    Veranstaltung entsprechende Kenntnisse mittlerweile nicht mehr
-    vorausgesetzt und bestimmte Inhalte wie XSLT und XQuery
-    zurückgestellt. Dafür sollte der Umgang mit historischen
-    Schriftdokumenten als Bestandteil der Ausbildung beibehalten werden,
-    weshalb die Einheit zur Paläographie hinzugefügt wurde. Dabei wurde
-    die frühzeitige gemeinsame Transkription eines Briefes als eine
-    notwendige Ergänzung gesehen. Die Heterogenität der Kompetenzprofile
-    wird darüber hinaus durch häufige Gruppenarbeiten in den Sitzungen
-    vor Ort kompensiert.</p>
-    <p>Die curricularen Rahmenbedingungen standen nicht im Zentrum
-    dieses Beitrags. Dennoch ist der Zusammenhang vermutlich nicht
-    zweifelhaft. Selbst bei Veranstaltungen in vergleichbaren
-    Studiengängen stellen sich rasch Unterschiede heraus. In
-    Studiengängen der Digitalen Geisteswissenschaften können oftmals
-    Kenntnisse zu Datenmodellierung und -verarbeitung angenommen werden.
-    Der Bedarf, diese im Hinblick auf digitale Editionen grundlegend zu
-    vermitteln, besteht in der Fachgemeinschaft indes weiterhin. Dies
-    zeigt das Interesse an Formaten wie einem Workshop
-    (<xref alt="Hegel, Ries und Viehhauser 2023" rid="ref-Hegel-2023" ref-type="bibr">Hegel,
-    Ries und Viehhauser 2023</xref>), der eine Abwandlung des
-    vorhandenen Kurskonzeptes darstellt und mit Einheiten aus ähnlichen
-    Lehrveranstaltungen kombiniert wurde.</p>
-    <p>Aufgrund der verschiedenen Anforderungen an derartige Übungen,
-    vor allem aufgrund der Vermittlung nicht nur editorischer, sondern
-    auch computerphilologischer Kompetenzen (siehe Abschnitt 1) werden
-    vergleichbare Veranstaltungen andernorts auf zwei Semester verteilt.
-    Mit Blick auf die digitalen Kompetenzen erscheint es eine Überlegung
-    wert, ob editorische Kenntnisse in philologischen und ähnlichen
-    Studiengängen gleich mit digitalen Methoden verbunden werden
-    können.</p>
-    <p>Ähnlich wie die praktische Editorik theoretische Erkenntnisse
-    über den edierten Gegenstand voraussetzt und ermöglicht, kann der
-    Unterricht idealiter in der Textkodierung eine Reflexion der
-    digitalen Praktiken von Datenstrukturierung und -verarbeitung
-    ermöglichen (vgl.
-    <xref alt="McCarty 2005" rid="ref-McCarty-2005" ref-type="bibr">McCarty
-    2005</xref>;
-    <xref alt="Burnard 2018, 108–109, 112–114" rid="ref-Burnard-2018" ref-type="bibr">Burnard
-    2018, 108–109, 112–114</xref>; sowie
-    <xref alt="Sahle 2015" rid="ref-Sahle-2015" ref-type="bibr">Sahle
-    2015</xref>). Dies betrifft nicht nur die Frage, wie der Gegenstand
-    digital adäquat modelliert kann, sondern auch die Frage, wie er
-    digital präsentiert und bereitgestellt werden soll. Ein solcher
-    Unterricht steht vor der Aufgabe, sowohl den Gegenstand der Edition
-    zu überdenken als auch die medialen Spezifika der digitalen
-    Verarbeitung. Man kann dies positiv wenden: Der Unterricht
-    ermöglicht idealerweise eine tiefere Einsicht in das behandelte
-    Objekt und in die Methode seiner Behandlung, indem Strategien zur
-    Datenmodellierung und -verarbeitung gefunden werden, die dem
-    Gegenstand und der Fragestellung angemessen sind (vgl.
-    <xref alt="Behrmann 1991" rid="ref-Behrmann-1991" ref-type="bibr">Behrmann
-    1991</xref>, v.a. 8 und 11; sowie
-    <xref alt="Mahony und Pierazzo 2012, 223–224" rid="ref-Mahony-2012" ref-type="bibr">Mahony
-    und Pierazzo 2012, 223–224</xref>).</p>
-    <sec id="alternativen">
-      <title>4.3 Alternativen</title>
-      <p>In vergleichbaren Lehrkontexten können die einzelnen Schritte
-      anders gewichtet sein. Wenn der Fokus auf dem Erproben von
-      standardisierten Workflows und Tools liegt, spielen die
-      editorischen Grundlagen eine indirektere Rolle. In Bezug auf die
-      Punkte 1 bis 5 aus Abschnitt 3.1 werden dann bspw. Problemfelder
-      nur angesprochen und auf vertiefende Literatur sowie
-      Recherchemittel wie das zum Selbststudium hingewiesen. In anderen
-      Veranstaltungen wird auf die <italic>Kommentierung</italic>
-      verzichtet, während sich ein ganzer Block dem Themenfeld
-      <italic>Mediale Präsentation</italic> widmet. Im Rahmen des Blocks
-      <italic>Transkription</italic> (s. Abschnitt 3.5) wird in
-      vergleichbaren Veranstaltungen üblicherweise auch das einschlägige
-      TEI-Kapitel zum kritischen Apparat
-      (<monospace>textcrit</monospace>) mit den verschiedenen Ansätzen
-      der lokalen Referenz, der doppelten Endpunktmarkierung und der
-      parallelen Segmentierung behandelt. Es wird aber im hier
-      vorgestellten Lehrkonzept bewusst ausgespart, da es aufgrund der
-      Quellenlage eine weniger wichtige Rolle spielt.</p>
-      <p>Je nach Studienmöglichkeiten können die fachlichen Hintergründe
-      der Studierenden variieren, sodass sich auch Inter- und
-      Transdisziplinarität unter Umständen als weitere Lernziele
-      anbieten. Methodische Varianz kann durch den zeitlichen Rahmen
-      oder durch die Anbindung an Forschungsvorhaben begründet sein,
-      aber auch im Hinblick auf die vorausgesetzten Kompetenzen
-      erfolgen. Welche Möglichkeiten hier offen stehen, sollen folgende
-      Hinweise zu einem vergleichbaren Kurs andeuten, der auf einer
-      Übung zu X-Technologien aufbaut und auf eine Veranstaltung zu
-      Webtechnologien vorbereitet:</p>
-      <p>Statt Briefe manuell zu entziffern, erschließen in diesem Kurs
-      zunächst alle Teilnehmenden je einen handgeschriebenen Brief und
-      ein Typoskript mit , um praktische Erfahrung mit einem gängigen
-      OCR/HTR-Werkzeug zu erlangen. In einer anschließenden
-      Gruppendiskussion werden dann typische Problemfälle gemeinsam
-      herausgearbeitet. Zusätzlich können Studierende vorhandene
-      XSLT-Kenntnisse vertiefen, indem sie ein eigenes Skript zur
-      Transformation des eScriptorium-Outputs in valides TEI
-      entwickeln.</p>
-      <p>In einem zweiten Schritt entwickeln die Teilnehmenden unter
-      Hilfestellung ein XSLT-Skript, das Personen und Orte extrahiert.
-      Das so generierte Personenregister wird dann mit um Normdaten
-      (<ext-link ext-link-type="uri" xlink:href="https://gnd.network/">GND</ext-link>-IDs)
-      angereichert. Umgekehrt erfolgt die Anreicherung des Ortsregister
-      durch manuelle Recherche in , sodass die Teilnehmenden beide Wege
-      kennenlernen. Des weiteren erfassen die Studierenden Normdaten als
-      CMIF
-      (<xref alt="Dumont u. a. 2020" rid="ref-Dumont-2020" ref-type="bibr">Dumont
-      u. a. 2020</xref>) im Metadatenblock der TEI-Dokumente, was eine
-      Validierung und Vorschau über den im Briefkontext weit
-      verbreiteten Webservice
-      (<xref alt="Dumont 2016" rid="ref-Dumont-2016" ref-type="bibr">Dumont
-      2016</xref>) ermöglicht.</p>
-      <p>Um die Methodenvielfalt in den Digitalen Geisteswissenschaften
-      aufzuzeigen, enthält der Vergleichskurs auch eine kleine Einheit
-      mit Einblicken in Nachbardisziplinen wie dem <italic>Natural
-      Language Processing</italic>. Diese beginnt mit einer freien
-      Exploration der Briefinhalte mit den , gefolgt von einem
-      gemeinsamen Erkenntnisaustausch. Darüber hinaus hat die
-      Kursleitung Batch- bzw. Shellskripte vorbereitet, die XSLTs mit
-      dem (Schmid
-      (<xref alt="1995" rid="ref-Schmid-1995" ref-type="bibr">1995</xref>))
-      kombinieren, um die TEI-Texte in eine lemmatisierte Version zu
-      transformieren. Auf diese Weise lernen die Teilnehmenden
-      alternative Kodierungs- und Analysemöglichkeiten kennen und können
-      deren Vor- und Nachteile explorieren und diskutieren.</p>
-      <p>Abschließend bereitet eine Gruppe von Studierenden das
-      Personenregister zu einer HTML-Ansicht auf, während eine andere
-      eine Briefeinzelansicht mit XSLT generiert, sodass sie praxisnahe
-      Einblicke in alle Abschnitte eines digitalen Editionsprozesses
-      erfahren.</p>
-      <p>Alle diese real praktizierten Lehreinheiten sollen zeigen, dass
-      das vorgestellte Lehrkonzept in der Regel nicht <italic>in
-      toto</italic> übertragen werden kann. Die Modularität sowohl der
-      einzelnen Werkzeuge als auch der TEI-Richtlinien erleichtern
-      allerdings die Übernahme einzelner Bestandteile aus diesem Konzept
-      oder dem eingangs genannten frei zugänglichen Lehrmaterial. Die
-      Auswahl der Module hängt von verschiedenen Faktoren ab: a) von den
-      Kompetenzprofilen der Teilnehmenden, b) der Einbindung in
-      Curricula mit ihren jeweiligen Voraussetzungen, Lernzielen und
-      Zeitgerüsten, c) der Anbindung an Forschungsprojekte sowie d) den
-      individuellen wie institutionellen technischen Voraussetzungen.
-      Ein weiterer, aber entscheidender Faktor wurde dabei noch nicht
-      genannt: e) die Kompetenzprofile der Lehrenden.</p>
-    </sec>
-  </sec>
-</sec>
-</body>
-<back>
-<ref-list>
-  <title></title>
-  <ref id="ref-Behrmann-1991">
-    <mixed-citation>Behrmann, Alfred. 1991. <italic>Philologische
-    Praxis</italic>. Bd. 2. Stuttgart: Metzler.</mixed-citation>
-  </ref>
-  <ref id="ref-Boekaerts-2000">
-    <mixed-citation>Boekaerts, Monique und Markku Niemivirta. 2000.
-    Self-Regulated Learning: Finding A Balance Between Learning Goals
-    and Ego-Protective Goals. In: <italic>Handbook of
-    Self-Regulation</italic>, hg. von Monique Boekaerts, Paul R.
-    Pintrich, und Moche Zeidner, 417–450. San Diego: Academic
-    Press.</mixed-citation>
-  </ref>
-  <ref id="ref-Burghart-2017">
-    <mixed-citation>Burghart, Marjorie und Elena Pierazzo. 2017. Digital
-    Scholarly Editions: Manuscripts, Texts and TEI Encoding. 17. Juli.
-    <ext-link ext-link-type="uri" xlink:href="https://teach.dariah.eu/course/view.php?id=32&amp;section=0">https://teach.dariah.eu/course/view.php?id=32&amp;section=0</ext-link>
-    (zugegriffen: 21. Februar 2025).</mixed-citation>
-  </ref>
-  <ref id="ref-Burnard-2018">
-    <mixed-citation>Burnard, Lou. 2018. How Modeling Standards Evolve:
-    The Case of the TEI. In: <italic>The Shape of Data in Digital
-    Humanities. Modeling Texts and Text-Based Resources</italic>, hg.
-    von Julie Flanders und Fotis Jannidis, 99–116. London:
-    Routledge.</mixed-citation>
-  </ref>
-  <ref id="ref-DeRose-1990">
-    <mixed-citation>DeRose, Steven J., David G. Durand, Elli Mylonas und
-    Allen H. Renear. 1990. What Is Text, Really? <italic>Journal of
-    Computing in Higher Education</italic> 1, Nr. 2:
-    3–26.</mixed-citation>
-  </ref>
-  <ref id="ref-DFG-2015">
-    <mixed-citation>Deutsche Forschungsgemeinschaft. 2015.
-    Förderkriterien für wissenschaftliche Editionen in der
-    Literaturwissenschaft. <italic>Informationen für Geistes- und
-    Sozialwissenschaftler/innen</italic>, Nr. 11.
-    <ext-link ext-link-type="uri" xlink:href="https://www.dfg.de/resource/blob/172080/895fcc3cb72ec6cd1d5dc84292fb2758/foerderkriterien-editionen-literaturwissenschaft-data.pdf">https://www.dfg.de/resource/blob/172080/895fcc3cb72ec6cd1d5dc84292fb2758/foerderkriterien-editionen-literaturwissenschaft-data.pdf</ext-link>
-    (zugegriffen: 21. Februar 2025).</mixed-citation>
-  </ref>
-  <ref id="ref-Dumont-2016">
-    <mixed-citation>Dumont, Stefan. 2016. correspSearch – Connecting
-    Scholarly Editions of Letters. <italic>Journal of the Text Encoding
-    Initiative</italic>, Nr. 10. doi:
-    <ext-link ext-link-type="uri" xlink:href="https://doi.org/10.4000/jtei.1742">10.4000/jtei.1742</ext-link>,
-    <ext-link ext-link-type="uri" xlink:href="https://journals.openedition.org/jtei/1742">https://journals.openedition.org/jtei/1742</ext-link>
-    (zugegriffen: 21. Februar 2025).</mixed-citation>
-  </ref>
-  <ref id="ref-Dumont-2020">
-    <mixed-citation>Dumont, Stefan, Ingo Börner, Jonas Müller-Laackman,
-    Dominik Leipold und Gerlinde Schneider. 2020. Correspondence
-    Metadata Interchange Format (CMIF). Berlin-Brandenburg Academy of
-    Sciences; Humanities, 22. April.
-    <ext-link ext-link-type="uri" xlink:href="https://encoding-correspondence.bbaw.de/v1/CMIF.html">https://encoding-correspondence.bbaw.de/v1/CMIF.html</ext-link>
-    (zugegriffen: 21. Februar 2025).</mixed-citation>
-  </ref>
-  <ref id="ref-Goldfarb-1981">
-    <mixed-citation>Goldfarb, Charles F. 1981. A Generalized Approach to
-    Document Markup. In: <italic>Proceedings of the ACM SIGPLAN SIGOA
-    Symposium on Text Manipulation</italic>, 68–73. New York:
-    Association for Computing Machinery.</mixed-citation>
-  </ref>
-  <ref id="ref-Goldfarb-2004">
-    <mixed-citation>Goldfarb, Charles F. und Paul Prescod. 2004.
-    <italic>XML Handbook</italic>. 5. Aufl. Upper Saddle River: Prentice
-    Hall.</mixed-citation>
-  </ref>
-  <ref id="ref-Goetz-2017">
-    <mixed-citation>Götz, Thomas und Ulrike F. Nett. 2017.
-    Selbstreguliertes Lernen. In: <italic>Emotion, Motivation und
-    selbstreguliertes Lernen</italic>, hg. von Thomas Götz, 144–185. 2.
-    Aufl. Paderborn: Schöningh.</mixed-citation>
-  </ref>
-  <ref id="ref-Gregolin-1990">
-    <mixed-citation>Gregolin, Jürgen. 1990. Briefe als Texte: Die
-    Briefedition. <italic>Deutsche Vierteljahresschrift für
-    Literaturwissenschaft und Geistesgeschichte</italic> 64, Nr. 4:
-    756–771.</mixed-citation>
-  </ref>
-  <ref id="ref-Hegel-2023">
-    <mixed-citation>Hegel, Philipp, Thorsten Ries und Gabriel
-    Viehhauser. 2023. Workshop: Digitale Edition – Grundlagen und
-    Perspektiven.
-    <ext-link ext-link-type="uri" xlink:href="https://events.gwdg.de/event/531/overview">https://events.gwdg.de/event/531/overview</ext-link>
-    (zugegriffen: 21. Februar 2025).</mixed-citation>
-  </ref>
-  <ref id="ref-Landmann-2015">
-    <mixed-citation>Landmann, Meike, Franziska Perels, Barbara Otto,
-    Kathleen Schnick-Vollmer und Bernhard Schmitz. 2015.
-    Selbstregulation und selbstreguliertes Lernen. In:
-    <italic>Pädagogische Psychologie</italic>, hg. von Elke Wild und
-    Jens Möller, 45–65. 2. Aufl. Berlin: Springer.</mixed-citation>
-  </ref>
-  <ref id="ref-Mahony-2012">
-    <mixed-citation>Mahony, Simon und Elena Pierazzo. 2012. Teaching
-    Skills or Teaching Methodology? In: <italic>Digital Humanities
-    Pedadogy. Practices, Principles and Politics</italic>, hg. von Brett
-    D. Hirsch, 215–225. [Cambridge]: Open Book.</mixed-citation>
-  </ref>
-  <ref id="ref-Matthews-Schlinzig-2020-a">
-    <mixed-citation>Matthews-Schlinzig, Marie Isabel, Jörg Schuster,
-    Gesa Steinbrink und Jochen Strobel, Hrsg. 2020a. <italic>Handbuch
-    Brief. Von der Frühen Neuzeit bis zur Gegenwart</italic>. Bd. 1.
-    Berlin: De Gruyter.</mixed-citation>
-  </ref>
-  <ref id="ref-Matthews-Schlinzig-2020-b">
-    <mixed-citation>———, Hrsg. 2020b. <italic>Handbuch Brief. Von der
-    Frühen Neuzeit bis zur Gegenwart</italic>. Bd. 2. Berlin: De
-    Gruyter.</mixed-citation>
-  </ref>
-  <ref id="ref-McCarty-2005">
-    <mixed-citation>McCarty, Willard. 2005. <italic>Humanities
-    Computing</italic>. London: Palgrave.</mixed-citation>
-  </ref>
-  <ref id="ref-Mischke-2022">
-    <mixed-citation>Mischke, Dennis, Peer Trilcke und Henny
-    Sluyter-Gäthje. 2022. Hackathons als kollektiv-kreative
-    Bildungsereignisse: Ein Konzept zur Gestaltung offener
-    Lehrveranstaltungen in den Digital Humanities. In: <italic>Kulturen
-    des digitalen Gedächtnisses</italic>, hg. von Michaela Geierhos,
-    131–134. Potsdam: [Digital Humanities im deutschsprachigen Raum
-    e.V.].</mixed-citation>
-  </ref>
-  <ref id="ref-Moerth-2021">
-    <mixed-citation>Moerth, Martina, Hiltraut Paridon und Ulrike
-    Sonntag. 2021. Kognitionswissenschaftliche Erkenntnisse und ihre
-    Folgerungen für evidenzbasierte Hochschullehre. <italic>Die
-    Hochschullehre</italic> 7, Nr. 5: 38–48.</mixed-citation>
-  </ref>
-  <ref id="ref-Otto-2015">
-    <mixed-citation>Otto, Barbara, Franziska Perels und Bernhard
-    Schmitz. 2015. Selbstreguliertes Lernen. In: <italic>Empirische
-    Bildungsforschung. Gegenstandsbereiche</italic>, hg. von Heinz
-    Reinders, Hartmut Ditton, Cornelia Gräsel, und Burkhard Gniewosz,
-    41–53. 2. Aufl. Wiesbaden: Springer VS.</mixed-citation>
-  </ref>
-  <ref id="ref-Plachta-2013">
-    <mixed-citation>Plachta, Bodo. 2013. <italic>Editionswissenschaft:
-    Eine Einführung in Methode und Praxis der Edition neuerer
-    Texte</italic>. 2. Aufl. Stuttgart: Reclam.</mixed-citation>
-  </ref>
-  <ref id="ref-Plachta-2020">
-    <mixed-citation>———. 2020. <italic>Editionswissenschaft: Handbuch zu
-    Geschichte, Methode und Praxis der neugermanistischen
-    Edition</italic>. Stuttgart: Hiersemann.</mixed-citation>
-  </ref>
-  <ref id="ref-Rapp-2017">
-    <mixed-citation>Rapp, Andrea. 2017. Manuelle und automatische
-    Annotation. In: <italic>Digital Humanities</italic>, hg. von Fotis
-    Jannidis, Hubertus Kohle, und Malte Rehbein, 253–267. Stuttgart:
-    Metzler.</mixed-citation>
-  </ref>
-  <ref id="ref-Rehbein-2012">
-    <mixed-citation>Rehbein, Malte und Christiane Fritze. 2012. Hands-On
-    Teaching Digital Humanities: A Didactic Analysis of a Summer School
-    Course on Digital Editing. In: <italic>Digital Humanities Pedadogy.
-    Practices, Principles and Politics</italic>, hg. von Brett D.
-    Hirsch, 47–57. [Cambridge]: Open Book.</mixed-citation>
-  </ref>
-  <ref id="ref-Sahle-2013">
-    <mixed-citation>Sahle, Patrick. 2013. <italic>Digitale
-    Editionsformen. Zum Umgang mit der Überlieferung unter den
-    Bedingungen des Medienwandels</italic>. Bd. 2. Schriften des
-    Instituts für Dokumentologie und Editorik 8. Norderstedt: Book on
-    Demand.
-    <ext-link ext-link-type="uri" xlink:href="http://nbn-resolving.de/urn:nbn:de:hbz:38-53523">http://nbn-resolving.de/urn:nbn:de:hbz:38-53523</ext-link>.</mixed-citation>
-  </ref>
-  <ref id="ref-Sahle-2015">
-    <mixed-citation>———. 2015. Digital Humanities? Gibt’s doch gar
-    nicht! <italic>Zeitschrift für digitale
-    Geisteswissenschaften</italic> Sonderband 1.</mixed-citation>
-  </ref>
-  <ref id="ref-Schmid-1995">
-    <mixed-citation>Schmid, Helmut. 1995. Improvements in Part-of-Speech
-    Tagging with an Application to German. In: <italic>Proceedings of
-    the ACL SIGDAT-Workshop</italic>, 1–9. Dublin: Association for
-    Computational Linguistics.
-    <ext-link ext-link-type="uri" xlink:href="https://cis.uni-muenchen.de/~schmid/tools/TreeTagger/data/tree-tagger2.pdf">https://cis.uni-muenchen.de/~schmid/tools/TreeTagger/data/tree-tagger2.pdf</ext-link>.</mixed-citation>
+    <ext-link ext-link-type="uri" ns1:href="https://cis.uni-muenchen.de/~schmid/tools/TreeTagger/data/tree-tagger2.pdf">https://cis.uni-muenchen.de/~schmid/tools/TreeTagger/data/tree-tagger2.pdf</ext-link>.</mixed-citation>
   </ref>
   <ref id="ref-Strobel-2019">
     <mixed-citation>Strobel, Jochen. 2019. Performanz in der
