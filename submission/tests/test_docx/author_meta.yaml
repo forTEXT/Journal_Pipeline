@@ -1,0 +1,101 @@
+# Legen Sie hier die für die Publikation relevanten Metadaten ab:
+# Titel, Autor*innen inkl. Metadaten, Affiliations, Keywords, Information zum Veranstaltungstypen sowie Anzahl der Sitzungen
+
+# !!! Achtung: Bitte füllen sie lediglich die vorhandenen Felder aus. 
+# !!! Fügen sie keine neuen Felder hinzu, benennen sie die bestehenden nicht um und löschen Sie keine Felder, wenn dies nicht 
+# !!! explizit in der Beschreibung des Feldes gefordert ist.
+
+# Fügen Sie hier den Titel ihres Beitrags in Anführungszeichen ein. 
+title: "Thematologie und Topic Modeling"
+
+
+# Für jede Affiliation vergeben Sie eine ID. Mit dieser ID weisen sie im nächsten Schrit den Autor*innen die jeweilige Affiliation zu. 
+# Falls sie mehr oder weniger Affiliations benötigen, fügen sie für jede Affiliation ein Feld "id" und ein Feld "organization" hinzu bzw.
+# bzw. löschen die nicht benötigten Felder.
+affiliation:
+- id: 1
+  organization: Christian-Albrechts-Universität zu Kiel
+
+# Zählen Sie hier die Autor*innen des Beitrags auf.
+# Sollte es sich nur um eine Person handeln, löschen sie die Platzhalter für weitere Einträge, die mit "- affiliation:" beginnen
+# Für jede Affiliation wird eine oben definierte ID gesetzt.
+# Für AutorInnen ohne Affiliation bleibt das Feld bestehen, es wird aber keine Zahl gesetzt 
+author:
+- affiliation: 1
+  email: jacke@ndl-medien.uni-kiel.de
+  given-names: Janina
+  orcid: 0000-0001-7217-3136
+  surname: Jacke
+
+
+# Zählen Sie hier die Autor*innen auf
+copyright_:
+- holder:
+  - Janina Jacke
+  statement: '>-  © 2019 The authors. Published under a CC BY license.'
+  year: '2025'
+
+
+# Weitere Metadaten
+
+tags: # Hier tragen sie 5 keywords ein
+  - Thematologie
+  - Topic Modeling
+  - Computational Literary Studies
+  - Reflektierte Textanalyse
+  - Textannotation
+
+va_type: Seminar
+no_type: 14
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Ab hier ist keine weitere Bearbeitung notwendig.
+issuetitle: Textannotation in der Hochschullehre
+journal:
+- container-title: forTEXT
+  publisher-loc: Darmstadt
+  publisher-name: Universitäts- und Landesbibliothek Darmstadt
+  title: forTEXT
+license:
+- link: https://creativecommons.org/licenses/by-sa/4.0/
+  text: '>-This work is licensed under a Creative Commons Attribution-ShareAlike 4.0
+    International License.'
+  type: open-access
+container-title: forTEXT Heft
+type: article-journal
+volume: 2
+issue: 13
+article:
+  doi: 
+date:
+reviewers:
+- name:
+  email:
+- name:
+  email:

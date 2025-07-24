@@ -1,0 +1,68 @@
+## Legen Sie hier die für die Publikation relevanten Metadaten ab:
+# Titel, Autor*innen inkl. Metadaten, Affiliations, Keywords, Information zum Veranstaltungstypen sowie Anzahl der Sitzungen
+
+#fügen Sie hier den Titel ihrer Lehrveranstaltung ein
+title: "Textauszeichnung: Digitale Edition und Kommentierung"
+
+# Für jede Affiliation vergeben Sie eine ID, diese ID muss mit der ID der AutorInnen übereinstimmen
+affiliation:
+  id: 1
+  organization: Akademie der Wissenschaften und der Literatur Mainz
+
+# Zählen Sie hier die Autor*innen des Beitrags auf.
+# Sollte es sich nur um eine Person handeln, löschen sie die Platzhalter für weitere Einträge, die mit "- affiliation:" beginnen
+# Für jede Affiliation wird eine ID gesetzt, zu der sie im nächsten Schritt den Namen der Affiliation hinzufügen
+# für AutorInnen ohne Affiliation bleibt das Feld bestehen, es wird aber keine Zahl gesetzt 
+
+author:
+- affiliation: 1
+  email: Patrick.Brookshire@adwmainz.de
+  given-names: Patrick D.
+  orcid: https://orcid.org/0000-0002-5843-7577
+  surname: Brookshire
+- affiliation: 1
+  email: Philipp.Hegel@adwmainz.de
+  given-names: Philipp
+  orcid: https://orcid.org/0000-0001-6867-1511
+  surname: Hegel
+
+# Zählen Sie hier die Autor*innen auf
+copyright_:
+- holder:
+  - Patrick D. Brookshire
+  - Philipp Hegel
+  statement: '>-  © 2019 The authors. Published under a CC BY license.'
+  year: '2025'
+
+
+# Weitere Metadaten
+
+tags: #hier tragen sie 5 keywords ein
+  - Digitale Editorik
+  - Text Encoding Initiative
+  - X-Technologien
+  - Briefedition
+  - Masterstudium
+
+va_type: Übung
+no_type: 14
+
+# keine weitere Bearbeitung notwendig
+issuetitle: Textannotation in der Hochschullehre
+journal:
+- container-title: forTEXT
+  publisher-loc: Darmstadt
+  publisher-name: Universitäts- und Landesbibliothek Darmstadt
+  title: forTEXT
+license:
+- link: https://creativecommons.org/licenses/by-sa/4.0/
+  text: '>-This work is licensed under a Creative Commons Attribution-ShareAlike 4.0
+    International License.'
+  type: open-access
+container-title: forTEXT Heft
+type: article-journal
+volume: 2
+issue: 13
+article:
+  doi: 
+date:

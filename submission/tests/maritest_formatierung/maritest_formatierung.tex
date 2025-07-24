@@ -1,0 +1,638 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+          a4paper,
+        ]{article}
+\raggedbottom
+\usepackage{amsmath,amssymb}
+\usepackage{setspace}
+\usepackage{iftex}
+\RequireLuaTeX
+
+\usepackage{lscape} % für Querformat-Seiten
+\usepackage{hyperref}
+
+\usepackage{unicode-math} % this also loads fontspec
+\defaultfontfeatures{Scale=MatchLowercase}
+\defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+
+  \usepackage[]{plex-otf}
+  
+  
+  
+  
+  
+  
+  
+\directlua{luaotfload.add_fallback
+   ("fallbacks",
+    {
+      "STIX Two Math:;",
+      "NotoColorEmoji:mode=harf;",
+    }
+   )}
+\defaultfontfeatures{RawFeature={fallback=fallbacks}}
+
+\usepackage{academicons}
+\usepackage{fontawesome5}
+\usepackage{ccicons}
+
+  
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage{lua-widow-control}
+  \makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+  
+  
+\usepackage[dvipsnames,svgnames,x11names]{xcolor}
+
+\definecolor{oa-orange}     {RGB} {246, 130, 18}
+\definecolor{ft-red}        {RGB} {168, 0, 0}
+\definecolor{orcid-green}   {RGB} {166, 206, 57}
+\definecolor{fortext-green}   {RGB} {26, 73, 76}
+
+
+\colorlet{oa-orange}        {black}
+
+\colorlet{highlightcolor1}  {DarkOrange}
+\colorlet{highlightcolor2}  {DarkBlue}
+\colorlet{highlightcolor3}  {DarkGreen}
+\colorlet{highlightcolor4}  {DarkMagenta}
+
+\colorlet{filecolor}        {highlightcolor1}
+\colorlet{linkcolor}        {fortext-green}
+\colorlet{citecolor}        {fortext-green}
+\colorlet{urlcolor}         {fortext-green}
+
+
+\NewDocumentCommand \oalogo { }
+{%
+  \textcolor{oa-orange}{\sffamily%\bfseries%
+  open \aiOpenAccess\ access}
+}
+
+
+\NewDocumentCommand \orcidlink { m }
+{%
+	\texorpdfstring
+	{\href{https://orcid.org/#1}{\textcolor{orcid-green}{\raisebox{-.2ex}{\aiOrcid}}}}
+	{https://orcid.org/#1}%
+}
+
+\NewDocumentCommand \emaillink { m }
+{%
+	\texorpdfstring
+	{\href{mailto:#1}{\textcolor{black}{\raisebox{-.2ex}{\faEnvelopeOpen[regular]}}}}
+	{mailto:#1}%
+}
+
+  \usepackage{geometry}
+\geometry{
+	paper=a4paper,
+	top=25mm,
+	bottom=20mm,
+	right=30mm,
+	left=30mm,
+	footskip=10mm,
+	% showframe,
+}
+  
+  \usepackage{listingsutf8}
+\lstset{
+  language=python,
+  basicstyle=\ttfamily\footnotesize,
+  columns=fullflexible,
+  xleftmargin=2em,
+  xrightmargin=2em,
+  % frame=single,
+  breaklines=true,
+  postbreak=\mbox{\textcolor{highlightcolor1}{\(\hookrightarrow\)}\space},
+}
+\newcommand{\passthrough}[1]{#1}
+\lstset{defaultdialect=[5.3]Lua}
+\lstset{defaultdialect=[x86masm]Assembler}
+  
+  
+  
+\usepackage{longtable,booktabs,array}
+\usepackage{tabularray}
+\usepackage{ifthen}
+
+  
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=.8\maxwidth,height=\maxheight,keepaspectratio}
+\makeatletter
+\def\fps@figure{hbp}
+\makeatother
+
+  
+\usepackage{luacolor}
+\usepackage[soul]{lua-ul}
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+  \setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+  
+  
+  
+\usepackage{fancyhdr}
+
+\fancypagestyle{plain}{% used for the first page
+	\fancyhf{}% clear all header and footer fields
+	\fancyhead[L]{}
+	\fancyfoot[L]{}
+	\fancyfoot[R]{\small\thepage}
+	\renewcommand{\headrulewidth}{0pt}%
+	\renewcommand{\footrulewidth}{0pt}%
+}
+
+\fancypagestyle{page}{%
+	\fancyhf{}% clear all header and footer fields
+	\fancyhead[L]{}
+	\fancyhead[R]{\small forTEXT, \textit{Markdownformatierung}}
+	\fancyfoot[L]{\small\textit{forTEXT} 2(13): Textannotation in der
+Hochschullehre}
+	\fancyfoot[R]{\thepage}
+	\renewcommand{\headrulewidth}{0pt}%
+	\renewcommand{\footrulewidth}{0pt}%
+}
+
+\pagestyle{page}
+
+
+\usepackage[
+	small,
+	sf,bf,
+	raggedright,
+	clearempty,
+]{titlesec}
+
+\titleformat{\section}{\Large\sffamily\bfseries}{\thesection.}{.5em}{}
+\titleformat{\subsection}{\large\sffamily\bfseries}{\thesubsection}{.5em}{}
+\titleformat{\subsubsection}{\normalsize\sffamily\bfseries}{\thesubsubsection}{.5em}{}
+\titleformat{\paragraph}{\normalsize\sffamily\bfseries}{\thesubsubsection}{.5em}{}
+\titleformat{\subparagraph}{\normalsize\sffamily\bfseries}{\thesubsubsection}{.5em}{}
+
+  \NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ \let\@cite@ofmt\@firstofone
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+  
+  \usepackage[bidi=basic]{babel}
+    \babelprovide[main,import]{ngerman}
+                  \let\LanguageShortHands\languageshorthands
+\def\languageshorthands#1{}
+  
+\usepackage[
+	ragged,
+	bottom,
+	norule,
+	multiple,
+]{footmisc}
+
+\makeatletter
+\RenewDocumentCommand \footnotemargin { } {0em}
+\RenewDocumentCommand \thefootnote { } {\arabic{footnote}}
+\RenewDocumentCommand \@makefntext { m } {\noindent{\@thefnmark}. #1}
+\interfootnotelinepenalty=10000
+\makeatother
+
+\usepackage{changepage}
+% \newlength{\overhang}
+% \setlength{\overhang}{\marginparwidth}
+% \addtolength{\overhang}{\marginparsep}
+
+  \usepackage{caption}
+\captionsetup{labelformat=empty,font={small,it}}
+  
+\usepackage{selnolig}
+
+  
+  
+  
+  
+\usepackage{csquotes}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+
+  
+  \usepackage[inkscapelatex=false]{svg}
+
+\makeatletter
+\def\@maketitle{%
+	%
+	% title
+	%
+	\newpage
+	\null
+	\vspace*{-\topskip}
+	\begin{tblr}{
+    vline{1,5} = {1pt},
+    colspec={lllX[c,l]},
+    width=\textwidth,
+    columns={font=\small\sffamily,},
+    column{1,3}={
+      rightsep=.3em,
+      font=\footnotesize\sffamily,
+    },
+}
+\hline[1pt]
+\SetCell[c=4]{t,l}{\normalsize\textbf{Markdownformatierung}} & & & \\
+& & & \SetCell[r=3]{c,r}{\includegraphics[height=2\baselineskip]{}} \\
+\SetCell[c=3]{t,l}{\small  forTEXT \emaillink{redaktion@fortext-hefte.de}
+\textsuperscript{\scriptsize 1}
+} & & &\\
+\SetCell[c=2]{t,l}{% 
+\footnotesize%
+1. Technische Universität Darmstadt \\
+} & & & \\
+		\hline[1pt]
+    Thema:                & Textannotation in der Hochschullehre & & \\
+    DOI:                  & \href{https://doi.org/}{} & & \\
+    Jahrgang:             & 2 & & \\
+    Ausgabe:              & 13 & & \\
+		Erscheinungsdatum:    &  & & \\
+    Begutachtende:        & \href{mailto:mari@test.de}{Mari}, \href{mailto:janis@test.de}{Janis} & & \\
+		Lizenz:               & \faCreativeCommons\ \faCreativeCommonsBy\ \faCreativeCommonsSa\ & & \oalogo  \\
+		\hline[1pt]
+	\end{tblr}
+}
+\makeatother
+
+\hypersetup{
+      pdftitle={Markdownformatierung},
+      pdfauthor={ forTEXT},
+      pdflang={de},
+      pdfsubject={forTEXT 2(13): Textannotation in der Hochschullehre},
+      pdfkeywords={Selbststudieneinheit, Blended
+Learning, CATMA, Manuelle Annotation, Literaturwissenschaft},
+      colorlinks=true,
+  linkcolor={linkcolor},
+  filecolor={filecolor},
+  citecolor={citecolor},
+  urlcolor={urlcolor},
+  pdfcreator={LuaLaTeX via pandoc}
+}
+
+
+  
+  \usepackage{ragged2e}
+\usepackage[section]{placeins}
+% Manage float placement
+\usepackage{float}
+\floatplacement{figure}{H}
+
+\usepackage{marginnote}
+\RenewDocumentCommand \marginfont { }
+{ \sffamily\footnotesize }
+\RenewDocumentCommand \raggedleftmarginnote { } { }
+% \author{true}
+
+% \date{}
+
+\usepackage{everypage}
+\usepackage[printwatermark]{xwatermark}
+\usepackage{lipsum}
+\AddEverypageHook{%
+  \begin{picture}(0,0)
+    \put(250,-500){\makebox(0,0){\scalebox{8}{\rotatebox{45}{\textcolor[gray]{0.90}{MANUSCRIPT}}}}}
+  \end{picture}
+}
+
+\begin{document}
+
+
+
+\pagestyle{plain}
+
+
+\maketitle
+
+
+
+% \marginnote{\RaggedRight}[30\baselineskip]%
+
+
+
+
+
+
+
+
+
+\setstretch{1.2}
+
+
+\pagestyle{page}
+
+\renewcommand{\arraystretch}{3}  % Zeilenabstand in Tabellen erhöhen
+
+\section{Markdownformatierungen}\label{markdownformatierungen}
+
+Ich mlöchte dass
+\textbackslash{}(\citeproc{ref-rendition}{\textbf{rendition?}})
+angezeigt wird. wie geht das
+„\textbackslash{}(\citeproc{ref-renditioN}{\textbf{renditioN?}})`` oder
+„@rendition``
+
+\begin{itemize}
+\item
+  Anführungszeichen und Bindestriche müssen nicht gesondert kodiert
+  werden
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Anführungszeichen in Markown bitte so hinterlegen: „Einführung in
+    die Gattungstheorie: Prosa``
+  \item
+    Striche bei Seitenangaben „-`` oder „--``
+  \end{itemize}
+\item
+  Codeblöcke werden durch ```python eingeführt und müssen entsprechend
+  geschlossen werden:
+
+\begin{lstlisting}[language=Python]
+Textbeispiel im Codeblock: 
+- @rendition ist mein Lieblingstag
+
+Codebeispiel:
+tagslist = ["@rendition", "@format", "@highlight"]
+for x in tagslist:
+    print(x)
+\end{lstlisting}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Sonderzeichen, die in solchen Codeblöcken vorkommen müssen nicht
+    weiter kodiert oder gekennzeichnet werden, um korrekt dargestellt zu
+    werden
+  \item
+    Sonderzeichen, die nicht innerhalb eines Codeblocks vorkommen, bitte
+    durch einen vorangestellten Backslash kennzeichnen, bspw.
+    @rendition, @format, Lehrer*innen
+  \end{itemize}
+\end{itemize}
+
+Noch ein weiterer Hinweis zu gültigen Intextreferenzen:
+
+\begin{itemize}
+\tightlist
+\item
+  Zimmermann (\citeproc{ref-Zimmermann-2000}{2000, 21--22}) behaupten,
+  dass\ldots{} wird zu „Zimmermann (2000, 21--22) behaupten,
+  dass\ldots{}``
+\item
+  Boekaerts und Niemivirta (\citeproc{ref-Boekaerts-2000}{2000,
+  418--419, 432}) wird zu „Boekaerts und Niemivirta (2000, 418--419,
+  432)``
+\item
+  (vgl. \citeproc{ref-Zimmermann-2000}{Zimmermann 2000, 21--22};
+  \citeproc{ref-Boekaerts-2000}{Boekaerts und Niemivirta 2000, 418--419,
+  432}) wird zu „(vgl. Zimmermann 2000, 21--22; Boekaerts und Niemivirta
+  2000, 418--419, 432)``
+\end{itemize}
+
+\hfill\break
+\hfill\break
+\hfill\break
+\hfill\break
+
+\section{Gesamtablauf}\label{gesamtablauf}
+
+\section{Elemente der Lehreinheit}\label{elemente-der-lehreinheit}
+
+\begin{landscape}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1083}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.0917}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.0917}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1167}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.1750}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 16\tabcolsep) * \real{0.0167}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Einheit}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Modus}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Thema}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Inhalt}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Lernziel}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Vorbereitung}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Für Lehrende}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Abgabe/ Aufgabe}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+1 & Synchron, Präsenz & Theoretische Einführung in die Analyse von
+Figuren & Einführung in die Figurenanalyse und das Formulieren von
+Forschungsfragen & Grundlagen der Figurenanalyse verstehen und anwenden;
+Forschungsfragen formulieren & Lektüre
+(\citeproc{ref-Hansen_figuren_2016}{Hansen 2016}) & Laptop, Beamer,
+vorbereitende Texte, Foliensatz „Figuren`` (siehe Guhr
+(\citeproc{ref-Foliensatz_Figuren}{2024})) & Formulieren einer
+Forschungsfrage zur Figurenanalyse & \\
+2 & Asynchron, online & Selbststudium: Einführung in die
+literaturwissenschaftliche Textannotation & Erarbeitung von
+Einführungstexten und Video-Tutorials zur manuellen und digitalen
+Annotation & Grundlagen des manuellen und digitalen Annotierens
+verstehen; Anwendung des Tools CATMA & Lektüre
+(\citeproc{ref-schumacherToolbeitragCATMA2019}{Schumacher 2024};
+\citeproc{ref-jackeMethodenbeitragManuelleAnnotation2018}{Jacke 2024a};
+\citeproc{ref-jackeMethodenbeitragKollaborativesLiteraturwissenschaftliches2018}{Jacke
+2024b}), Anschauen der Tutorials
+(\citeproc{ref-fortext_tutorial_2019}{forTEXT 2019a};
+\citeproc{ref-fortext_tutorial_2020}{forTEXT 2020a};
+\citeproc{ref-fortext_tutorial_2019-1}{forTEXT 2019b};
+\citeproc{ref-fortext_tutorial_2019-2}{forTEXT 2019c};
+\citeproc{ref-fortext_tutorial_2020-1}{forTEXT 2020b}) & Sicherstellen,
+dass Links funktionieren und Materialien über Moodle verfügbar sind &
+Durcharbeiten der Materialien, Vorbereitung auf die synchrone Sitzung
+(inklusive der Einrichtung eines persönlichen CATMA-Accounts) & \\
+3 & Synchron, Präsenz & Einführung in die literaturwissenschaftliche
+Annotationspraxis & Zusammenfassende Einführung in die
+literaturwissenschaftliche Annotationspraxis und praktische Anwendung
+der Annotationsmethoden mit CATMA & Anwendung der Annotationsmethoden;
+Reflexion der Nützlichkeit der Annotation & Vorbereitung des
+CATMA-Projekts mit Tagset zur Figurenanalyse (orientiert an Jacke
+(\citeproc{ref-jackeRessourcenbeitragTagsetNarratologie2020}{2024c}))
+und Annotationsbeispielen in vorbereiteter Annotationscollection;
+Formulieren von Übungsaufgaben zur Klausurvorbereitung & Laptop, Beamer,
+Internetzugang, Zugriff auf CATMA & Eigenständige Annotation einer
+Textpassage; Diskussion und Übung von Klausuraufgaben zu
+literaturwissenschaftlicher Textannotation & \\
+4 & Synchron, Präsenz & Überprüfung des Gelernten durch Klausuraufgabe &
+Durchführung der Anwendungsaufgabe in der Klausur & Sicherstellung der
+Lernzielerreichung & Diskussion und Übung von Prüfungsfragen zur
+Textannotation als Teil der vorhergehenden Sitzung zur
+Prüfungsvorbereitung & Bereitstellung der Prüfungsaufgabe und eines
+Beispielprimärtextausschnitts & Formulieren einer Forschungsfrage,
+Begründung von Nutzen und Relevanz von Textannotation, Erstellung eines
+Annotationstagsets, Anwendung von Textannotation zur Näherung an die
+Beantwortung der Forschungsfrage & \\
+\end{longtable}
+
+\end{landscape}
+
+\section{Reflexion}\label{reflexion}
+
+\section*{Bibliographie}\label{bibliography}
+\addcontentsline{toc}{section}{Bibliographie}
+
+\phantomsection\label{refs}
+\begin{CSLReferences}{1}{0}
+\bibitem[\citeproctext]{ref-Boekaerts-2000}
+Boekaerts, Monique und Markku Niemivirta. 2000. Self-Regulated Learning:
+Finding A Balance Between Learning Goals and Ego-Protective Goals. In:
+\emph{Handbook of Self-Regulation}, hg. von Monique Boekaerts, Paul R.
+Pintrich, und Moche Zeidner, 417--450. San Diego: Academic Press.
+
+\bibitem[\citeproctext]{ref-fortext_tutorial_2019}
+forTEXT. 2019a. Tutorial: {CATMA} 6 zur manuellen {Annotation} nutzen.
+Oktober. doi:
+\href{https://doi.org/10.5281/zenodo.10353556}{10.5281/zenodo.10353556},
+\url{https://zenodo.org/records/10353556}.
+
+\bibitem[\citeproctext]{ref-fortext_tutorial_2019-1}
+---------. 2019b. Tutorial: {Projektmanagement} in {CATMA} 6. November.
+doi:
+\href{https://doi.org/10.5281/zenodo.10353713}{10.5281/zenodo.10353713},
+\url{https://zenodo.org/records/10353713}.
+
+\bibitem[\citeproctext]{ref-fortext_tutorial_2019-2}
+---------. 2019c. Tutorial: {Tagsets} in {CATMA} 6 anlegen. Dezember.
+doi:
+\href{https://doi.org/10.5281/zenodo.10377968}{10.5281/zenodo.10377968},
+\url{https://zenodo.org/records/10377968}.
+
+\bibitem[\citeproctext]{ref-fortext_tutorial_2020}
+---------. 2020a. Tutorial: {In} {CATMA} 6 annotieren. Januar. doi:
+\href{https://doi.org/10.5281/zenodo.10353910}{10.5281/zenodo.10353910},
+\url{https://doi.org/10.5281/zenodo.10353910}.
+
+\bibitem[\citeproctext]{ref-fortext_tutorial_2020-1}
+---------. 2020b. Tutorial: {Analysieren} und visualisieren mit {CATMA}.
+Februar. doi:
+\href{https://doi.org/10.5281/zenodo.10276637}{10.5281/zenodo.10276637},
+\url{https://doi.org/10.5281/zenodo.10276637}.
+
+\bibitem[\citeproctext]{ref-Foliensatz_Figuren}
+Guhr, Svenja. 2024. Foliensatz: Figurenanalyse.
+
+\bibitem[\citeproctext]{ref-Hansen_figuren_2016}
+Hansen, Per Krogh. 2016. {IV}. 3.3 {Figuren}. In: \emph{Einführung in
+die {Erzähltextanalyse}}, hg. von Silke Lahn und Jan Christoph Meister,
+übers. von Marie Isabel Schlinzig, 234--249. 3. Aufl. Lehrbuch.
+Stuttgart: J. B. Metzler Verlag.
+\url{https://doi.org/10.1007/978-3-476-05415-9} (zugegriffen: 27. Januar
+2021).
+
+\bibitem[\citeproctext]{ref-jackeRessourcenbeitragTagsetNarratologie2020}
+Jacke, Janina. 2024c. Ressourcenbeitrag: {Tagset} {Narratologie}
+(histoire). \emph{forTEXT Heft} 1, Nr. 4 (August). doi:
+\href{https://doi.org/10.48694/fortext.3757}{10.48694/fortext.3757},
+\url{https://fortext.net/ressourcen/tagsets/tagset-narratologie-histoire}.
+
+\bibitem[\citeproctext]{ref-jackeMethodenbeitragKollaborativesLiteraturwissenschaftliches2018}
+---------. 2024b. Methodenbeitrag: {Kollaboratives}
+literaturwissenschaftliches {Annotieren}. \emph{forTEXT Heft} 1, Nr. 4
+(August). doi:
+\href{https://doi.org/10.48694/fortext.3749}{10.48694/fortext.3749},
+\url{https://fortext.net/routinen/methoden/kollaboratives-literaturwissenschaftliches-annotieren}.
+
+\bibitem[\citeproctext]{ref-jackeMethodenbeitragManuelleAnnotation2018}
+---------. 2024a. Methodenbeitrag: {Manuelle} {Annotation}.
+\emph{forTEXT Heft} 1, Nr. 4 (August). doi:
+\href{https://doi.org/10.48694/fortext.3748}{10.48694/fortext.3748},
+\url{https://fortext.net/routinen/methoden/manuelle-annotation}.
+
+\bibitem[\citeproctext]{ref-schumacherToolbeitragCATMA2019}
+Schumacher, Mareike. 2024. Toolbeitrag: {CATMA}. \emph{forTEXT Heft} 1,
+Nr. 4 (August). doi:
+\href{https://doi.org/10.48694/fortext.3761}{10.48694/fortext.3761},
+\url{https://fortext.net/tools/tools/catma}.
+
+\bibitem[\citeproctext]{ref-Zimmermann-2000}
+Zimmermann, Barry J. 2000. Attaining Self-Regulation: A Social Cognitive
+Perspective. In: \emph{Handbook of Self-Regulation}, hg. von Monique
+Boekaerts, Paul R. Pintrich, und Moche Zeidner, 13--39. San Diego:
+Academic Press.
+
+\end{CSLReferences}
+
+
+
+
+\end{document}

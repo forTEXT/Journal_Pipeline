@@ -1,0 +1,338 @@
+<?xml version='1.0' encoding='utf-8'?>
+<article xmlns:ns0="http://www.niso.org/schemas/ali/1.0/" xmlns:ns1="http://www.w3.org/1999/xlink" dtd-version="1.3" article-type="other">
+<front>
+<journal-meta>
+<journal-id />
+<journal-title-group>
+</journal-title-group>
+<issn />
+<publisher>
+<publisher-name />
+</publisher>
+</journal-meta>
+<article-meta>
+<title-group>
+<article-title>Markdownformatierung</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<name>
+<surname>forTEXT</surname>
+<given-names />
+</name>
+<email>redaktion@fortext-hefte.de</email>
+<xref ref-type="aff" rid="aff-1" />
+</contrib>
+<aff id="aff-1">
+<institution-wrap>
+<institution>Technische Universität Darmstadt</institution>
+</institution-wrap>
+</aff>
+</contrib-group>
+<permissions>
+<license license-type="open-access">
+<ns0:license_ref>https://creativecommons.org/licenses/by-sa/4.0/</ns0:license_ref>
+<license-p>-This work is licensed under a Creative Commons
+Attribution-ShareAlike 4.0 International License.</license-p>
+</license>
+</permissions>
+<kwd-group kwd-group-type="author">
+<kwd>Selbststudieneinheit</kwd>
+<kwd>Blended Learning</kwd>
+<kwd>CATMA</kwd>
+<kwd>Manuelle Annotation</kwd>
+<kwd>Literaturwissenschaft</kwd>
+</kwd-group>
+</article-meta>
+</front>
+<body>
+<sec id="markdownformatierungen">
+  <title>Markdownformatierungen</title>
+  <p>Ich mlöchte dass
+  \(<xref alt="rendition?" rid="ref-rendition" ref-type="bibr"><bold>rendition?</bold></xref>)
+  angezeigt wird. wie geht das
+  „\(<xref alt="renditioN?" rid="ref-renditioN" ref-type="bibr"><bold>renditioN?</bold></xref>)“
+  oder „@rendition“</p>
+  <list list-type="bullet">
+    <list-item>
+      <p>Anführungszeichen und Bindestriche müssen nicht gesondert
+      kodiert werden</p>
+      <list list-type="bullet">
+        <list-item>
+          <p>Anführungszeichen in Markown bitte so hinterlegen:
+          „Einführung in die Gattungstheorie: Prosa“</p>
+        </list-item>
+        <list-item>
+          <p>Striche bei Seitenangaben „-“ oder „–“</p>
+        </list-item>
+      </list>
+    </list-item>
+    <list-item>
+      <p>Codeblöcke werden durch ```python eingeführt und müssen
+      entsprechend geschlossen werden:</p>
+      <p specific-use="wrapper">
+        <code language="python">Textbeispiel im Codeblock: 
+- @rendition ist mein Lieblingstag
+
+Codebeispiel:
+tagslist = ["@rendition", "@format", "@highlight"]
+for x in tagslist:
+    print(x)
+        </code>
+      </p>
+      <list list-type="bullet">
+        <list-item>
+          <p>Sonderzeichen, die in solchen Codeblöcken vorkommen müssen
+          nicht weiter kodiert oder gekennzeichnet werden, um korrekt
+          dargestellt zu werden</p>
+        </list-item>
+        <list-item>
+          <p>Sonderzeichen, die nicht innerhalb eines Codeblocks
+          vorkommen, bitte durch einen vorangestellten Backslash
+          kennzeichnen, bspw. @rendition, @format, Lehrer*innen</p>
+        </list-item>
+      </list>
+    </list-item>
+  </list>
+  <p>Noch ein weiterer Hinweis zu gültigen Intextreferenzen:</p>
+  <list list-type="bullet">
+    <list-item>
+      <p>Zimmermann
+      (<xref alt="2000, 21–22" rid="ref-Zimmermann-2000" ref-type="bibr">2000,
+      21–22</xref>) behaupten, dass… wird zu „Zimmermann (2000, 21–22)
+      behaupten, dass…“</p>
+    </list-item>
+    <list-item>
+      <p>Boekaerts und Niemivirta
+      (<xref alt="2000, 418–419, 432" rid="ref-Boekaerts-2000" ref-type="bibr">2000,
+      418–419, 432</xref>) wird zu „Boekaerts und Niemivirta (2000,
+      418–419, 432)“</p>
+    </list-item>
+    <list-item>
+      <p>(vgl.
+      <xref alt="Zimmermann 2000, 21–22" rid="ref-Zimmermann-2000" ref-type="bibr">Zimmermann
+      2000, 21–22</xref>;
+      <xref alt="Boekaerts und Niemivirta 2000, 418–419, 432" rid="ref-Boekaerts-2000" ref-type="bibr">Boekaerts
+      und Niemivirta 2000, 418–419, 432</xref>) wird zu „(vgl.
+      Zimmermann 2000, 21–22; Boekaerts und Niemivirta 2000, 418–419,
+      432)“</p>
+    </list-item>
+  </list>
+  <p>
+  </p>
+</sec>
+<sec id="gesamtablauf">
+  <title>Gesamtablauf</title>
+</sec>
+<sec id="elemente-der-lehreinheit">
+  <title>Elemente der Lehreinheit</title>
+  <table-wrap>
+    <table>
+      <colgroup>
+        <col width="11%" />
+        <col width="9%" />
+        <col width="9%" />
+        <col width="10%" />
+        <col width="12%" />
+        <col width="15%" />
+        <col width="15%" />
+        <col width="18%" />
+        <col width="2%" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th align="left" valign="top"><bold>Einheit</bold></th>
+          <th align="left" valign="top"><bold>Modus</bold></th>
+          <th align="left" valign="top"><bold>Thema</bold></th>
+          <th align="left" valign="top"><bold>Inhalt</bold></th>
+          <th align="left" valign="top"><bold>Lernziel</bold></th>
+          <th align="left" valign="top"><bold>Vorbereitung</bold></th>
+          <th align="left" valign="top"><bold>Für Lehrende</bold></th>
+          <th align="left" valign="top"><bold>Abgabe/ Aufgabe</bold></th>
+          <th align="left" valign="top" />
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td align="left" valign="top">1</td>
+          <td align="left" valign="top">Synchron, Präsenz</td>
+          <td align="left" valign="top">Theoretische Einführung in die Analyse von Figuren</td>
+          <td align="left" valign="top">Einführung in die Figurenanalyse und das Formulieren von
+          Forschungsfragen</td>
+          <td align="left" valign="top">Grundlagen der Figurenanalyse verstehen und anwenden;
+          Forschungsfragen formulieren</td>
+          <td align="left" valign="top">Lektüre
+          (<xref alt="Hansen 2016" rid="ref-Hansen_figuren_2016" ref-type="bibr">Hansen
+          2016</xref>)</td>
+          <td align="left" valign="top">Laptop, Beamer, vorbereitende Texte, Foliensatz „Figuren“
+          (siehe Guhr
+          (<xref alt="2024" rid="ref-Foliensatz_Figuren" ref-type="bibr">2024</xref>))</td>
+          <td align="left" valign="top">Formulieren einer Forschungsfrage zur Figurenanalyse</td>
+          <td align="left" valign="top" />
+        </tr>
+        <tr>
+          <td align="left" valign="top">2</td>
+          <td align="left" valign="top">Asynchron, online</td>
+          <td align="left" valign="top">Selbststudium: Einführung in die
+          literaturwissenschaftliche Textannotation</td>
+          <td align="left" valign="top">Erarbeitung von Einführungstexten und Video-Tutorials zur
+          manuellen und digitalen Annotation</td>
+          <td align="left" valign="top">Grundlagen des manuellen und digitalen Annotierens
+          verstehen; Anwendung des Tools CATMA</td>
+          <td align="left" valign="top">Lektüre
+          (<xref alt="Schumacher 2024" rid="ref-schumacherToolbeitragCATMA2019" ref-type="bibr">Schumacher
+          2024</xref>;
+          <xref alt="Jacke 2024a" rid="ref-jackeMethodenbeitragManuelleAnnotation2018" ref-type="bibr">Jacke
+          2024a</xref>;
+          <xref alt="Jacke 2024b" rid="ref-jackeMethodenbeitragKollaborativesLiteraturwissenschaftliches2018" ref-type="bibr">Jacke
+          2024b</xref>), Anschauen der Tutorials
+          (<xref alt="forTEXT 2019a" rid="ref-fortext_tutorial_2019" ref-type="bibr">forTEXT
+          2019a</xref>;
+          <xref alt="forTEXT 2020a" rid="ref-fortext_tutorial_2020" ref-type="bibr">forTEXT
+          2020a</xref>;
+          <xref alt="forTEXT 2019b" rid="ref-fortext_tutorial_2019-1" ref-type="bibr">forTEXT
+          2019b</xref>;
+          <xref alt="forTEXT 2019c" rid="ref-fortext_tutorial_2019-2" ref-type="bibr">forTEXT
+          2019c</xref>;
+          <xref alt="forTEXT 2020b" rid="ref-fortext_tutorial_2020-1" ref-type="bibr">forTEXT
+          2020b</xref>)</td>
+          <td align="left" valign="top">Sicherstellen, dass Links funktionieren und Materialien
+          über Moodle verfügbar sind</td>
+          <td align="left" valign="top">Durcharbeiten der Materialien, Vorbereitung auf die
+          synchrone Sitzung (inklusive der Einrichtung eines
+          persönlichen CATMA-Accounts)</td>
+          <td align="left" valign="top" />
+        </tr>
+        <tr>
+          <td align="left" valign="top">3</td>
+          <td align="left" valign="top">Synchron, Präsenz</td>
+          <td align="left" valign="top">Einführung in die literaturwissenschaftliche
+          Annotationspraxis</td>
+          <td align="left" valign="top">Zusammenfassende Einführung in die
+          literaturwissenschaftliche Annotationspraxis und praktische
+          Anwendung der Annotationsmethoden mit CATMA</td>
+          <td align="left" valign="top">Anwendung der Annotationsmethoden; Reflexion der
+          Nützlichkeit der Annotation</td>
+          <td align="left" valign="top">Vorbereitung des CATMA-Projekts mit Tagset zur
+          Figurenanalyse (orientiert an Jacke
+          (<xref alt="2024c" rid="ref-jackeRessourcenbeitragTagsetNarratologie2020" ref-type="bibr">2024c</xref>))
+          und Annotationsbeispielen in vorbereiteter
+          Annotationscollection; Formulieren von Übungsaufgaben zur
+          Klausurvorbereitung</td>
+          <td align="left" valign="top">Laptop, Beamer, Internetzugang, Zugriff auf CATMA</td>
+          <td align="left" valign="top">Eigenständige Annotation einer Textpassage; Diskussion und
+          Übung von Klausuraufgaben zu literaturwissenschaftlicher
+          Textannotation</td>
+          <td align="left" valign="top" />
+        </tr>
+        <tr>
+          <td align="left" valign="top">4</td>
+          <td align="left" valign="top">Synchron, Präsenz</td>
+          <td align="left" valign="top">Überprüfung des Gelernten durch Klausuraufgabe</td>
+          <td align="left" valign="top">Durchführung der Anwendungsaufgabe in der Klausur</td>
+          <td align="left" valign="top">Sicherstellung der Lernzielerreichung</td>
+          <td align="left" valign="top">Diskussion und Übung von Prüfungsfragen zur Textannotation
+          als Teil der vorhergehenden Sitzung zur
+          Prüfungsvorbereitung</td>
+          <td align="left" valign="top">Bereitstellung der Prüfungsaufgabe und eines
+          Beispielprimärtextausschnitts</td>
+          <td align="left" valign="top">Formulieren einer Forschungsfrage, Begründung von Nutzen
+          und Relevanz von Textannotation, Erstellung eines
+          Annotationstagsets, Anwendung von Textannotation zur Näherung
+          an die Beantwortung der Forschungsfrage</td>
+          <td align="left" valign="top" />
+        </tr>
+      </tbody>
+    </table>
+  </table-wrap>
+</sec>
+</body>
+<back>
+<ref-list>
+  <title>Reflexion</title>
+  <ref id="ref-Boekaerts-2000">
+    <mixed-citation>Boekaerts, Monique und Markku Niemivirta. 2000.
+    Self-Regulated Learning: Finding A Balance Between Learning Goals
+    and Ego-Protective Goals. In: <italic>Handbook of
+    Self-Regulation</italic>, hg. von Monique Boekaerts, Paul R.
+    Pintrich, und Moche Zeidner, 417–450. San Diego: Academic
+    Press.</mixed-citation>
+  </ref>
+  <ref id="ref-fortext_tutorial_2019">
+    <mixed-citation>forTEXT. 2019a. Tutorial: CATMA 6 zur manuellen
+    Annotation nutzen. Oktober. doi:
+    <ext-link ext-link-type="uri" ns1:href="https://doi.org/10.5281/zenodo.10353556">10.5281/zenodo.10353556</ext-link>,
+    <ext-link ext-link-type="uri" ns1:href="https://zenodo.org/records/10353556">https://zenodo.org/records/10353556</ext-link>.</mixed-citation>
+  </ref>
+  <ref id="ref-fortext_tutorial_2019-1">
+    <mixed-citation>———. 2019b. Tutorial: Projektmanagement in CATMA 6.
+    November. doi:
+    <ext-link ext-link-type="uri" ns1:href="https://doi.org/10.5281/zenodo.10353713">10.5281/zenodo.10353713</ext-link>,
+    <ext-link ext-link-type="uri" ns1:href="https://zenodo.org/records/10353713">https://zenodo.org/records/10353713</ext-link>.</mixed-citation>
+  </ref>
+  <ref id="ref-fortext_tutorial_2019-2">
+    <mixed-citation>———. 2019c. Tutorial: Tagsets in CATMA 6 anlegen.
+    Dezember. doi:
+    <ext-link ext-link-type="uri" ns1:href="https://doi.org/10.5281/zenodo.10377968">10.5281/zenodo.10377968</ext-link>,
+    <ext-link ext-link-type="uri" ns1:href="https://zenodo.org/records/10377968">https://zenodo.org/records/10377968</ext-link>.</mixed-citation>
+  </ref>
+  <ref id="ref-fortext_tutorial_2020">
+    <mixed-citation>———. 2020a. Tutorial: In CATMA 6 annotieren. Januar.
+    doi:
+    <ext-link ext-link-type="uri" ns1:href="https://doi.org/10.5281/zenodo.10353910">10.5281/zenodo.10353910</ext-link>,
+    <ext-link ext-link-type="uri" ns1:href="https://doi.org/10.5281/zenodo.10353910">https://doi.org/10.5281/zenodo.10353910</ext-link>.</mixed-citation>
+  </ref>
+  <ref id="ref-fortext_tutorial_2020-1">
+    <mixed-citation>———. 2020b. Tutorial: Analysieren und visualisieren
+    mit CATMA. Februar. doi:
+    <ext-link ext-link-type="uri" ns1:href="https://doi.org/10.5281/zenodo.10276637">10.5281/zenodo.10276637</ext-link>,
+    <ext-link ext-link-type="uri" ns1:href="https://doi.org/10.5281/zenodo.10276637">https://doi.org/10.5281/zenodo.10276637</ext-link>.</mixed-citation>
+  </ref>
+  <ref id="ref-Foliensatz_Figuren">
+    <mixed-citation>Guhr, Svenja. 2024. Foliensatz:
+    Figurenanalyse.</mixed-citation>
+  </ref>
+  <ref id="ref-Hansen_figuren_2016">
+    <mixed-citation>Hansen, Per Krogh. 2016. IV. 3.3 Figuren. In:
+    <italic>Einführung in die Erzähltextanalyse</italic>, hg. von Silke
+    Lahn und Jan Christoph Meister, übers. von Marie Isabel Schlinzig,
+    234–249. 3. Aufl. Lehrbuch. Stuttgart: J. B. Metzler Verlag.
+    <ext-link ext-link-type="uri" ns1:href="https://doi.org/10.1007/978-3-476-05415-9">https://doi.org/10.1007/978-3-476-05415-9</ext-link>
+    (zugegriffen: 27. Januar 2021).</mixed-citation>
+  </ref>
+  <ref id="ref-jackeRessourcenbeitragTagsetNarratologie2020">
+    <mixed-citation>Jacke, Janina. 2024c. Ressourcenbeitrag: Tagset
+    Narratologie (histoire). <italic>forTEXT Heft</italic> 1, Nr. 4
+    (August). doi:
+    <ext-link ext-link-type="uri" ns1:href="https://doi.org/10.48694/fortext.3757">10.48694/fortext.3757</ext-link>,
+    <ext-link ext-link-type="uri" ns1:href="https://fortext.net/ressourcen/tagsets/tagset-narratologie-histoire">https://fortext.net/ressourcen/tagsets/tagset-narratologie-histoire</ext-link>.</mixed-citation>
+  </ref>
+  <ref id="ref-jackeMethodenbeitragKollaborativesLiteraturwissenschaftliches2018">
+    <mixed-citation>———. 2024b. Methodenbeitrag: Kollaboratives
+    literaturwissenschaftliches Annotieren. <italic>forTEXT
+    Heft</italic> 1, Nr. 4 (August). doi:
+    <ext-link ext-link-type="uri" ns1:href="https://doi.org/10.48694/fortext.3749">10.48694/fortext.3749</ext-link>,
+    <ext-link ext-link-type="uri" ns1:href="https://fortext.net/routinen/methoden/kollaboratives-literaturwissenschaftliches-annotieren">https://fortext.net/routinen/methoden/kollaboratives-literaturwissenschaftliches-annotieren</ext-link>.</mixed-citation>
+  </ref>
+  <ref id="ref-jackeMethodenbeitragManuelleAnnotation2018">
+    <mixed-citation>———. 2024a. Methodenbeitrag: Manuelle Annotation.
+    <italic>forTEXT Heft</italic> 1, Nr. 4 (August). doi:
+    <ext-link ext-link-type="uri" ns1:href="https://doi.org/10.48694/fortext.3748">10.48694/fortext.3748</ext-link>,
+    <ext-link ext-link-type="uri" ns1:href="https://fortext.net/routinen/methoden/manuelle-annotation">https://fortext.net/routinen/methoden/manuelle-annotation</ext-link>.</mixed-citation>
+  </ref>
+  <ref id="ref-schumacherToolbeitragCATMA2019">
+    <mixed-citation>Schumacher, Mareike. 2024. Toolbeitrag: CATMA.
+    <italic>forTEXT Heft</italic> 1, Nr. 4 (August). doi:
+    <ext-link ext-link-type="uri" ns1:href="https://doi.org/10.48694/fortext.3761">10.48694/fortext.3761</ext-link>,
+    <ext-link ext-link-type="uri" ns1:href="https://fortext.net/tools/tools/catma">https://fortext.net/tools/tools/catma</ext-link>.</mixed-citation>
+  </ref>
+  <ref id="ref-Zimmermann-2000">
+    <mixed-citation>Zimmermann, Barry J. 2000. Attaining
+    Self-Regulation: A Social Cognitive Perspective. In:
+    <italic>Handbook of Self-Regulation</italic>, hg. von Monique
+    Boekaerts, Paul R. Pintrich, und Moche Zeidner, 13–39. San Diego:
+    Academic Press.</mixed-citation>
+  </ref>
+</ref-list>
+</back>
+</article>

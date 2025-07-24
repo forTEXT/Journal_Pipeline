@@ -1,0 +1,129 @@
+# Legen Sie hier die für die Publikation relevanten Metadaten ab:
+# Titel, Autor*innen inkl. Metadaten, Affiliations, Keywords, Information zum Veranstaltungstypen sowie Anzahl der Sitzungen
+
+# !!! Achtung: Bitte füllen sie lediglich die vorhandenen Felder aus. 
+# !!! Fügen sie keine neuen Felder hinzu, benennen sie die bestehenden nicht um und löschen Sie keine Felder, wenn dies nicht 
+# !!! explizit in der Beschreibung des Feldes gefordert ist.
+
+# Fügen Sie hier den Titel ihres Beitrags in Anführungszeichen ein. 
+title: "Titel des Beitrags"
+
+
+# Für jede Affiliation vergeben Sie eine ID. Mit dieser ID weisen sie im nächsten Schrit den Autor*innen die jeweilige Affiliation zu. 
+# Falls sie mehr oder weniger Affiliations benötigen, fügen sie für jede Affiliation ein Feld "id" und ein Feld "organization" hinzu bzw.
+# bzw. löschen die nicht benötigten Felder.
+affiliation:
+- id: 1
+  organization: Affiliation1
+- id: 2
+  organization: Affiliation2
+
+# Zählen Sie hier die Autor*innen des Beitrags auf.
+# Sollte es sich nur um eine Person handeln, löschen sie die Platzhalter für weitere Einträge, die mit "- affiliation:" beginnen
+# Für jede Affiliation wird eine oben definierte ID gesetzt.
+# Für AutorInnen ohne Affiliation bleibt das Feld bestehen, es wird aber keine Zahl gesetzt 
+author:
+- affiliation: 1
+  email: Mailadresse
+  given-names: Vorname1
+  orcid: Orcid oder Zeile löschen wenn nicht vorhanden
+  surname: Nachname1
+- affiliation: 2
+  email: Mailadresse2
+  given-names: Vorname2
+  surname: Nachname2
+- affiliation: 1
+  email: Mailadresse
+  given-names: Vorname3
+  orcid: Orcid oder Zeile löschen wenn nicht vorhanden
+  surname: Nachname3
+
+
+# Zählen Sie hier die Autor*innen auf
+copyright_:
+- holder:
+  - Vorname1 Nachname1
+  - Vorname2 Nachname2
+  statement: '>-  © 2019 The authors. Published under a CC BY license.'
+  year: '2025'
+
+
+# Weitere Metadaten
+
+tags: # Hier tragen sie 5 keywords ein
+  - keyword1
+  - keyword2
+  - keyword3
+  - keyword4
+  - keyword5
+
+va_type: # Veranstaltungstyp z.B. Workshop, Mehrere Sitzungen einer Lehrveranstaltung, Semesterplan, Hackathon etc.
+no_type: # Anzahl der Sitzungen in Tagen z.B. eintägiger Workshop == 1 etc.
+
+# Anhänge
+# Dieser Abschnitt enthält eine Liste der Anhänge.
+# Wichtige Hinweise zur Bearbeitung:
+# - Jeder Anhang muss in einer neuen Zeile mit einem Bindestrich (-) beginnen.
+# - Für jeden Anhang müssen die Felder "title", "year" und "author" angegeben werden.
+# - Falls keine weniger (oder keine) Anhänge vorhanden sind, müssen die nicht benötigten Einträge entsprechend entfernt werden
+# - Falls zusätzliche Anhänge hinzugefügt werden, müssen sie nach demselben Muster ergänzt werden.
+
+appendices:
+  - title: "Foliensatz: Literarische Textannotation (mit CATMA)"
+    year: 2024
+    author: fortext
+  - title: "Foliensatz: Figurenanalyse"
+    year: 2024
+    author: fortext
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Ab hier ist keine weitere Bearbeitung notwendig.
+issuetitle: Textannotation in der Hochschullehre
+journal:
+- container-title: forTEXT
+  publisher-loc: Darmstadt
+  publisher-name: Universitäts- und Landesbibliothek Darmstadt
+  title: forTEXT
+license:
+- link: https://creativecommons.org/licenses/by-sa/4.0/
+  text: '>-This work is licensed under a Creative Commons Attribution-ShareAlike 4.0
+    International License.'
+  type: open-access
+container-title: forTEXT Heft
+type: article-journal
+volume: 2
+issue: 13
+article:
+  doi: 
+date:
+reviewers:
+- name:
+  email:
+- name:
+  email:
