@@ -10,6 +10,7 @@ forTEXT führt die Konvertierung und somit Erstellung finaler Artikeldateien in 
 forTEXT übernimmt eine sogenannte "formale Prüfung" die im Rahmen der Ausführung dieser Pipeline durchgeführt wird: Sollten Dateien unvollständig oder im falschen Format vorhanden sein, gibt die Pipeline Fehlermeldungen aus. Im schlimmsten Fall ist eine Generierung der XML- und PDF-Versionen nicht möglich. Die Fehlermeldungen werden im Rahmen der formalen Prüfung an die Autor\*innen weitergeleitet und Fehler müssen von diesen korrigiert werden.
 
 ## Directory strcuture
+- **review_templates**: contains templates for the formal review
 - **archive**: contains past article versions
 - **submission**: contains currently edited article versions
 - **template**: contains all templates, codes etc. of the article pipeline
