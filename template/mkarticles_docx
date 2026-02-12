@@ -1,0 +1,234 @@
+#!/bin/bash
+
+# Bash script to generate articles from DOCX files. 
+# Generates XML and PDF files for each article. 
+
+# Update to the newest version using git
+#git pull --rebase
+
+# Set Paths
+BASE_DIR="../submission"
+BD=$(pwd)  # Base directory
+
+# set path to fortext logo according to used os
+LOGOPATH=$(realpath ./data/logo/forTEXT_journal_Logo_Black.pdf)
+
+if [[ "$OSTYPE" == "msys" || "$OSTYPE" == "cygwin" ]]; then
+  FORTEXTLOGO=$(cygpath -m "$LOGOPATH")
+ 
+else
+  FORTEXTLOGO=$LOGOPATH
+
+
+fi
+
+# Update to the newest version using git
+#git pull --rebase
+
+# Start cleaning files and generating article files
+echo "***************************************************************************"
+echo -e "PIPELINE RUNNING...\n"
+
+# Check if articles.txt is empty or missing
+if [ ! -s "articles.txt" ]; then
+  echo "❌ articles.txt is empty or missing. Exiting"
+  # If articles.txt is empty or missing, iterate over all subdirectories in INPUT_BASE_DIR
+  exit 1
+else
+  echo "✅ articles.txt found & contains entries. Processing directories listed in articles.txt."
+  # If articles.txt contains entries, read directories from the file
+  ARTICLE_DIRS=$(<articles.txt)
+fi
+
+# Iterate over the list of directories 
+for ARTICLE_DIR in ${ARTICLE_DIRS[@]}; do
+  # echo -e "\n\nPROCESSING ARTICLE DIR: $ARTICLE_DIR"
+  
+  # Navigate to the current article directory
+  cd "$ARTICLE_DIR" || exit 1
+  
+  # Get the article name based on directory name
+  ARTICLE=$(basename "$ARTICLE_DIR")
+  echo "- Processing Article Dir: $ARTICLE" 
+
+  # Check if the main docx file exists, if not exit
+  DOCX_FILE="text.docx"
+  if [ ! -f "$DOCX_FILE" ]; then
+    echo "***************************************************************************"
+    echo "\n\n❌Error: Docx file '$Docx_FILE' not found in $ARTICLE_DIR. Exiting.❌"
+    echo "***************************************************************************"
+    exit 1
+  fi
+
+  # Check if metadata file exists, if not exit
+  METADATA_FILE="author_meta.yaml"
+  if [ ! -f "$METADATA_FILE" ]; then
+    echo "***************************************************************************"
+    echo "\n\n❌!!Error: Metadata file (author_meta.yaml) '$METADATA_FILE' not found in $ARTICLE_DIR. Exiting.❌"
+    echo "***************************************************************************"
+    exit 1
+  fi
+  
+  BIBLIO_ARG=()
+  # Find the bibliography file (supports multiple formats like .json, .bib, etc.)
+  BIBLIOGRAPHY_FILE=$(find . -maxdepth 1 -type f -iname 'bibliography.*' | head -n 1)
+  if [ -f "$BIBLIOGRAPHY_FILE" ]; then
+    BIBLIO_ARG=(--bibliography="$BIBLIOGRAPHY_FILE")
+    echo "- Using bibliography file: $BIBLIOGRAPHY_FILE"
+    echo -e "\n***************************************************************************"
+  
+  else
+    echo "***************************************************************************"
+    echo -e "⚠️!WARNING: No bibliography file found in $ARTICLE_DIR."
+    echo "***************************************************************************"
+  fi
+
+
+  # 1. Convert Docx to Markdown 
+  # echo "***************************************************************************"
+  echo -e "\nCONVERTING $DOCX_FILE to ${ARTICLE}_markdown.md"
+  pandoc \
+    "text.docx" \
+    --output "${ARTICLE}_markdown.md" \
+
+  echo -e "✅ DOCX TO MARKDOWN SUCCESSFUL."
+
+  # 2. Fix conversion issues in Markdown file
+  echo -e "- Cleaning conversion issues in ${ARTICLE}_markdown.md"
+  python3 "$BD/scripts/fix_markdown.py" "${ARTICLE}_markdown.md" -o "${ARTICLE}_cleaned_markdown.md"
+  echo -e "✅ CLEANED MARKDOWN."
+  # && git add "${ARTICLE}_cleaned_markdown.md" \
+  # && git commit -m "data(output): generated ${ARTICLE}_cleaned_markdown.md" \
+  # && git push
+  
+
+
+  echo -e "\n***************************************************************************"
+  echo -e "\n ADDING TABLE..."
+
+  # Check if the main markdown file exists
+  MARKDOWN_FILE="${ARTICLE}_cleaned_markdown.md"
+  if [ ! -f "$MARKDOWN_FILE" ]; then
+    echo "\n\n ❌!! Error: Markdown file '$MARKDOWN_FILE' not found in $ARTICLE_DIR. Exiting."
+    exit 1
+  fi
+  
+  # 3. Add table to markdown file 
+  # Identify and select the correct table file (either .csv or .md)
+  TABLE_FILE=""
+  if [ -s "table.csv" ]; then
+    TABLE_FILE="table.csv" 
+  elif [ -s "table.md" ]; then
+    TABLE_FILE="table.md"
+  else
+    echo -e "⚠️!! Warning: No table file (table.csv/.md) found for $ARTICLE. CONTINUING without table file"
+  fi
+
+  #set input variable for pandoc
+  OUTPUT_MD="${ARTICLE}_tableversion.md"
+  PANDOC_INPUT_MD="$MARKDOWN_FILE"
+
+  # If a table file was successfully assigned, run the Python script to insert the table into the Markdown
+  if [ -n "$TABLE_FILE" ]; then
+    echo -e "- Inserting table to markdown file"
+    echo -e "- Running insert_table.py with $MARKDOWN_FILE and $TABLE_FILE"
+    python3 "$BD/scripts/insert_table.py" "$MARKDOWN_FILE" "$TABLE_FILE" "$OUTPUT_MD"
+    echo -e "✅ Succesfully added table. Using $OUTPUT_MD for article generation."
+  
+    PANDOC_INPUT_MD="$OUTPUT_MD"
+  else
+    # No table file exists, create intext_replaced as a copy of the markdown file
+    echo -e "✅ No table file assigned. Using original markdown for article generation."
+    #cp "$MARKDOWN_FILE" "${ARTICLE}_cleaned_markdown.md"
+    # PANDOC_INPUT_MD="$MARKDOWN_FILE"
+    # echo -e "- Successfully generated markdown without table."
+    # && git add "${ARTICLE}_intext_replaced.md" \
+    # && git commit -m "data(output): generated ${ARTICLE}_intext_replaced.md (copy)" \
+    # && git push
+    
+  fi
+
+
+  #Extract table
+  #python3 "$BD/scripts/extract_table.py" "table_only_processed.md"   
+
+  echo -e "\n***************************************************************************"
+  echo -e "\nCALLING PANDOC..."
+
+  # Generate PDF file
+  echo -e "- Generating $ARTICLE.pdf"
+  pandoc \
+    --defaults="$BD/fortext-hefte.yaml" \
+    --defaults=latex.yaml \
+    --metadata-file="$METADATA_FILE" \
+    --variable=logo:"$FORTEXTLOGO" \
+    --include-in-header=caption.tex \
+    "${BIBLIO_ARG[@]}" \
+    "$PANDOC_INPUT_MD" \
+    --output "$ARTICLE.pdf" \
+    && echo -e "✅ PDF file."
+  # && git add "$ARTICLE.pdf" \
+  # && git commit -m "data(output): generated $ARTICLE.pdf" \
+  # && git push
+  
+
+  # Generate Cover for Appendices only if dir exists and not empty
+  # if [ -d "anhänge" ] && [ "$(ls -A anhänge)" ]; then
+  #   echo -e "\n\nGenerating appendix covers for $ARTICLE"
+  #   "$BD/mkappendix"
+  # else
+  #   echo -e "No appendix folder or folder is empty, skipping cover generation"
+  # fi
+
+
+  # Generate XML File
+  echo -e "\n- Generating $ARTICLE.xml"
+  pandoc \
+    --defaults="$BD/fortext-hefte.yaml" \
+    --defaults=jats.yaml \
+    --metadata-file="$METADATA_FILE" \
+    "${BIBLIO_ARG[@]}" \
+    "$PANDOC_INPUT_MD" \
+    --to jats \
+    --output $ARTICLE.xml \
+    && echo -e "- XML file generated."
+  # && git add $ARTICLE.xml \
+  # && git commit -m "data(output): generated $ARTICLE.xml" \
+  # && git push
+    
+
+  # Format the XML file using the Python script
+  echo -e "\n- Formatting $ARTICLE.xml"
+  python3.11 "$BD/scripts/format_xml.py" "$ARTICLE.xml" \
+  && echo -e "✅ XML file modified.\n" \
+  # && git add "$ARTICLE.xml" \
+  # && git commit -m "data(output): formatted $ARTICLE.xml" \
+  # && git push
+
+
+  # echo "***************************************************************************"
+  # # Generate TeX file
+  # echo -e "\n\nGenerating $ARTICLE.tex"
+  # pandoc \
+  #   --defaults="$BD/fortext-hefte.yaml" \
+  #   --defaults=latex.yaml \
+  #   --include-in-header=caption.tex \
+  #   --metadata-file="$METADATA_FILE" \
+  #   "${BIBLIO_ARG[@]}" \
+  #   "$PANDOC_INPUT_MD" \
+  #   --output "$ARTICLE.tex" \
+  #   && echo -e "✅ TEX-File."
+  # # && git add "$ARTICLE.tex" \
+  # # && git commit -m "data(output): generated $ARTICLE.tex" \
+  # # && git push
+
+  # Clean Dir
+  echo -e "\nREMOVING files from Dir: "
+  echo -e "${ARTICLE}_cleaned_markdown.md, ${ARTICLE}_markdown.md, $OUTPUT_MD"
+  rm -f "${ARTICLE}_cleaned_markdown.md" "${ARTICLE}_markdown.md"  "$OUTPUT_MD"
+   
+
+  # Return to the base directory for the next iteration
+  cd "$BD" || exit 1
+
+done

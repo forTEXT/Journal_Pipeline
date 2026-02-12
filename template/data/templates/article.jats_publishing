@@ -1,3 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+$if(xml-stylesheet)$
+<?xml-stylesheet type="text/xsl" href="$xml-stylesheet$"?>
+$endif$
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.3 20210610//EN"
+  "http://jats.nlm.nih.gov/archiving/1.3/JATS-archivearticle1-3.dtd">
 $if(article.type)$
 <article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" article-type="$article.type$">
 $else$
@@ -5,8 +11,8 @@ $else$
 $endif$
 <front>
 <journal-meta>
-$if(journal.publisher-id)$
-<journal-id journal-id-type="publisher-id">$journal.publisher-id$</journal-id>
+$if(journal.eissn)$
+<journal-id journal-id-type="eissn">$journal.eissn$</journal-id>
 $endif$
 $if(journal.nlm-ta)$
 <journal-id journal-id-type="nlm-ta">$journal.nlm-ta$</journal-id>
@@ -64,18 +70,18 @@ $endif$
 $if(article.art-access-id)$
 <article-id pub-id-type="art-access-id">$article.art-access-id$</article-id>
 $endif$
-$if(article.heading)$
+$if(article.categories)$
 <article-categories>
+$if(article.heading)$
 <subj-group subj-group-type="heading">
 <subject>$article.heading$</subject>
 </subj-group>
-$if(article.categories)$
+$endif$
 <subj-group subj-group-type="categories">
 $for(article.categories)$
-<subject>$article.categories$</subject>
+<subject>$it$</subject>
 $endfor$
 </subj-group>
-$endif$
 </article-categories>
 $endif$
 $if(title)$
@@ -86,8 +92,8 @@ $if(subtitle)$
 $endif$
 </title-group>
 $endif$
-$if(author)$
 <contrib-group>
+$if(author)$
 $for(author)$
 <contrib contrib-type="author"$if(author.equal-contrib)$ equal-contrib="yes"$endif$$if(author.cor-id)$ corresp="yes"$endif$>
 $if(author.orcid)$
@@ -131,6 +137,81 @@ $endfor$
 $for(affiliation)$
 ${ it:affiliations.jats() }
 $endfor$
+$if(reviewers)$
+$for(reviewers)$
+<contrib contrib-type="reviewer"$if(reviewers.role)$ specific-use="$reviewers.role$"$endif$>
+<role>$reviewers.role$</role>
+$if(reviewers.surname)$
+<name>
+<surname>$if(reviewers.non-dropping-particle)$${reviewers.non-dropping-particle} $endif$$reviewers.surname$</surname>
+<given-names>$reviewers.given-names$$if(reviewers.dropping-particle)$ ${reviewers.dropping-particle}$endif$</given-names>
+$if(reviewers.prefix)$
+<prefix>${reviewers.suffix}</prefix>
+$endif$
+$if(reviewers.suffix)$
+<suffix>${reviewers.suffix}</suffix>
+$endif$
+</name>
+$elseif(reviewers.name)$
+<string-name>$reviewers.name$</string-name>
+$else$
+<string-name>$reviewers$</string-name>
+$endif$
+$if(reviewers.email)$
+<email>$reviewers.email$</email>
+$endif$
+$if(reviewers.orcid)$
+<contrib-id contrib-id-type="orcid">$reviewers.orcid$</contrib-id
+$endif$
+</contrib>
+$endfor$
+$endif$
+$if(guest-editors)$
+$for(guest-editors)$
+<contrib contrib-type="editor" specific-use="guest-editor">
+<role>guest-editor</role>
+$if(guest-editors.surname)$
+<name>
+<surname>$if(guest-editors.non-dropping-particle)$${guest-editors.non-dropping-particle} $endif$$guest-editors.surname$</surname>
+<given-names>$guest-editors.given-names$$if(guest-editors.dropping-particle)$ ${guest-editors.dropping-particle}$endif$</given-names>
+$if(guest-editors.prefix)$<prefix>${guest-editors.suffix}</prefix>$endif$
+$if(guest-editors.suffix)$<suffix>${guest-editors.suffix}</suffix>$endif$
+</name>
+$elseif(guest-editors.name)$
+<string-name>$guest-editors.name$</string-name>
+$else$
+<string-name>$guest-editors$</string-name>
+$endif$
+$if(guest-editors.email)$
+<email>$guest-editors.email$</email>
+$endif$
+$if(guest-editors.orcid)$
+<contrib-id contrib-id-type="orcid">$guest-editors.orcid$</contrib-id>
+$endif$
+</contrib>
+$endfor$
+$endif$
+$if(editor-in-chief)$
+$for(editor-in-chief)$
+<contrib contrib-type="editor" specific-use="editor-in-chief">
+<role>editor-in-chief</role>
+$if(editor-in-chief.surname)$
+<name>
+<surname>$if(editor-in-chief.non-dropping-particle)$${editor-in-chief.non-dropping-particle} $endif$$editor-in-chief.surname$</surname>
+<given-names>$editor-in-chief.given-names$$if(editor-in-chief.dropping-particle)$ ${editor-in-chief.dropping-particle}$endif$</given-names>
+$if(editor-in-chief.prefix)$<prefix>${editor-in-chief.suffix}</prefix>$endif$
+$if(editor-in-chief.suffix)$<suffix>${editor-in-chief.suffix}</suffix>$endif$
+</name>
+$elseif(editor-in-chief.name)$
+<string-name>$editor-in-chief.name$</string-name>
+$else$
+<string-name>$editor-in-chief$</string-name>
+$endif$
+$if(editor-in-chief.email)$<email>$editor-in-chief.email$</email>$endif$
+$if(editor-in-chief.orcid)$<contrib-id contrib-id-type="orcid">$editor-in-chief.orcid$</contrib-id>$endif$
+</contrib>
+$endfor$
+$endif$
 </contrib-group>
 $endif$
 $if(article.author-notes)$
@@ -148,17 +229,6 @@ $if(article.author-notes.con)$
 $endif$
 </author-notes>
 $endif$
-$if(date)$
-<pub-date date-type="$if(date.type)$$date.type$$else$pub$endif$" publication-format="electronic"$if(date.iso-8601)$ iso-8601-date="$date.iso-8601$"$endif$>
-$if(date.day)$
-<day>$date.day$</day>
-$endif$
-$if(date.month)$
-<month>$date.month$</month>
-$endif$
-<year>$date.year$</year>
-</pub-date>
-$endif$
 $if(article.volume)$
 <volume>$article.volume$</volume>
 $endif$
@@ -166,33 +236,34 @@ $if(article.issue)$
 <issue>$article.issue$</issue>
 $endif$
 $if(article.issuetitle)$
-<issue-title>$article.issuetitle$</issue-title>
+<issue-title xml:lang="de">$article.issuetitle$</issue-title>
 $endif$
-$if(article.fpage)$
-<fpage>$article.fpage$</fpage>
+$if(article.date)$
+<pub-date date-type="pub" publication-format="electronic"$if(article.date.iso-8601)$ iso-8601-date="$article.date.iso-8601$"$endif$>
+    <year>$article.date.year$</year>
+</pub-date>
 $endif$
-$if(article.lpage)$
-<lpage>$article.lpage$</lpage>
-$endif$
-$if(article.elocation-id)$
-<elocation-id>$article.elocation-id$</elocation-id>
+$if(article.version)$
+<article-version vocab="JAV" vocab-identifier="http://www.niso.org/publications/rp/RP-8-2008.pdf"
+  article-version-type="$article.version.article-version-type$"
+  vocab-term="$article.version.vocab-term$"
+  version-number="$article.version.version-number$"
+  version-note="Previous version: $article.version.previous_version.prev_version-number$ published $article.version.previous_version.prev_version_date$">
+</article-version>
 $endif$
 $if(history)$
 <history>
+  $if(history.received)$
+    <date date-type="received" $if(history.received.iso-8601)$ iso-8601-date="$history.received.iso-8601$"$endif$>
+          <year>$history.received.year$</year>
+    </date>
+  $endif$
+  $if(history.accepted)$
+    <date date-type="accepted" $if(history.accepted.iso-8601)$ iso-8601-date="$history.accepted.iso-8601$"$endif$>
+       <year>$history.accepted.year$</year>
+    </date>
+  $endif$
 </history>
-$endif$
-$if(origdate)$
-<pub-history>
-<event>
-<event-desc>Erstveröffentlichung: $origdate.day$.$origdate.month$.$origdate.year$ auf <ext-link ext-link-type="uri" xlink:href="$origurl$">fortext.net</ext-link>
-<date date-type="origdate" iso-8601-date="$origdate.iso$">
-<day>$origdate.day$</day>
-<month>$origdate.month$</month>
-<year>$origdate.year$</year>
-</date>
-</event-desc>
-</event>
-</pub-history>
 $endif$
 <permissions>
 $for(copyright.statement)$
@@ -226,7 +297,7 @@ $endif$
 $if(tags)$
 <kwd-group kwd-group-type="author">
 $for(tags)$
-<kwd>$tags$</kwd>
+<kwd>$it$</kwd>
 $endfor$
 </kwd-group>
 $endif$
@@ -252,4 +323,3 @@ $back$
 $endif$
 </back>
 </article>
-

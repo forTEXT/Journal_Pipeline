@@ -5,7 +5,7 @@ import re
 def read_markdown_text(file_path):
     """
     Read a markdown text file and return its contents as a list of lines.
-    Removes everything before the '# Inhaltsverzeichnis' heading if it exists.
+    Removes everything before the '# Inhalt' heading if it exists.
     
     Function cleans up markdown files by removing any preamble
     content that appears before the main table of contents section.
@@ -31,10 +31,10 @@ def read_markdown_text(file_path):
         
         # Remove any content before '# Inhaltsverzeichnis' (Table of Contents in German)
         # This regex pattern matches everything from the start of the file up to the first
-        # occurrence of '# Inhaltsverzeichnis' and replaces it with just the heading
-        hint_pattern = r'^.*?(# Inhaltsverzeichnis)'
+        # occurrence of '# Inhalt' and replaces it with just the heading
+        hint_pattern = r'^.*?(# Inhalt)'
         content = ''.join(lines)
-        content = re.sub(hint_pattern, r'\1', content, flags=re.DOTALL)
+        #content = re.sub(hint_pattern, r'\1', content, flags=re.DOTALL)
         
         # Return as list of lines while preserving line endings for proper formatting
         return content.splitlines(True)  # Preserve line endings
@@ -99,7 +99,7 @@ def write_markdown_file(file_path, lines):
         # Write all lines to the specified file with UTF-8 encoding
         with open(file_path, 'w', encoding='utf-8') as file:
             file.writelines(lines)
-        print(f"Successfully wrote file: {file_path}")
+            print(f" - Successfully wrote file: {file_path}")
     except IOError as e:
         print(f"Error writing to file {file_path}: {str(e)}")
         raise
@@ -126,13 +126,18 @@ def read_csv_file(file_path):
     
     table = []
     try:
-        # Open CSV file with proper encoding and newline handling
         with open(file_path, newline='', encoding='utf-8') as csvfile:
-            reader = csv.reader(csvfile)
+            # add sniffer here
+            sample = csvfile.read(4096)
+            csvfile.seek(0)
+            dialect = csv.Sniffer().sniff(sample, delimiters=";,")
+
+            reader = csv.reader(csvfile,dialect)
             for row in reader:
                 # Clean each cell by removing newlines, carriage returns, and tabs
                 # Replace them with spaces and strip whitespace for clean formatting
                 cleaned_row = [re.sub(r'[\r\n\t]+', ' ', cell).strip() for cell in row]
+                #print(cleaned_row)
                 table.append(cleaned_row)
         
         # Warn if the CSV file appears to be empty
@@ -142,6 +147,9 @@ def read_csv_file(file_path):
     except csv.Error as e:
         print(f"CSV parsing error in {file_path}: {str(e)}")
         raise
+    except UnicodeDecodeError as e:
+        print("❌ Major Problem ❌")
+        print(f"Table possibly not in UTF-8 {file_path}: {str(e)}")
     except IOError as e:
         print(f"Error reading file {file_path}: {str(e)}")
         raise
@@ -230,14 +238,28 @@ def insert_table(lines, table_markdown, heading_no=4):
         # Provide helpful error message if the heading index is out of bounds
         print(f"Text only contains {len(heading_indices)} level 1 headings. Index {heading_no} is out of bounds")
         return lines
+    
+    #Folgeheading bestimmen (Bei Lehrkonzepten Sitzungsbeschreibung)
+    if heading_no + 1 < len(heading_indices):
+        next_heading_index = heading_indices[heading_no + 1]
+    else:
+        next_heading_index = len(lines)
 
-    # Create new document structure:
-    # 1. Keep everything before the target heading
-    new_lines = lines[:heading_index]
-    # 2. Insert the table
-    new_lines.append(table_markdown)
-    # 3. Skip the next 3 lines (previous placeholder table block if any) and add the rest
-    new_lines.extend(lines[heading_index + 3:])
+    new_lines = []
+    # alles bishalten inkl. Zielüberschrift
+    new_lines.extend(lines[:heading_index+1])
+    #add table
+    new_lines.append("\n"+table_markdown+"\n")
+    #add the rest, ab nächster Überschrift, um dummy text zu ignorieren
+    new_lines.extend(lines[next_heading_index:])
+
+    # # Create new document structure:
+    # # 1. Keep everything before the target heading
+    # new_lines = lines[:heading_index]
+    # # 2. Insert the table
+    # new_lines.append(table_markdown)
+    # # 3. Skip the next 3 lines (previous placeholder table block if any) and add the rest
+    # new_lines.extend(lines[heading_index+1:])
 
     return new_lines
 
@@ -312,7 +334,7 @@ def add_latex_landscape_wrapper(table_markdown, heading):
     # Return the complete wrapped table as a single string
     return ''.join(new_table)
 
-def main(markdown_file, table_file):
+def main(markdown_file, table_file, output_filename):
     """
     Main entry point to process a markdown document and insert a table into it.
 
@@ -334,51 +356,52 @@ def main(markdown_file, table_file):
         
         # Handle CSV input files
         if table_file.lower().endswith('.csv'):
-            print(f"Reading CSV table from {table_file}")
+            print(f" - Reading CSV table from {table_file}")
             # Read CSV data and convert to markdown table format
             table = read_csv_file(table_file)
             table_markdown = convert_csv_to_markdown(table)
+            # with open('table.md','w', encoding="utf-8") as f:
+            #     f.write(table_markdown)
 
         # Handle markdown input files
         elif table_file.lower().endswith('.md'):
-            print(f"Reading markdown table from {table_file}")
+            print(f" - Reading markdown table from {table_file}")
             # Read markdown table directly
             table_markdown = read_markdown_table(table_file)
             
-            # Create a CSV backup of the markdown table for data archival
-            csv_file = table_file.replace('.md', '_processed.csv')
-            print(f"Converting markdown table to CSV: {csv_file}")
-            convert_markdown_to_csv(table_markdown, csv_file)
+            # # Create a CSV backup of the markdown table for data archival
+            # csv_file = table_file.replace('.md', '_processed.csv')
+            # print(f" - Converting markdown table to CSV: {csv_file}")
+            # convert_markdown_to_csv(table_markdown, csv_file)
 
         # Read the main markdown document
-        print(f"Reading markdown text file: {markdown_file}")
+        print(f" - Reading markdown text file: {markdown_file}")
         lines = read_markdown_text(markdown_file)
         
         # Process the table if content was successfully loaded
         if table_markdown:
-            print("Adding LaTeX landscape wrapper to table")
+            print(" - Adding LaTeX landscape wrapper to table")
             # Extract the heading where the table will be placed
             heading = exctract_heading(lines)
             # Wrap the table with LaTeX commands for PDF processing
             table_markdown = add_latex_landscape_wrapper(table_markdown, heading)
             
-            # Save the processed table for debugging/verification purposes
-            with open('table_processed.md', 'w', encoding='utf-8') as f:
-                f.write(table_markdown)
-            print("Saved processed table to table_processed.md")
+            # # Save the processed table for debugging/verification purposes
+            # with open('table_processed.md', 'w', encoding='utf-8') as f:
+            #     f.write(table_markdown)
+            # print("Saved processed table to table_processed.md")
             
             # Insert the table into the main document
-            print("Inserting table")
+            print(" - Inserting processed table to markdown.")
             updated_lines = insert_table(lines, table_markdown)
         else:
-            print("Warning: No table content to insert")
+            print(" ❌ Warning: No table content to insert ❌")
             updated_lines = lines
 
         # Generate output filename based on current directory name
-        output_file = f"{os.path.basename(os.getcwd())}_intext_replaced.md"
-        print(f"Writing output to {output_file}")
-        write_markdown_file(output_file, updated_lines)
-        print(f"The file has been updated and saved as: {output_file}")
+        # output_file = f"{os.path.basename(os.getcwd())}_cleaned_markdown.md"
+     
+        write_markdown_file(output_filename, updated_lines)
 
     except Exception as e:
         print(f"Error in main function: {str(e)}")
@@ -393,11 +416,12 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Insert a table into a markdown document.")
     parser.add_argument("markdown_file", help="Path to the markdown file.")
     parser.add_argument("table_file", help="Path to the table file (markdown or CSV).")
+    parser.add_argument("output_filename",help="Output file name")
     args = parser.parse_args()
 
     # Execute main function with command line arguments
     try:
-        main(args.markdown_file, args.table_file)
+        main(args.markdown_file, args.table_file, args.output_filename)
     except Exception as e:
         print(f"Program failed: {str(e)}")
         exit(1)

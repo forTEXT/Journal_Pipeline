@@ -48,6 +48,75 @@ def process_yaml_block(match):
     return yaml_content
 
 
+def write_tableofcontents(input_text):
+    """
+    function to extract and write table of contents
+    
+    Args:
+        input_text (str): Raw markdown content with conversion artifacts
+        
+    Returns:
+        str: markdown content including table of contents
+
+    """
+
+    
+    # Alle Level-1 Überschriften extrahieren (beginnen mit "# ")
+    headings = re.findall(r"(?m)^# (.+)", input_text)
+
+    # Wenn es nur eine Überschrift gibt (z. B. nur Abstract), kein TOC einfügen
+    if len(headings) < 3:
+        #del alles, was vor der ersten Überschrift steht (Beschreibungstext)
+        match = re.search(r"^#{1,6}\s+.*", input_text, re.MULTILINE)
+        if match:
+            input_text = input_text[match.start():]
+
+        return input_text
+    
+    # add if 3 headings (methodenbeitrag, dann
+    if len(headings) < 6 and len(headings)>3: #für methodenbeiträge:
+        
+        #del alles, was vor der ersten Überschrift steht (Beschreibungstext)
+        match = re.search(r"^#{1,6}\s+.*", input_text, re.MULTILINE)
+        if match:
+            input_text = input_text[match.start():]
+
+        toc_headings = [re.sub(r"^\d+\s*", "", h) for h in headings]
+
+        # Inhaltsblock aufbauen
+        toc_lines = ["# Inhalt\n"]
+        for i, h in enumerate(toc_headings, start=1):
+            toc_lines.append(f"{i}. {h}")
+        toc_block = "\n".join(toc_lines) + "\n\n"
+
+        input_text = toc_block + input_text
+
+    
+    if len(headings) == 6:
+
+        # Erste Überschrift als "Abstract" beibehalten, restliche für TOC nutzen
+        # Nummerierung am Anfang entfernen (z.B. "1. Einführung" -> "Einführung") #todo template anpassung ohne nummerierung h1
+        toc_headings = [re.sub(r"^\d+\s*", "", h) for h in headings[1:]]
+
+        # Inhaltsblock aufbauen
+        toc_lines = ["# Inhalt\n"]
+        for i, h in enumerate(toc_headings, start=1):
+            toc_lines.append(f"{i}. {h}")
+        toc_block = "\n".join(toc_lines) + "\n\n"
+
+        # Inhaltsblock nach dem Abstract einfügen (vor der ersten Überschrift)
+        #input_text = re.sub(r"(?m)^# ", toc_block + "# ", input_text, count=1)
+        abstract_match = re.search(r"(?ms)(^# .+?\n.*?)(?=\n# |\Z)", input_text)
+        if abstract_match:
+            abstract_block = abstract_match.group(1)
+            rest_text = input_text[abstract_match.end():]
+            # TOC direkt nach dem Abstract-Block einfügen
+        input_text = abstract_block + "\n\n" + toc_block + rest_text
+
+    return input_text
+
+
+
 def process_markdown(input_text):
     """
     Main function to process and clean up markdown text that has conversion artifacts.
@@ -59,23 +128,33 @@ def process_markdown(input_text):
         str: Cleaned markdown content ready for PDF conversion
     """
     
-    # Process YAML frontmatter block first
-    # Pattern explanation:
-    # (?s) - DOTALL flag, makes . match newlines
-    # (\\-\\--\s*\n.*?\n\\-\\--) - Matches escaped YAML block delimiters with content
-    yaml_pattern = r"(?s)(\\-\\--\s*\n.*?\n\\-\\--)"
+    # As no yaml block included in docs following code lines are deprecated
+    # # Process YAML frontmatter block first
+    # # Pattern explanation:
+    # # (?s) - DOTALL flag, makes . match newlines
+    # # (\\-\\--\s*\n.*?\n\\-\\--) - Matches escaped YAML block delimiters with content
+    # yaml_pattern = r"(?s)(\\-\\--\s*\n.*?\n\\-\\--)"
     
-    # Apply YAML block processing using the helper function
-    text = re.sub(yaml_pattern, process_yaml_block, input_text)
+    # # Apply YAML block processing using the helper function
+    # text = re.sub(yaml_pattern, process_yaml_block, input_text)
     
     # De-escape @ symbols that appear after whitespace
     # This is common for email addresses or citation formats
-    text = re.sub(r' \\@', r' @', text)
+    text = re.sub(r'\\@', r'@', input_text)
+    #text = re.sub(r'\@', r' @', text)
     
     # Global de-escaping of quotation marks throughout the document
     # These often get escaped during DOCX conversion and need to be restored
     text = re.sub(r'\\"', r'"', text)  # Double quotes
     text = re.sub(r"\\'", r"'", text)  # Single quotes
+
+    ## dirty footnote clean
+    text = re.sub(r"\[↩︎\]\(#fnref\d+\)"," ",text)
+
+    ##
+    text = re.sub(r'\\\[', '[', text)
+    text = re.sub(r'\\\]', ']', text)
+
    
     # De-escape backticks used for code formatting
     # Backticks are essential for inline code and code blocks in markdown
@@ -147,27 +226,24 @@ def main():
    
     try:
         # Read the input markdown file with UTF-8 encoding
-        # UTF-8 encoding is essential for handling international characters
-        # and special symbols that might be present in scientific documents
+        
         with open(args.input_file, 'r', encoding='utf-8') as f:
             content = f.read()
        
-        # Apply the markdown cleanup processing
-        processed_content = process_markdown(content)
+        # Apply the markdown cleanup 
+        cleaned_content = process_markdown(content)
+        final_content = write_tableofcontents(cleaned_content)
        
-        # Write the cleaned content to the output file
+        # Write  cleaned content to the output file
         with open(output_file, 'w', encoding='utf-8') as f:
-            f.write(processed_content)
+            f.write(final_content)
             
-        # Provide user feedback on successful processing
-        print(f"Successfully processed '{args.input_file}' -> '{output_file}'")
+        print(f"- Successfully processed '{args.input_file}' -> '{output_file}'")
        
     except FileNotFoundError:
-        # Handle case where input file doesn't exist
         print(f"Error: File '{args.input_file}' not found")
         sys.exit(1)
     except Exception as e:
-        # Handle any other errors during processing
         print(f"Error while processing: {e}")
         sys.exit(1)
 

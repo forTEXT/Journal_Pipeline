@@ -1,4 +1,3 @@
-template: article.jats
+template: ./data/templates/article.jats_publishing
 filters:
-  - remove-references-heading.lua
   - origdate.lua

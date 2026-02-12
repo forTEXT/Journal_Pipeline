@@ -12,6 +12,7 @@ resource-path:
 metadata:
   lang: de
   link-citations: true
+  reference-section-title: Literaturverzeichnis
   reference-links: true
 
 # variables:

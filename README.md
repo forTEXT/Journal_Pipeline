@@ -11,15 +11,11 @@ forTEXT übernimmt eine sogenannte "formale Prüfung" die im Rahmen der Ausführ
 
 ## Directory strcuture
 - **review_templates**: contains templates for the formal review
-- **archive**: contains past article versions
 - **submission**: contains currently edited article versions
 - **template**: contains all templates, codes etc. of the article pipeline
     - content:
-        - **shell skripts**
-            - mkarticles.sh: Main script to be executed in terminal to generate output XML JATS and PDF in specified directory path(s)
-            - mkappendix.sh: automatically executed when appendices are found
-            - md_to_docx.sh: convert markdown to docx
-            - WORK IN PROGRESS: mkarticles_docx.sh > script for docx-pipeline
+        - **shell skript**
+            - mkarticles_docx.sh: Main script to be executed in terminal to generate output XML JATS and PDF in specified directory path(s)
         - **files**
             - articles.txt: specify directory path(s) for article pipepline
             - fortext-hefte.yaml
@@ -35,19 +31,12 @@ forTEXT übernimmt eine sogenannte "formale Prüfung" die im Rahmen der Ausführ
                 - fix_markdown.py
                 - format_xml.py: used in mkarticles to adjust xml-verison
                 - insert_table.py: contains code that inserts the csv/md file of the table into the markdown file to be converted to pdf/jats
-                - make_cover_meta.py: used in mkappendices.sh to gather meta information for apemndix header
-
 
 
 
 ## Execute Article Pipeline
 
-1. Put folder according to submission guidelines 
-    Note: folder needs to contain the following files: author_meta.yaml, text.md, table.csv/table.md,bibliogrphy.bib/.json/.bibtex
-
-2. Navigate to template/ 
-
-3. Specify the folder path in template/articles.txt
-
-3. Run ./mkarticles in terminal/command line
+1. Navigate to template/ 
+2. Specify the folder path in template/articles.txt that includes the article files
+3. Run ./mkarticles_docx in terminal/commandline
 

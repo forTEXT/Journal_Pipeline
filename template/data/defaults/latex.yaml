@@ -8,3 +8,4 @@ filters:
 variables:
   linestretch: 1.2
   colorlinks: true
+  fontfamily: 'plex-otf'
