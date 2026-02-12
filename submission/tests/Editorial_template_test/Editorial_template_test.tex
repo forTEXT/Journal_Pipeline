@@ -1,0 +1,442 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+          a4paper,
+        ]{article}
+\raggedbottom
+\usepackage{amsmath,amssymb}
+\usepackage{setspace}
+\usepackage{iftex}
+\RequireLuaTeX
+
+\usepackage{lscape} % für Querformat-Seiten
+\usepackage{hyperref}
+
+\usepackage{unicode-math} % this also loads fontspec
+\defaultfontfeatures{Scale=MatchLowercase}
+\defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+
+  \usepackage[]{plex-otf}
+  
+  
+  
+  
+  
+  
+  
+\directlua{luaotfload.add_fallback
+   ("fallbacks",
+    {
+      "STIX Two Math:;",
+      "NotoColorEmoji:mode=harf;",
+    }
+   )}
+\defaultfontfeatures{RawFeature={fallback=fallbacks}}
+
+\usepackage{academicons}
+\usepackage{fontawesome5}
+\usepackage{ccicons}
+
+  
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage{lua-widow-control}
+  \makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+  
+  
+\usepackage[dvipsnames,svgnames,x11names]{xcolor}
+
+\definecolor{oa-orange}     {RGB} {246, 130, 18}
+\definecolor{ft-red}        {RGB} {168, 0, 0}
+\definecolor{orcid-green}   {RGB} {166, 206, 57}
+\definecolor{fortext-green}   {RGB} {26, 73, 76}
+
+
+\colorlet{oa-orange}        {black}
+
+\colorlet{highlightcolor1}  {DarkOrange}
+\colorlet{highlightcolor2}  {DarkBlue}
+\colorlet{highlightcolor3}  {DarkGreen}
+\colorlet{highlightcolor4}  {DarkMagenta}
+
+\colorlet{filecolor}        {highlightcolor1}
+\colorlet{linkcolor}        {fortext-green}
+\colorlet{citecolor}        {fortext-green}
+\colorlet{urlcolor}         {fortext-green}
+
+
+\NewDocumentCommand \oalogo { }
+{%
+  \textcolor{oa-orange}{\sffamily%\bfseries%
+  open \aiOpenAccess\ access}
+}
+
+
+\NewDocumentCommand \orcidlink { m }
+{%
+	\texorpdfstring
+	{\href{https://orcid.org/#1}{\textcolor{orcid-green}{\raisebox{-.2ex}{\aiOrcid}}}}
+	{https://orcid.org/#1}%
+}
+
+\NewDocumentCommand \emaillink { m }
+{%
+	\texorpdfstring
+	{\href{mailto:#1}{\textcolor{black}{\raisebox{-.2ex}{\faEnvelopeOpen[regular]}}}}
+	{mailto:#1}%
+}
+
+  \usepackage{geometry}
+\geometry{
+	paper=a4paper,
+	top=25mm,
+	bottom=20mm,
+	right=30mm,
+	left=30mm,
+	footskip=10mm,
+	% showframe,
+}
+  
+  \usepackage{listingsutf8}
+\lstset{
+  language=python,
+  basicstyle=\ttfamily\footnotesize,
+  columns=fullflexible,
+  xleftmargin=2em,
+  xrightmargin=2em,
+  % frame=single,
+  breaklines=true,
+  postbreak=\mbox{\textcolor{highlightcolor1}{\(\hookrightarrow\)}\space},
+}
+\newcommand{\passthrough}[1]{#1}
+\lstset{defaultdialect=[5.3]Lua}
+\lstset{defaultdialect=[x86masm]Assembler}
+  
+  
+  
+\usepackage{longtable,booktabs,array}
+\usepackage{tabularray}
+\usepackage{ifthen}
+
+  
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=.8\maxwidth,height=\maxheight,keepaspectratio}
+\makeatletter
+\def\fps@figure{hbp}
+\makeatother
+
+  
+\usepackage{luacolor}
+\usepackage[soul]{lua-ul}
+
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+  \setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+  
+  
+  
+\usepackage{fancyhdr}
+
+\fancypagestyle{plain}{% used for the first page
+	\fancyhf{}% clear all header and footer fields
+	\fancyhead[L]{}
+	\fancyfoot[L]{}
+	\fancyfoot[R]{\small\thepage}
+	\renewcommand{\headrulewidth}{0pt}%
+	\renewcommand{\footrulewidth}{0pt}%
+}
+
+\fancypagestyle{page}{%
+	\fancyhf{}% clear all header and footer fields
+	\fancyhead[L]{}
+	\fancyhead[R]{\small Gius, Akazawa, Messner, \textit{Editorial}}
+	\fancyfoot[L]{\small\textit{forTEXT} 2(1): Textannotation in der
+Hochschullehre}
+	\fancyfoot[R]{\thepage}
+	\renewcommand{\headrulewidth}{0pt}%
+	\renewcommand{\footrulewidth}{0pt}%
+}
+
+\pagestyle{page}
+
+
+\usepackage[
+	small,
+	sf,bf,
+	raggedright,
+	clearempty,
+]{titlesec}
+
+\titleformat{\section}{\Large\sffamily\bfseries}{\thesection.}{.5em}{}
+\titleformat{\subsection}{\large\sffamily\bfseries}{\thesubsection}{.5em}{}
+\titleformat{\subsubsection}{\normalsize\sffamily\bfseries}{\thesubsubsection}{.5em}{}
+\titleformat{\paragraph}{\normalsize\sffamily\bfseries}{\thesubsubsection}{.5em}{}
+\titleformat{\subparagraph}{\normalsize\sffamily\bfseries}{\thesubsubsection}{.5em}{}
+
+  
+  \usepackage[bidi=basic]{babel}
+    \babelprovide[main,import]{ngerman}
+                  \let\LanguageShortHands\languageshorthands
+\def\languageshorthands#1{}
+  
+\usepackage[
+	ragged,
+	bottom,
+	norule,
+	multiple,
+]{footmisc}
+
+\makeatletter
+\RenewDocumentCommand \footnotemargin { } {0em}
+\RenewDocumentCommand \thefootnote { } {\arabic{footnote}}
+\RenewDocumentCommand \@makefntext { m } {\noindent{\@thefnmark}. #1}
+\interfootnotelinepenalty=10000
+\makeatother
+
+\usepackage{changepage}
+% \newlength{\overhang}
+% \setlength{\overhang}{\marginparwidth}
+% \addtolength{\overhang}{\marginparsep}
+
+  \usepackage{caption}
+\captionsetup{labelformat=empty,font={small,it}}
+% \input{old}
+  
+\usepackage{selnolig}
+
+  
+  
+  
+  
+\usepackage{csquotes}
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+
+  
+  \usepackage[inkscapelatex=false]{svg}
+
+\makeatletter
+\def\@maketitle{%
+	%
+	% title
+	%
+	\newpage
+	\null
+	\vspace*{-\topskip}
+	\begin{tblr}{
+    vline{1,5} = {1pt},
+    colspec={lllX},
+    width=\textwidth,
+    columns={font=\small\sffamily,},
+    column{1,3}={
+      rightsep=.3em,
+      font=\footnotesize\sffamily,
+    },
+}
+\hline[1pt]
+\SetCell[c=4]{t,l}{\normalsize\textbf{Editorial}} & & & \\
+& & & \SetCell[r=3]{c,r}{\includegraphics[height=2\baselineskip]{}} \\
+\SetCell[c=3]{t,l}{\small Evelyn Gius \orcidlink{0000-0001-8888-8419}
+\textsuperscript{\scriptsize 1}
+} & & &\\
+\SetCell[c=3]{t,l}{\small Mari Akazawa \orcidlink{0009-0007-2653-6275}
+\textsuperscript{\scriptsize 1}
+} & & &\\
+\SetCell[c=3]{t,l}{\small Stefanie Messner \orcidlink{0009-0007-2477-7948}
+\textsuperscript{\scriptsize 1}
+} & & &\\
+\SetCell[c=2]{t,l}{% 
+\footnotesize%
+1. Technische Universität Darmstadt \\
+} & & & \\
+		\hline[1pt]
+     Titel der Ausgabe: & Textannotation in der Hochschullehre & & \\ 
+         Jahrgang: & 2 & & \\ 
+     Ausgabe: & 1 & & \\ 
+     Erscheinungsdatum: & 26.05.2025 & & \\ 
+    
+     Version: & 2 & & 15.08.2025 \\ 
+     DOI: & \href{https://doi.org/10.48694/fortext.4067}{10.48694/fortext.4067} & & \\   
+     & & \\ 
+
+   Lizenz: & \faCreativeCommons\ \faCreativeCommonsBy\ \faCreativeCommonsSa\ & & \oalogo \\
+		\hline[1pt]
+	\end{tblr}
+}
+\makeatother
+
+\hypersetup{
+      pdftitle={Editorial},
+      pdfauthor={Evelyn Gius, Mari Akazawa, Stefanie Messner},
+      pdflang={de},
+      pdfsubject={forTEXT},
+      pdfkeywords={Textannotation, Lehrkonzepte, Hochschullehre},
+      colorlinks=true,
+  linkcolor={linkcolor},
+  filecolor={filecolor},
+  citecolor={citecolor},
+  urlcolor={urlcolor},
+  pdfcreator={LuaLaTeX via pandoc}
+}
+
+
+  
+  \usepackage{ragged2e}
+\usepackage[section]{placeins}
+% Manage float placement
+\usepackage{float}
+\floatplacement{figure}{H}
+
+\usepackage{marginnote}
+\RenewDocumentCommand \marginfont { }
+{ \sffamily\footnotesize }
+\RenewDocumentCommand \raggedleftmarginnote { } { }
+% \author{true \and true \and true}
+
+% \date{}
+
+\usepackage{everypage}
+\usepackage[printwatermark]{xwatermark}
+\usepackage{lipsum}
+
+
+\begin{document}
+
+
+
+\pagestyle{plain}
+
+
+\maketitle
+
+
+
+% \marginnote{\RaggedRight}[30\baselineskip]%
+
+
+
+
+
+
+
+
+
+\setstretch{1.2}
+
+
+
+
+\pagestyle{page}
+
+\renewcommand{\arraystretch}{3}  % Zeilenabstand in Tabellen erhöhen
+
+\section{Editorial}\label{editorial}
+
+\textbf{Führen Sie in die Ausgabe ein, indem Sie:}
+
+\begin{itemize}
+\item
+  das Schwerpunktthema (z.B. Methode, Ansatz, Gegenstand) der Ausgabe
+  kurz vorstellen,
+\item
+  auf die Relevanz des Themas für textbasierte (digitale)
+  Geisteswissenschaften eingehen,
+\item
+  das Schwerpunktthema in seinen Froschungskontexten (Traditionen,
+  aktuelle Entwicklungen, methodische Bedeutung) darstellen
+\item
+  Gehen Sie bei der Veröffentlichung von Lehrkonzepten bitte auch darauf
+  ein, warum sich das Thema (besonders) für die Lehre geeignet ist (z.B.
+  niederschwellig, kollaborativ, praxisorientiert)
+\end{itemize}
+
+\textbf{Gehen Sie auf die Entstehung der Ausgabe und ihre Verortung in
+der Zeitschrift ein:}
+
+\begin{itemize}
+\item
+  Was war Motivation/Anlass für das Thema der Ausgabe?
+\item
+  Warum passt das Thema gut zur Ausrichtung der Zeitschrift?
+\item
+  Gehen Sie darauf ein, welche Beitragstypen im Rahmen der Ausgabe
+  veröffentlicht werden (z.B. nachnutzbare Lehrkonzepte,
+  Methodenbeiträge)
+\end{itemize}
+
+\textbf{Gehen Sie kurz auf den Redaktions - und Reviewprozess ein:}
+
+\begin{itemize}
+\item
+  Nennen Sie das Begutachtungsverfahrens (Open Peer Review, Zero-Blind)
+  sowie
+\item
+  Beteiligte Akteur*innen (z.B. Fachredaktion, externe Gutachter*innen,
+  Gastherausgeber*innen, \ldots)
+\end{itemize}
+
+\section{Beiträge der Ausgabe}\label{beitruxe4ge-der-ausgabe}
+
+Sofern zutreffend, erklären Sie an dieser Stelle bitte kurz, dass neue
+Beiträge im Rahmen des Rollings Issues fortlaufend veröffentlicht
+werden.\\
+\strut \\
+\ul{Hinweis}: Werden die Beiträge der Ausgabe als Rolling Issue
+veröffentlicht, so wird dieser Abschnitt mit jeder
+Beitragsveröffentlichung um die jeweilige Beitragsbeschreibung
+erweitert.
+
+\textbf{\hfill\break
+Beschreiben Sie die einzelnen Beiträge kurz, indem Sie je nach
+Beitragstyp auf folgende Punkte eingehen:}
+
+\begin{itemize}
+\item
+  Autor*innen, Titel
+\item
+  Thema/Fokus
+\item
+  Lehrsetting (Lehrveranstaltung, Workshop, online etc.), Methoden,
+  Werkzeuge
+\item
+  Zielsetzungen
+\item
+  Mögliche Besonderheiten
+\end{itemize}
+
+
+
+
+\end{document}

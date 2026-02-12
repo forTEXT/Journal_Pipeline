@@ -1,0 +1,623 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.3 20210610//EN" "http://jats.nlm.nih.gov/archiving/1.3/JATS-archivearticle1-3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" article-type="other">
+<front>
+<journal-meta>
+<journal-id journal-id-type="eissn">2943-212X</journal-id>
+<journal-id/>
+<journal-title-group>
+<journal-title>forTEXT</journal-title>
+</journal-title-group>
+<issn publication-format="electronic">2943-212X</issn>
+<publisher>
+<publisher-name>Universitäts- und Landesbibliothek
+Darmstadt</publisher-name>
+<publisher-loc>Darmstadt</publisher-loc>
+</publisher>
+</journal-meta>
+<article-meta>
+<title-group>
+<article-title>Thematologie und Topic Modeling</article-title>
+</title-group>
+<contrib-group>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">0000-0001-7217-3136</contrib-id>
+<name>
+<surname>Jacke</surname>
+<given-names>Janina</given-names>
+</name>
+<email>jacke@ndl-medien.uni-kiel.de</email>
+<xref ref-type="aff" rid="aff-1"/>
+</contrib>
+<aff id="aff-1">
+<institution-wrap>
+<institution>Christian-Albrechts-Universität zu Kiel</institution>
+</institution-wrap>
+</aff>
+<contrib contrib-type="reviewer" specific-use="primary">
+<role>primary</role>
+<string-name>Florian Barth</string-name>
+<email>florian.barth@uni-goettingen.de</email>
+</contrib>
+<contrib contrib-type="reviewer" specific-use="secondary">
+<role>secondary</role>
+<string-name>Julian Schröter</string-name>
+<email>j.schroeter@lmu.de</email>
+</contrib>
+<contrib contrib-type="editor" specific-use="editor-in-chief">
+<role>editor-in-chief</role>
+<string-name>Evelyn Gius</string-name>
+<email>sdfks@gmx.de</email>
+
+</contrib>
+<contrib contrib-type="editor" specific-use="editor-in-chief">
+<role>editor-in-chief</role>
+<string-name>Gustav Gius</string-name>
+<email>sdfks@gmx.de</email>
+
+</contrib>
+</contrib-group>
+<volume>2</volume>
+<issue>1</issue>
+<issue-title xml:lang="de">Sonderausgabe: Reflektierte
+Textanalyse</issue-title>
+<pub-date date-type="pub" publication-format="electronic">
+    <year>2025</year>
+</pub-date>
+<history>
+      <date date-type="received" iso-8601-date="2025-03-16">
+          <year>2025</year>
+    </date>
+        <date date-type="accepted">
+       <year>2025</year>
+    </date>
+  </history>
+<permissions>
+<license license-type="open-access">
+<ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/">https://creativecommons.org/licenses/by-sa/4.0/</ali:license_ref>
+<license-p>-This work is licensed under a Creative Commons
+Attribution-ShareAlike 4.0 International License.</license-p>
+</license>
+</permissions>
+<kwd-group kwd-group-type="author">
+<kwd>Thematologie</kwd>
+<kwd>Topic Modeling</kwd>
+<kwd>Computational Literary Studies</kwd>
+<kwd>Reflektierte Textanalyse</kwd>
+<kwd>Textannotation</kwd>
+</kwd-group>
+</article-meta>
+</front>
+<body>
+<sec id="abstract">
+  <title>Abstract</title>
+  <p>Ihr Abstract sollte kurz und knapp die wichtigsten Aspekte des
+  vorgestellten Lehrkonzepts in bis zu 80 Wörtern aufführen.</p>
+</sec>
+<sec id="inhalt">
+  <title>Inhalt</title>
+  <list list-type="order">
+    <list-item>
+      <p>Einführung</p>
+    </list-item>
+    <list-item>
+      <p>Gesamtablauf</p>
+    </list-item>
+    <list-item>
+      <p>Tabellarische Sitzungs-/Ablaufübersicht</p>
+    </list-item>
+    <list-item>
+      <p>Elemente der Lehreinheit (Passen Sie diese Überschrift ggf.
+      gerne an)</p>
+    </list-item>
+    <list-item>
+      <p>Reflexion</p>
+    </list-item>
+  </list>
+</sec>
+<sec id="einführung">
+  <title>1 Einführung</title>
+  <p>Beschreiben Sie die Veranstaltung in bis zu 600 Wörtern. Dieser
+  Text soll insbesondere die Rahmenbedingungen sowie die Voraussetzungen
+  der Teilnehmenden beleuchten. Bitte gehen sie in Fließtextform daher
+  auf die folgenden ein.</p>
+  <p>Es ist Ihnen freigestellt, ob Sie diesen Abschnitt in die
+  entsprechenden Unterpunkte gliedern, oder diese beispielweise durch
+  entsprechende Absätze darstellen.</p>
+  <sec id="rahmenbedingungen">
+    <title>1.1 Rahmenbedingungen</title>
+    <list list-type="bullet">
+      <list-item>
+        <p>Titel der LV/des Workshops/der vorgestellten Sitzungen </p>
+      </list-item>
+      <list-item>
+        <p>Ziel der LV/des Workshops/der vorgestellten Sitzungen </p>
+      </list-item>
+      <list-item>
+        <p>Optional: Beschreibung der Schnittstelle Geisteswissenschaft
+        + Informatik/DH (sofern vorhanden)</p>
+      </list-item>
+      <list-item>
+        <p>Typ der LV und sofern anwendbar, Angabe der ECTS und die Art
+        der Prüfungsleistung</p>
+      </list-item>
+      <list-item>
+        <p>Umfang: Für wie viele Semesterwochen bzw. Sitzungen ist das
+        Lehrkonzept konzipiert?</p>
+      </list-item>
+      <list-item>
+        <p>Modus: Fand(en) die LV/der Workshop/die vorgestellten
+        Sitzungen asynchron/synchron/gemischt statt?</p>
+      </list-item>
+      <list-item>
+        <p>Ungefähre Studierendenzahl</p>
+      </list-item>
+      <list-item>
+        <p>Wann und wo wurde(n) die LV/der Workshop/die vorgestellten
+        Sitzungen angeboten?</p>
+      </list-item>
+    </list>
+    <p>1.2 Voraussetzungen der Teilnehmenden</p>
+    <list list-type="bullet">
+      <list-item>
+        <p>Zielgruppe: Für welche Zielgruppe(n) ist das Lehrkonzept
+        ausgerichtet? Für Bachelorstudierende, Masterstudierende? Und
+        welcher Studiengänge?</p>
+      </list-item>
+      <list-item>
+        <p>Notwendige Vorkenntnisse in Bezug auf das Fach und/oder
+        technische Voraussetzungen und Vorkenntnisse (ggf. differenziert
+        nach Gruppen)</p>
+      </list-item>
+      <list-item>
+        <p>Kenntnisstand in Bezug auf das wissenschaftliche Arbeiten</p>
+      </list-item>
+      <list-item>
+        <p>Vorhandene überfachliche Kompetenzen </p>
+      </list-item>
+      <list-item>
+        <p>Studentische Ausstattung</p>
+      </list-item>
+    </list>
+  </sec>
+  <sec id="ausführung-der-elementesitzungen-in-bezug-auf-das-eingereichte-lehrkonzept">
+    <title>1.3 Ausführung der Elemente/Sitzungen (in Bezug auf das
+    eingereichte Lehrkonzept)</title>
+    <p>Verfügbarkeit von Medien und Materialien – Welche Materialien
+    sind für die Umsetzung des Lehrkonzepts notwendig?</p>
+    <list list-type="bullet">
+      <list-item>
+        <p>Welche Medien werden zur Vermittlung von Kompetenzen
+        genutzt? </p>
+      </list-item>
+      <list-item>
+        <p>Unterstützung durch TutorInnen o.ä.</p>
+      </list-item>
+      <list-item>
+        <p>Informationen zum Arbeitsmodus</p>
+      </list-item>
+      <list-item>
+        <p>Optional: Information zur Prüfungsleistung</p>
+      </list-item>
+    </list>
+  </sec>
+</sec>
+<sec id="gesamtablauf">
+  <title>2 Gesamtablauf</title>
+  <p>In diesem Teil ihrer Einreichungen beschreiben sie kurz und
+  prägnant den Gesamtablauf des eingereichten Lehrkonzepts in bis zu 600
+  Wörtern. </p>
+  <p>Dieser Abschnitt soll einen Gesamtüberblick über den Verlauf des
+  vorgestellten Lehrkonzepts geben. </p>
+  <p>Unter Punkt
+  <xref alt="Elemente der Lehreinheit" rid="elemente-der-lehreinheit-passen-sie-diese-überschrift-ggf.-gerne-an"><underline>Elemente
+  der Lehreinheit</underline></xref> haben Sie die Möglichkeit, die
+  einzelnen Sitzungen/Einheiten/Arbeitsblöcke im Detail zu
+  beschreiben.</p>
+  <p>Gehen Sie in diesem Abschnitt auf die Lerninhalte und die zu
+  vermittelnden Kompetenzen in den Einheiten ihres Lehrkonzepts ein.</p>
+</sec>
+<sec id="tabellarische-sitzungs-ablaufübersicht">
+  <title>3 Tabellarische Sitzungs-/Ablaufübersicht</title>
+</sec>
+<sec id="tabellarische-sitzungs-ablaufübersicht-1">
+  <title>3 Tabellarische Sitzungs-/Ablaufübersicht</title>
+  <table-wrap>
+    <table>
+      <colgroup>
+        <col width="17%"/>
+        <col width="7%"/>
+        <col width="7%"/>
+        <col width="9%"/>
+        <col width="13%"/>
+        <col width="15%"/>
+        <col width="15%"/>
+        <col width="17%"/>
+      </colgroup>
+      <thead>
+        <tr>
+          <th align="left" valign="top">Sitzungsnummer</th>
+          <th align="left" valign="top">Modus</th>
+          <th align="left" valign="top">Thema</th>
+          <th align="left" valign="top">Inhalt</th>
+          <th align="left" valign="top">(Lern)ziel</th>
+          <th align="left" valign="top">Vorbereitung</th>
+          <th align="left" valign="top">Für Lehrende</th>
+          <th align="left" valign="top">Abgabe/Aufgabe</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td align="left" valign="top">1</td>
+          <td align="left" valign="top">synchron, Präsenz</td>
+          <td align="left" valign="top">Einführungssitzung</td>
+          <td align="left" valign="top">a) Einführung: Was tun wir im Seminar (Semesterplan), was
+          sind unsere Ziele? Was sind Netzwerkanalysen (Beispiele)?
+          Welche Leistungen erbringen die Teilnehmenden? b)
+          Vorstellungsrunde: Background und Vorwissen, Interesse an
+          (S)NA, „Kerndisziplinen“ der Teilnehmenden</td>
+          <td align="left" valign="top">Semesterüberblick, Semesterziele, Überblick über die
+          Methode und ihre Einsatzfelder; Kennenlernen der
+          Teilnehmenden.</td>
+          <td align="left" valign="top">Als Seminarvorbereitung werden Ahnert et al. 2020 und
+          Trilcke 2013 empfohlen.</td>
+          <td align="left" valign="top">Präsentation zur Veranschaulichung möglicher
+          Netzwerkanalysen (Figuren in Dramen, Begriffe von Erzählungen,
+          Themen in religiösen Texten etc.)</td>
+          <td align="left" valign="top"/>
+        </tr>
+        <tr>
+          <td align="left" valign="top">2</td>
+          <td align="left" valign="top">synchron, Präsenz</td>
+          <td align="left" valign="top">Theorie: Traditionslinien der SNA</td>
+          <td align="left" valign="top">Von der SNA als soziologische Methode zur algorithmischen
+          NA in den DH - Bestandteile und Eigenschaften von Netzwerken -
+          Netzwerkmetriken: Gesamtnetzwerk - Beispielaufgabe:
+          Eigenschaften von Netzwerken ermitteln</td>
+          <td align="left" valign="top">Kennenlernen der SNA als soziologische Methode
+          Grundannahmen und Eigenschaften von Netzwerken einschätzen
+          können</td>
+          <td align="left" valign="top">Lektüre: Kap. 1 aus Jansen 2003</td>
+          <td align="left" valign="top">Einführende Präsentation mit Forschungstraditionen der
+          SNA, Grundannahmen der algorithmischen NA und ersten einfachen
+          Metriken</td>
+          <td align="left" valign="top">Übung zu Netzwerk und Eigenschaften</td>
+        </tr>
+        <tr>
+          <td align="left" valign="top">3</td>
+          <td align="left" valign="top">synchron, Präsenz</td>
+          <td align="left" valign="top">Theorie: Netzwerkmetriken</td>
+          <td align="left" valign="top">Netzwerkmetriken: Zentralitätswerte - Beispielaufgabe:
+          Knotenzentralität intuitiv ermitteln und berechnen</td>
+          <td align="left" valign="top">Die Studierenden lernen wichtige Metriken kennen, wissen
+          wie diese berechnet werden und können sie kritisch
+          einordnen</td>
+          <td align="left" valign="top">Lektüre: Fischer und Skorinkin 2021: „Social Network
+          Analysis in Russian Literary Studies“</td>
+          <td align="left" valign="top">Beispielaufgaben (Übung) vorbereiten</td>
+          <td align="left" valign="top">Übung zu Zentralitätswerten</td>
+        </tr>
+        <tr>
+          <td align="left" valign="top">4</td>
+          <td align="left" valign="top">synchron, Präsenz</td>
+          <td align="left" valign="top">Theorie: Operationalisierung I</td>
+          <td align="left" valign="top">NA und Operationalisierung - Operationalisierungsbegriff -
+          Operationalisierung in den DH - Herausforderungen der
+          Operationalisierung anhand von Beispieldaten
+          (Annotationsbeispiel)</td>
+          <td align="left" valign="top">Die Studierenden lernen anhand von Beispieltexten die
+          Operationalisierung in Forschungsbeiträgen zu erkennen, zu
+          benennen und kritisch zu hinterfragen. Sie lernen außerdem,
+          eigene Alternativen zu entwickeln. Sie üben, eine erste eigene
+          Operationalisierungen anhand eines Beispieltextes
+          durchzuführen.</td>
+          <td align="left" valign="top">Lektüre: Krautter 2022: „Die Operationalisierung als
+          interdisziplinäre Schnittstelle der Digital Humanities“</td>
+          <td align="left" valign="top">Beispieltext zur Annotation vorbereiten</td>
+          <td align="left" valign="top">Leitfragen zur Operationalisierung beantworten</td>
+        </tr>
+        <tr>
+          <td align="left" valign="top">5</td>
+          <td align="left" valign="top">synchron, Präsenz</td>
+          <td align="left" valign="top">Theorie: Operationalisierung II</td>
+          <td align="left" valign="top">Annotationensbeispiel - Diskussion von
+          Operationalisierungsentscheidungen, Herausforderungen etc. -
+          Was sind Knoten und Kanten? - Wie sehen Protonetzwerke
+          (Ezlinavis) aus, je nach
+          Operationalisierungsentscheidung?</td>
+          <td align="left" valign="top">Die Studierenden lernen, einander Feedback zu den
+          Operationalisierungsansätzen zu geben. Sie lernen außerdem,
+          ihre Annotationsdaten in Netzwerkdaten zu überführen.</td>
+          <td align="left" valign="top"/>
+          <td align="left" valign="top"/>
+          <td align="left" valign="top">Annotation des Beispieltextes nach Knoten- und
+          Kantenindikatoren</td>
+        </tr>
+        <tr>
+          <td align="left" valign="top">6</td>
+          <td align="left" valign="top">synchron, Präsenz</td>
+          <td align="left" valign="top">Anwendung: NA in den DH ein Überblick</td>
+          <td align="left" valign="top">Literaturrecherche: Studierende stellen vor: Für welche
+          Gegenstände und Fragen wird die NA im „eigenen“ Forschungsfeld
+          eingesetzt?</td>
+          <td align="left" valign="top">Es werden Recherche-Fähigkeiten entwickelt oder vertieft
+          und der Blick dafür, Forschungsbeiträge der
+          (netzwerkanalytischen) DH zu erkennen wird geschärft. Durch
+          die eigene Recherche wird den Teilnehmenden außerden
+          vermittelt, dass es erwünscht ist, ihre eigenen
+          Interessenschwerpunkte und fachlichen Hintegründe
+          einzubringen</td>
+          <td align="left" valign="top">Recherche und Lektüre von jeweils einem
+          netzwerkanalytischen Forschungsbeitrag</td>
+          <td align="left" valign="top"/>
+          <td align="left" valign="top">Hochladen des Recherche-Ergebnisses in die Reader (Ordner
+          im Moodle-System oder Zotero-Bibliothek)</td>
+        </tr>
+        <tr>
+          <td align="left" valign="top">7</td>
+          <td align="left" valign="top">synchron, Präsenz</td>
+          <td align="left" valign="top">Anwendung: NA in den DH reflektieren I</td>
+          <td align="left" valign="top">Anwendungsfälle I: Besprechung der Beiträge (Leitfragen),
+          Diskussion: Möglichkeiten, Grenzen, Leerstellen</td>
+          <td align="left" valign="top">Es wird geübt, Forschungsbeiträge anhand von Leitfragen zu
+          lesen und prägnant zusammenzufassen. Es wird geübt,
+          Forschungsbeiträge kritisch zu diskutieren.</td>
+          <td align="left" valign="top">Lektüre eines weiteren (von jemand anderem recherchierten)
+          Forschungsbeitrages zur SNA</td>
+          <td align="left" valign="top">Vorbereitung der Leitfragen für die Diksussion</td>
+          <td align="left" valign="top">Leitfragen beantworten</td>
+        </tr>
+        <tr>
+          <td align="left" valign="top">8</td>
+          <td align="left" valign="top">synchron, Präsenz</td>
+          <td align="left" valign="top">Anwendung: NA in den DH reflektieren II</td>
+          <td align="left" valign="top">s.o. (1Sitzung 7)</td>
+          <td align="left" valign="top">s.o. (Sitzung 7)</td>
+          <td align="left" valign="top">Lektüre eines weiteren (von jemand anderem recherchierten)
+          Forschungsbeitrages zur SNA</td>
+          <td align="left" valign="top">s.o. (Sitzung 7)</td>
+          <td align="left" valign="top">Leitfragen beantworten</td>
+        </tr>
+        <tr>
+          <td align="left" valign="top">9</td>
+          <td align="left" valign="top">synchron, Präsenz</td>
+          <td align="left" valign="top">Praxis I: Gephi kennenlernen</td>
+          <td align="left" valign="top">Gephi kennenlernen: Visualisierungsmöglichkeiten,
+          Anpassungen, Metriken und Filter</td>
+          <td align="left" valign="top">Grundfunktionalitäten von Gephi werden erlernt, d.h. die
+          Arbeit mit dem Datenlabor, die Verwendung von
+          Netzwerk-Layouts, visuelle Anpassungen und Berechnung
+          grundlegender Metriken sind nach dieser Sitzung bekannt.</td>
+          <td align="left" valign="top">Alle Studierenden müssen spätestens zu dieser Sitzung
+          Gephi installiert haben. Studierenden anderer Fachbereiche
+          wird zusätzlich die forTEXT Lernheineit Netzwerkanalyse
+          (Schumacher 2024) empfohlen.</td>
+          <td align="left" valign="top">Vorbereitung der Parameter und der Reihenfolge, in der die
+          Funktionen von Gephi gezeigt werden: vom Importieren der Daten
+          über das Datenlabor bis zu den Bereichen „Übersicht“ und
+          „Vorschau“</td>
+          <td align="left" valign="top"/>
+        </tr>
+        <tr>
+          <td align="left" valign="top">10</td>
+          <td align="left" valign="top">synchron, Präsenz</td>
+          <td align="left" valign="top">Praxis II: Dateiformate</td>
+          <td align="left" valign="top">Daten: Formate (Graphxml, csv) und
+          Konvertierungsmöglichkeiten</td>
+          <td align="left" valign="top">Die Studierenden kennen unterschiedliche Datenformate, mit
+          denen Netzwerkanalyse-Tools umgehen können. Sie wissen, wie
+          diese Formate gelesen werden und können selbst kompatible
+          Tabellendaten erstellen</td>
+          <td align="left" valign="top">Ein Beispieldatenset vorbereiten (Daten der
+          Beispielannotation aus Sitzung 5 oder eigene
+          Annotationsdaten).</td>
+          <td align="left" valign="top">Verschiedene Dateiformate zu Demo-Zwecken vorbereiten</td>
+          <td align="left" valign="top"/>
+        </tr>
+        <tr>
+          <td align="left" valign="top">11</td>
+          <td align="left" valign="top">synchron, Präsenz</td>
+          <td align="left" valign="top">Praxis II: Gephi-Erweiterungen und Plugins</td>
+          <td align="left" valign="top">Weitere Funktionalitäten: Geolayout, dynamische
+          Netzwerke</td>
+          <td align="left" valign="top">Es können dynamische und georeferenzierte Netzwerke
+          erstellt werden.</td>
+          <td align="left" valign="top"/>
+          <td align="left" valign="top">Testen aktueller Versionen von Plugins (falls es seit dem
+          letzten Turnus des Seminarangebots ein Update gab),
+          Beispieldaten für die verschiedenen Funktionalitäten
+          vorbereiten.</td>
+          <td align="left" valign="top"/>
+        </tr>
+        <tr>
+          <td align="left" valign="top">12</td>
+          <td align="left" valign="top">synchron, Präsenz</td>
+          <td align="left" valign="top">Praxis III: Netzwerke interpretieren</td>
+          <td align="left" valign="top">Reflexion: What do we see when we look at networks? -
+          Besprechung des Artikels anhand der Leitfragen - reflektierter
+          Umgang mit der „Lesbarkeit“ und „Interpretierbarkeit“ von
+          Netzwerken</td>
+          <td align="left" valign="top">Die Teilnehmenden wissen, dass eine Interpretation von
+          Visualisierungen stets nur ein Teil einer Netzwerkanalyse
+          sind, sie entwickeln außerdem ein Bewusstsein für mögliche
+          Fehlinterpretationen</td>
+          <td align="left" valign="top">Lektüre: Venturini et al. (2021): „What do we see when we
+          look at networks?“</td>
+          <td align="left" valign="top">Vorbereitung der Leitfragen</td>
+          <td align="left" valign="top">Leitfragen beantworten</td>
+        </tr>
+        <tr>
+          <td align="left" valign="top">13</td>
+          <td align="left" valign="top">synchron, Präsenz</td>
+          <td align="left" valign="top">Theoretischer Rückbezug</td>
+          <td align="left" valign="top">Rückbezug der in den Praxis-Sitzungen gewonnenen
+          Erkenntnisse zum Forschungsstand, der in den Theorie- und
+          Anwendungssitzungen im Zentrum stand.</td>
+          <td align="left" valign="top">Eigene Erkenntnisse können mit denen anderer
+          Forschungsbeiträge verglichen werden. Erkenntnisse können in
+          einen Forschungsdiskurs eingebettet werden.</td>
+          <td align="left" valign="top"/>
+          <td align="left" valign="top">Leitfragen für die Diskussion vorbereiten</td>
+          <td align="left" valign="top"/>
+        </tr>
+        <tr>
+          <td align="left" valign="top">14</td>
+          <td align="left" valign="top">synchron, Präsenz</td>
+          <td align="left" valign="top">Projektideen entwickeln und präsentieren</td>
+          <td align="left" valign="top">Studierende entwickeln eigene Projektideen: -
+          Forschungsfrage und Phänomene - Operationalisierung -
+          Korpuserstellung und Datenerhebung - Protonetzwerke
+          Studierende präsentieren und diskutieren die Ideen</td>
+          <td align="left" valign="top">Die Teilnehmenden können selbstständig eine
+          netzwerkanalytische Fragestellung entwickeln und die darin
+          enthaltenen geisteswissenschaftlichen Phänomene gezielt
+          operationalisieren. Sie können ihre Projektideen präsentieren,
+          die Ideen anderer konstruktiv beurteilen und durch eigene
+          Anregungen voranbringen.</td>
+          <td align="left" valign="top">Ideen für netzwerkanalytische Untersuchungen entwickeln
+          (Leitfaden als Orientierung), Präsentationen erstellen</td>
+          <td align="left" valign="top"/>
+          <td align="left" valign="top">Projektpräsentation</td>
+        </tr>
+        <tr>
+          <td align="left" valign="top">15</td>
+          <td align="left" valign="top">synchron, Präsenz</td>
+          <td align="left" valign="top">Projektideen entwickeln und präsentieren</td>
+          <td align="left" valign="top">s.o. (1Sitzung 14)</td>
+          <td align="left" valign="top">s.o. (Sitzung 14)</td>
+          <td align="left" valign="top"/>
+          <td align="left" valign="top"/>
+          <td align="left" valign="top">Projektpräsentation</td>
+        </tr>
+        <tr>
+          <td align="left" valign="top">16</td>
+          <td align="left" valign="top">synchron, Präsenz</td>
+          <td align="left" valign="top">Abschlusssitzung</td>
+          <td align="left" valign="top">Offene Fragen, Seminar-Feedback und Evaluation</td>
+          <td align="left" valign="top">Die Teilnehmenden können ihren Lernstand reflektieren und
+          beurteilen, ob das Seminar ihre Erwartungen erfüllen
+          konnte.</td>
+          <td align="left" valign="top"/>
+          <td align="left" valign="top">Vorbereitung der Evaluation</td>
+          <td align="left" valign="top"/>
+        </tr>
+      </tbody>
+    </table>
+  </table-wrap>
+</sec>
+<sec id="elemente-der-lehreinheit-passen-sie-diese-überschrift-ggf.-gerne-an">
+  <title>4 Elemente der Lehreinheit (Passen Sie diese Überschrift ggf.
+  gerne an)</title>
+  <p>In diesem Teil des Beitrags haben sie die Möglichkeit, die
+  einzelnen Sitzungen/Einheiten/Arbeitsblöcke zum Thema Textannotation
+  genauer zu beschreiben. Es handelt sich somit um einen ausformulierten
+  Fließtext, der sich mit Ihrer Sitzungsübersicht deckt. Sie sollten das
+  Thema der Einheit nennen, auf die Inhalte, Lernziele und die
+  Durchführung im Detail eingehen sowie ggf. Aufgabenstellungen
+  formulieren. Nennen Sie außerdem relevante Literatur, indem Sie dafür
+  die entsprechenden Citekeys aufführen.</p>
+  <p>Insgesamt sollte dieser Abschnitt nicht mehr als 2500 Wörter
+  enthalten. Jede Sitzungsbeschreibung/Einheitsbeschreibung (bei
+  Workshops) beginnt, analog zur Spalte 1 in der Sitzungsübersicht, mit
+  der Nummer der Sitzung bzw. der Dauer der Einheit sowie dem Titel.</p>
+</sec>
+<sec id="reflexion">
+  <title>5 Reflexion</title>
+  <p>In diesem Teil des Beitrages reflektieren Sie Ihre
+  Lehrveranstaltung/den Workshop/die vorgestellten Sitzungen in Form
+  eines Fließtextes in bis zu 1200 Wörtern.</p>
+  <p>Allgemein gilt, dass Sie insbesondere in Bezug auf die Zielgruppe
+  und Lernziele darauf eingehen sollten, wie sich genutzte Methoden und
+  Materialien, der Aufbau/die Struktur des Lehrkonzepts bewährt haben.
+  Reflektieren Sie gelungene Elemente und gehen Sie auf
+  Herausforderungen des Lehrkonzepts ein, die sich möglicherweise im
+  Laufe der Veranstaltung ergeben haben. </p>
+  <p>Nennen Sie ggf. Ideen oder Lösungsvorschläge zur Überwindung der
+  genannten Herausforderungen oder, falls Sie das Lehrkonzept mehrmals
+  angewendet haben, welche Anpassungen Sie weshalb getätigt haben. Gehen
+  Sie darauf ein, ob Sie bei erneuter Durchführung des Konzepts
+  Anpassungen durchführen würden. Stellen Sie dabei einen Bezug zu
+  Gründen oder möglichen Ursachen auf.</p>
+  <p>Gehen Sie auch gerne auf Feedback ein, das Sie im Zuge der
+  Durchführung Ihrer Veranstaltung erhalten haben.</p>
+  <p>Es ist Ihnen freigestellt, ob Sie diesen Abschnitt in die
+  entsprechenden Unterpunkte gliedern, oder diese beispielweise durch
+  entsprechende Absätze darstellen.</p>
+  <sec id="rahmenbedingungen-ausführung">
+    <title>5.1 Rahmenbedingungen &amp; Ausführung</title>
+    <list list-type="bullet">
+      <list-item>
+        <p>War der Veranstaltungstyp (Übung, (Pro)Seminar etc.) in Bezug
+        auf das Lernziel angemessen?</p>
+      </list-item>
+      <list-item>
+        <p>Umfang und Inhalt: Hat die geplante Durchführung der
+        tatsächlichen Durchführung entsprochen? Zu welchen
+        Änderungen/Anpassungen kam es und was waren die Ursachen?</p>
+      </list-item>
+      <list-item>
+        <p>Blended Learning: War die Mischung von synchron und
+        asynchronen Elementen sinnvoll? Ggf. Hätte sich die Mischung von
+        synchronen und asynchronen Sitzungen angeboten?</p>
+      </list-item>
+      <list-item>
+        <p>Verfügbarkeit von Medien und Materialien: Waren Medien und
+        Materialien (Beamer, Smartboard, Online-Meetings, WLAN)
+        verfügbar und notwendig?</p>
+      </list-item>
+      <list-item>
+        <p>Materialzugänglichkeit (Bücher, Online-Materialien, Geräte,
+        Ausstattung)</p>
+      </list-item>
+      <list-item>
+        <p>Tutor\*innen: War die Unterstützung von Tutor*innen sinnvoll?
+        Oder wäre die Unterstützung im Rückblick sinnvoll?</p>
+      </list-item>
+      <list-item>
+        <p>Wie haben sich die Frequenz und der Umfang der
+        Vorbereitungen/Aufgaben/Abgaben bewährt?</p>
+      </list-item>
+      <list-item>
+        <p>Hat sich die Prüfungsform als sinnvoll erwiesen?</p>
+      </list-item>
+    </list>
+  </sec>
+  <sec id="studierende">
+    <title>5.2 Studierende</title>
+    <list list-type="bullet">
+      <list-item>
+        <p>Zielgruppe: Studierende welcher Fachrichtungen und welches
+        angestrebten Hochschulgrades (Bachelor/Master) haben tatsächlich
+        ihre Veranstaltung besucht? Zu welchen Anpassungen führte die
+        möglw. von der Planung abweichende Zielgruppe?</p>
+      </list-item>
+      <list-item>
+        <p>Waren ausreichend Vorkenntnisse in Bezug auf das Fach (ggf.
+        differenziert nach Gruppen) gegeben? Falls nicht: Wie haben Sie
+        darauf reagiert? Hätten bestimmte Sitzungen ausführlicher oder
+        ggf. zusätzlich eingeplant werden müssen?</p>
+      </list-item>
+      <list-item>
+        <p>Haben Sich überfachliche Kompetenzen als hilfreich erwiesen?
+        (z.B. Projektarbeitserfahrung, Sprachkenntnisse, interkulturelle
+        Erfahrung)</p>
+      </list-item>
+      <list-item>
+        <p>Welche technischen Voraussetzungen und Vorkenntnisse waren
+        tatsächlich vorhanden oder wären zwingend notwendig gewesen?</p>
+      </list-item>
+      <list-item>
+        <p>Gab es für Studierende Barrieren und wie konnten bzw. können
+        diese ggf. überwunden werden?</p>
+      </list-item>
+      <list-item>
+        <p>Welche Sitzungen waren besonders produktiv/ weniger
+        produktiv?</p>
+      </list-item>
+    </list>
+  </sec>
+</sec>
+</body>
+<back>
+</back>
+</article>

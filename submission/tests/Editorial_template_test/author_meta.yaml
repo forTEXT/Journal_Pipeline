@@ -1,0 +1,103 @@
+# Legen Sie hier die für die Publikation relevanten Metadaten ab:
+# Titel, Autor*innen inkl. Metadaten, Affiliations, Keywords, Information zum Veranstaltungstypen sowie Anzahl der Sitzungen
+
+# !!! Achtung: Bitte füllen sie lediglich die vorhandenen Felder aus. 
+# !!! Fügen sie keine neuen Felder hinzu, benennen sie die bestehenden nicht um und löschen Sie keine Felder, wenn dies nicht 
+# !!! explizit in der Beschreibung des Feldes gefordert ist.
+
+# Fügen Sie hier den Titel ihres Beitrags in Anführungszeichen ein. 
+title: "Editorial"
+
+
+# Für jede Affiliation vergeben Sie eine ID. Mit dieser ID weisen sie im nächsten Schrit den Autor*innen die jeweilige Affiliation zu. 
+# Falls sie mehr oder weniger Affiliations benötigen, fügen sie für jede Affiliation ein Feld "id" und ein Feld "organization" hinzu bzw.
+# bzw. löschen die nicht benötigten Felder.
+affiliation:
+- id: 1
+  organization: Technische Universität Darmstadt
+
+# Zählen Sie hier die Autor*innen des Beitrags auf.
+# Sollte es sich nur um eine Person handeln, löschen sie die Platzhalter für weitere Einträge, die mit "- affiliation:" beginnen
+# Für jede Affiliation wird eine oben definierte ID gesetzt.
+# Für AutorInnen ohne Affiliation bleibt das Feld bestehen, es wird aber keine Zahl gesetzt 
+author:
+- affiliation: 1
+  email: evelyn.gius@tu-darmstadt.de
+  given-names: Evelyn
+  orcid:  0000-0001-8888-8419
+  surname: Gius
+- affiliation: 1
+  email: mari.akazawa@tu-darmstadt.de
+  given-names: Mari
+  orcid: 0009-0007-2653-6275
+  surname: Akazawa
+- affiliation: 1
+  email: stefanie.messner@tu-darmstadt.de
+  given-names: Stefanie
+  orcid: 0009-0007-2477-7948
+  surname: Messner
+
+
+# Zählen Sie hier die Autor*innen auf
+copyright_:
+- holder:
+  - Mari Akazawa
+  - Stefanie Messner
+  - Evelyn Gius
+  statement: '>-  © 2019 The authors. Published under a CC BY license.'
+  year: '2025'
+
+
+# Weitere Metadaten
+
+tags: # Hier tragen sie 5 keywords ein
+  - Textannotation
+  - Lehrkonzepte
+  - Hochschullehre
+
+va_type: # Veranstaltungstyp z.B. Workshop, Mehrere Sitzungen einer Lehrveranstaltung, Semesterplan, Hackathon etc.
+no_type: # Anzahl der Sitzungen in Tagen z.B. eintägiger Workshop == 1 etc.
+
+
+
+# Ab hier ist keine weitere Bearbeitung notwendig.
+article:
+  doi: 10.48694/fortext.4067
+  issuetitle: Textannotation in der Hochschullehre
+  volume: 2
+  issue: 1
+  categories: Article
+  version:
+    version-number: 2 #aktuelle versionsnummer
+    # see https://www.niso.org/sites/default/files/2017-08/RP-8-2008.pdf for vocab
+    # CVoR = Corrected Version of Record, VoR = Version of Record, AO = AUthor's Original
+    article-version-type: "EoR"
+    vocab-term: "Enhanced Version of Record"
+    previous_version:
+      prev_version_date: 12.12.2022
+      prev_version-number: 1
+  date: 
+    iso-8601: 26.05.2025
+    year: 2025
+journal:
+  container-title: forTEXT
+  publisher-loc: Darmstadt
+  eissn: 2943-212X
+  publisher-name: Universitäts- und Landesbibliothek Darmstadt
+  title: forTEXT
+license:
+- link: https://creativecommons.org/licenses/by/4.0/
+  text: '>-This work is licensed under a Creative Commons Attribution 4.0 International License.'
+  type: open-access
+container-title: forTEXT
+type: article-journal
+
+date:
+reviewers:
+history:
+  received: 
+    iso-8601: 2025-06-23
+    year: 2025
+  accepted: 
+    iso-8601: 2025-06-23
+    year: 2025
