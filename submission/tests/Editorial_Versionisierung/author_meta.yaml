@@ -104,9 +104,6 @@ editor-in-chief:
     orcid: 0000-0001-8888-8419
     role: editor-in-chief
 reviewers:
-  - name: Florian Barth
-    email: florian.barth@uni-goettingen.de
+  - name: Janis von Keitz
+    email: 
     role: primary
-  - name: Julian Schröter
-    email: j.schroeter@lmu.de
-    role: secondary

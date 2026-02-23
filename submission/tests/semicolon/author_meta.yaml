@@ -6,7 +6,7 @@
 # !!! explizit in der Beschreibung des Feldes gefordert ist.
 
 # Fügen Sie hier den Titel ihres Beitrags in Anführungszeichen ein. 
-title: "Thematologie und Topic Modeling"
+title: "Täglich grüßt das Murmeltier"
 
 
 # Für jede Affiliation vergeben Sie eine ID. Mit dieser ID weisen sie im nächsten Schrit den Autor*innen die jeweilige Affiliation zu. 
@@ -14,7 +14,7 @@ title: "Thematologie und Topic Modeling"
 # bzw. löschen die nicht benötigten Felder.
 affiliation:
 - id: 1
-  organization: Christian-Albrechts-Universität zu Kiel
+  organization: TU Darmstadt
 
 # Zählen Sie hier die Autor*innen des Beitrags auf.
 # Sollte es sich nur um eine Person handeln, löschen sie die Platzhalter für weitere Einträge, die mit "- affiliation:" beginnen
@@ -22,16 +22,16 @@ affiliation:
 # Für AutorInnen ohne Affiliation bleibt das Feld bestehen, es wird aber keine Zahl gesetzt 
 author:
 - affiliation: 1
-  email: jacke@ndl-medien.uni-kiel.de
-  given-names: Janina
-  orcid: 0000-0001-7217-3136
-  surname: Jacke
+  email: redaktion@fortext.journal.org
+  given-names: forTEXT
+  orcid:
+  surname: Journal
 
 
 # Zählen Sie hier die Autor*innen auf
 copyright_:
 - holder:
-  - Janina Jacke
+  - forTEXT Journal
   statement: '>-  © 2019 The authors. Published under a CC BY license.'
   year: '2025'
 
@@ -42,7 +42,7 @@ tags: # Hier tragen sie 5 keywords ein
   - Thematologie
   - Topic Modeling
   - Computational Literary Studies
-  - Reflektierte Textanalyse
+  - Nachnutzung
   - Textannotation
 
 va_type: Seminar
@@ -95,9 +95,9 @@ article:
   volume: 2
   issue: 1 
   beitragstyp: Lehrkonzept
-  issuetitle: Reflektierte Textanalyse
+  issuetitle: Testissue
   date:
-    iso-8601:
+    iso-8601: 15.08.2025
     year: 2025  
 history:
   received: 
@@ -107,8 +107,3 @@ history:
     iso-8601:
     year: 2025
 
-reviewers:
-- name: Florian Barth
-  email: florian.barth@uni-goettingen.de
-- name: Julian Schröter
-  email: j.schroeter@lmu.de

@@ -1,9 +1,9 @@
 # Journal_Pipeline
-** Copy unser Artikelpipeline für die ULB **
+** Copy unser Artikelpipeline für das TU journals Team **
 
 # forTEXT Zeitschrift
 
-Privates Repository, indem externe Einreichungen zu PDF-XML-Dateien umgewandelt werden.
+Öffentliches Repository, indem externe Einreichungen zu PDF-XML-Dateien umgewandelt werden.
 
 **Kontext**: Autor\*innen nutzen für die Einreichung von Beiträgen die Submission-Guidelines und -Templates auf journal.fortext.org. Diese geben streng Formate der Einreichung sowie inhaltlichen Aufbau der Einreichungen vor. 
 forTEXT führt die Konvertierung und somit Erstellung finaler Artikeldateien in XML-JATS- und PDF-Format selbstständig durch. Dafür wird die Pipeline im Ordner "template" genutzt.

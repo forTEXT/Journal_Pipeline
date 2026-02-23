@@ -1,2 +1,1 @@
-../submission/tests/Editorial_template_test
-../submission/tests/LK_template_test
+../submission/tests/Editorial_Versionisierung
