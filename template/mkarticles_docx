@@ -19,7 +19,6 @@ if [[ "$OSTYPE" == "msys" || "$OSTYPE" == "cygwin" ]]; then
 else
   FORTEXTLOGO=$LOGOPATH
 
-
 fi
 
 # Update to the newest version using git
@@ -31,7 +30,7 @@ echo -e "PIPELINE RUNNING...\n"
 
 # Check if articles.txt is empty or missing
 if [ ! -s "articles.txt" ]; then
-  echo "❌ articles.txt is empty or missing. Exiting"
+  echo "articles.txt does not contain article directory paths or is missing."
   # If articles.txt is empty or missing, iterate over all subdirectories in INPUT_BASE_DIR
   exit 1
 else
@@ -43,6 +42,8 @@ fi
 # Iterate over the list of directories 
 for ARTICLE_DIR in ${ARTICLE_DIRS[@]}; do
   # echo -e "\n\nPROCESSING ARTICLE DIR: $ARTICLE_DIR"
+  echo "***************************************************************************"
+  echo -e "\n\nPROCESSING ARTICLE DIR: $ARTICLE_DIR"
   
   # Navigate to the current article directory
   cd "$ARTICLE_DIR" || exit 1
@@ -97,10 +98,7 @@ for ARTICLE_DIR in ${ARTICLE_DIRS[@]}; do
   echo -e "- Cleaning conversion issues in ${ARTICLE}_markdown.md"
   python3 "$BD/scripts/fix_markdown.py" "${ARTICLE}_markdown.md" -o "${ARTICLE}_cleaned_markdown.md"
   echo -e "✅ CLEANED MARKDOWN."
-  # && git add "${ARTICLE}_cleaned_markdown.md" \
-  # && git commit -m "data(output): generated ${ARTICLE}_cleaned_markdown.md" \
-  # && git push
-  
+
 
 
   echo -e "\n***************************************************************************"
@@ -139,18 +137,9 @@ for ARTICLE_DIR in ${ARTICLE_DIRS[@]}; do
   else
     # No table file exists, create intext_replaced as a copy of the markdown file
     echo -e "✅ No table file assigned. Using original markdown for article generation."
-    #cp "$MARKDOWN_FILE" "${ARTICLE}_cleaned_markdown.md"
-    # PANDOC_INPUT_MD="$MARKDOWN_FILE"
-    # echo -e "- Successfully generated markdown without table."
-    # && git add "${ARTICLE}_intext_replaced.md" \
-    # && git commit -m "data(output): generated ${ARTICLE}_intext_replaced.md (copy)" \
-    # && git push
-    
+
   fi
 
-
-  #Extract table
-  #python3 "$BD/scripts/extract_table.py" "table_only_processed.md"   
 
   echo -e "\n***************************************************************************"
   echo -e "\nCALLING PANDOC..."
@@ -171,15 +160,6 @@ for ARTICLE_DIR in ${ARTICLE_DIRS[@]}; do
   # && git commit -m "data(output): generated $ARTICLE.pdf" \
   # && git push
   
-
-  # Generate Cover for Appendices only if dir exists and not empty
-  # if [ -d "anhänge" ] && [ "$(ls -A anhänge)" ]; then
-  #   echo -e "\n\nGenerating appendix covers for $ARTICLE"
-  #   "$BD/mkappendix"
-  # else
-  #   echo -e "No appendix folder or folder is empty, skipping cover generation"
-  # fi
-
 
   # Generate XML File
   echo -e "\n- Generating $ARTICLE.xml"
@@ -205,22 +185,6 @@ for ARTICLE_DIR in ${ARTICLE_DIRS[@]}; do
   # && git commit -m "data(output): formatted $ARTICLE.xml" \
   # && git push
 
-
-  # echo "***************************************************************************"
-  # # Generate TeX file
-  # echo -e "\n\nGenerating $ARTICLE.tex"
-  # pandoc \
-  #   --defaults="$BD/fortext-hefte.yaml" \
-  #   --defaults=latex.yaml \
-  #   --include-in-header=caption.tex \
-  #   --metadata-file="$METADATA_FILE" \
-  #   "${BIBLIO_ARG[@]}" \
-  #   "$PANDOC_INPUT_MD" \
-  #   --output "$ARTICLE.tex" \
-  #   && echo -e "✅ TEX-File."
-  # # && git add "$ARTICLE.tex" \
-  # # && git commit -m "data(output): generated $ARTICLE.tex" \
-  # # && git push
 
   # Clean Dir
   echo -e "\nREMOVING files from Dir: "

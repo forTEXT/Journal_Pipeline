@@ -239,7 +239,7 @@ $if(article.issuetitle)$
 <issue-title xml:lang="de">$article.issuetitle$</issue-title>
 $endif$
 $if(article.date)$
-<pub-date date-type="pub" publication-format="electronic"$if(article.date.iso-8601)$ iso-8601-date="$article.date.iso-8601$"$endif$>
+<pub-date date-type="pub" publication-format="electronic"$if(article.date.iso8601)$ iso-8601-date="$article.date.iso8601$"$endif$>
     <year>$article.date.year$</year>
 </pub-date>
 $endif$
@@ -254,12 +254,12 @@ $endif$
 $if(history)$
 <history>
   $if(history.received)$
-    <date date-type="received" $if(history.received.iso-8601)$ iso-8601-date="$history.received.iso-8601$"$endif$>
+    <date date-type="received" $if(history.received.iso8601)$ iso-8601-date="$history.received.iso8601$"$endif$>
           <year>$history.received.year$</year>
     </date>
   $endif$
   $if(history.accepted)$
-    <date date-type="accepted" $if(history.accepted.iso-8601)$ iso-8601-date="$history.accepted.iso-8601$"$endif$>
+    <date date-type="accepted" $if(history.accepted.iso8601)$ iso-8601-date="$history.accepted.iso8601$"$endif$>
        <year>$history.accepted.year$</year>
     </date>
   $endif$

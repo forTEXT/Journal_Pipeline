@@ -417,7 +417,12 @@ $header-includes$
 	\vspace*{-\topskip}
 	\begin{tblr}{
     vline{1,5} = {1pt},
-    colspec={lllX},
+    colspec={
+      l
+      X
+      l
+      Q[r,wd=30mm]
+    },
     width=\textwidth,
     rows={valign=t},
     columns={font=\small\sffamily,},
@@ -428,7 +433,7 @@ $header-includes$
 }
 \hline[1pt]
 \SetCell[c=4]{t,l}{\normalsize\textbf{$title$}} & & & \\
-& & & \SetCell[r=2]{c,r}{\includegraphics[height=2\baselineskip]{$logo$}} \\
+& & & \SetCell[r=4]{c,t}{\includegraphics[width=30mm,height=36mm,keepaspectratio]{$logo$}} \\
 $if(subtitle)$
 \SetCell[c=3]{t,l}{\small\textbf{$subtitle$}} & & &\\
 $endif$
@@ -479,7 +484,7 @@ $endif$
     $if(article.issue)$ Ausgabe: & $article.issue$ & & \\ $endif$
     $if(beitragstyp)$ Beitragstyp: & $beitragstyp$ & & \\ $endif$
     $if(article.doi)$ DOI: & \href{https://doi.org/$article.doi$}{$article.doi$} & & \\ $endif$  
-    $if(article.date.iso-8601)$ Erscheinungsdatum: & $article.date.iso-8601$ & & \\ $endif$
+    $if(article.date.iso8601)$ Erscheinungsdatum: & $article.date.iso8601$ & & \\ $endif$
     $if(article.version)$
     Version: & $article.version.version-number$ & & \\
     Vorherige Version: & $article.version.previous_version.prev_version-number$ vom $article.version.previous_version.prev_version_date$ & & \\

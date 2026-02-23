@@ -246,8 +246,8 @@ def insert_table(lines, table_markdown, heading_no=4):
         next_heading_index = len(lines)
 
     new_lines = []
-    # alles bishalten inkl. Zielüberschrift
-    new_lines.extend(lines[:heading_index+1])
+    # alles bishalten exkl. Zielüberschrift
+    new_lines.extend(lines[:heading_index])
     #add table
     new_lines.append("\n"+table_markdown+"\n")
     #add the rest, ab nächster Überschrift, um dummy text zu ignorieren
